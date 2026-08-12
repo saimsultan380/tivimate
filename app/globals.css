@@ -1125,7 +1125,7 @@ main > :first-child.telvis-hero-page {
 .telvis-logo {
   display: block;
   width: auto;
-  height: 40px;
+  height: 42px;
   object-fit: contain;
   filter: none;
 }
@@ -2136,6 +2136,11 @@ main > :first-child.telvis-hero-page {
     gap: 12px;
   }
 
+  .telvis-bento,
+  .telvis-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .telvis-plan-card,
   .telvis-bento-card,
   .telvis-feature-tile,
@@ -2143,7 +2148,7 @@ main > :first-child.telvis-hero-page {
   .telvis-why-card,
   .telvis-step-card,
   .telvis-question-chip {
-    padding: 20px;
+    padding: 16px;
   }
 
   .telvis-panel,
@@ -3707,7 +3712,7 @@ main > :first-child.telvis-hero-page {
 .telvis-footer-logo {
   display: block;
   width: auto;
-  height: 48px;
+  height: 50px;
   object-fit: contain;
   filter: none;
 }
