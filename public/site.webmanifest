@@ -1,11 +1,11 @@
 {
-  "name": "Telvis",
-  "short_name": "Telvis",
-  "description": "IPTV UK subscription with live TV, movies, series and guided setup.",
+  "name": "TiviMate",
+  "short_name": "TiviMate",
+  "description": "IPTV subscription for TiviMate with plans, compatible devices and an easy setup guide.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#0084FF",
   "icons": [
     {
       "src": "/icon-192.png",

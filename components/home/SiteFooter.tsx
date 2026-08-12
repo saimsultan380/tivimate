@@ -2,19 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import {
+  brandAssets,
   footerLegalLinks,
   footerQuickLinks,
   navLinks,
   routes,
   siteConfig,
 } from "@/lib/site";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const trustHighlights = [
-  "24-Hour Trial",
-  "VPN Included",
-  "Guided Installation",
+  "Easy Setup",
+  "TiviMate Compatible",
+  "Flexible Plans",
   "24/7 Support",
 ] as const;
 
@@ -28,10 +29,10 @@ export function SiteFooter() {
           <ScrollReveal variant="text" className="telvis-footer-brand-col">
             <Link href="/" className="telvis-footer-brand">
               <Image
-                src="/logo-mark.png"
-                alt="Telvis"
-                width={80}
-                height={80}
+                src={brandAssets.logo}
+                alt="TiviMate"
+                width={180}
+                height={54}
                 className="telvis-footer-logo"
               />
             </Link>
@@ -65,15 +66,15 @@ export function SiteFooter() {
             <ScrollReveal delay={0.18} variant="text" className="telvis-footer-col">
               <h2 className="telvis-footer-heading">Support</h2>
               <nav className="telvis-footer-links" aria-label="Footer support">
-                <Link href={siteConfig.url} className="telvis-footer-link">
-                  {siteConfig.url.replace("https://", "")}
-                </Link>
                 <Link href={routes.contact} className="telvis-footer-link">
                   Contact Us
                 </Link>
+                <Link href={routes.installation} className="telvis-footer-link">
+                  Installation Guide
+                </Link>
                 <p className="telvis-footer-note">
-                  Email or WhatsApp support for trials, plans, installation and account
-                  questions.
+                  Need help configuring your subscription in TiviMate? Tell us your
+                  device and what you&apos;re experiencing.
                 </p>
               </nav>
             </ScrollReveal>
@@ -97,9 +98,10 @@ export function SiteFooter() {
 
         <ScrollReveal delay={0.1} variant="text">
           <p className="telvis-footer-disclaimer">
-            Telvis is intended for personal, lawful use only. Users must comply with
-            all applicable laws and use only content they are legally entitled to
-            access.
+            TiviMate is a separate media player application. An IPTV subscription
+            provides the service and content source; TiviMate is the player used to
+            access compatible playlists. Always confirm device and service
+            compatibility before ordering.
           </p>
         </ScrollReveal>
 

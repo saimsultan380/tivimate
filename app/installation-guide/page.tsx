@@ -1,80 +1,61 @@
 import type { Metadata } from "next";
-import { InstallationGuideBefore } from "@/components/installation/InstallationGuideBefore";
-import { InstallationGuideHero } from "@/components/installation/InstallationGuideHero";
-import {
-  InstallationGuideSchema,
-  InstallationGuideSupport,
-} from "@/components/installation/InstallationGuideSchema";
-import { InstallationGuideTabs } from "@/components/installation/InstallationGuideTabs";
-import { InstallationGuideTroubleshooting } from "@/components/installation/InstallationGuideTroubleshooting";
-import {
-  InstallationGuideEpg,
-  InstallationGuideXtream,
-} from "@/components/installation/InstallationGuideXtream";
-import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
-import { routes, siteConfig } from "@/lib/site";
+import { GuideBeforeSection } from "@/components/installation/GuideBeforeSection";
+import { GuideDevicesSection } from "@/components/installation/GuideDevicesSection";
+import { GuideFaqSection } from "@/components/installation/GuideFaqSection";
+import { GuideFinalCta } from "@/components/installation/GuideFinalCta";
+import { GuideHero } from "@/components/installation/GuideHero";
+import { GuideProblemsSection } from "@/components/installation/GuideProblemsSection";
+import { GuideSchema } from "@/components/installation/GuideSchema";
+import { GuideStepsSection } from "@/components/installation/GuideStepsSection";
+import { installationPageSeo } from "@/lib/installation-data";
+import { brandAssets, routes, siteConfig } from "@/lib/site";
 import { canonicalUrl } from "@/lib/seo";
 
 const pageUrl = canonicalUrl(routes.installation);
 
 export const metadata: Metadata = {
-  title: "IPTV UK Installation Guide – Firestick, TV & Mobile",
-  description:
-    "Install IPTV UK on Firestick, Android TV, Smart TV, Apple devices, Windows or Mac. Follow dedicated-app and Xtream Codes setup steps.",
+  title: installationPageSeo.title,
+  description: installationPageSeo.description,
+  keywords: [...installationPageSeo.keywords],
   alternates: {
     canonical: pageUrl,
   },
-  keywords: [
-    "IPTV UK installation guide",
-    "install IPTV on Firestick",
-    "IPTV setup UK",
-    "IPTV on Smart TV",
-    "Xtream Codes setup",
-    "IPTV player installation",
-  ],
   openGraph: {
     type: "article",
     url: pageUrl,
-    title: "IPTV UK Installation Guide – Firestick, TV & Mobile",
-    description:
-      "Install IPTV UK on Firestick, Android TV, Smart TV, Apple devices, Windows or Mac. Follow dedicated-app and Xtream Codes setup steps.",
+    title: installationPageSeo.title,
+    description: installationPageSeo.description,
     siteName: siteConfig.name,
-    locale: "en-GB",
+    locale: "en_GB",
+    images: [
+      {
+        url: brandAssets.ogImage,
+        width: 1200,
+        height: 630,
+        alt: installationPageSeo.title,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: installationPageSeo.title,
+    description: installationPageSeo.description,
+    images: [brandAssets.ogImage],
   },
 };
 
 export default function InstallationGuidePage() {
   return (
     <>
-      <InstallationGuideSchema />
+      <GuideSchema />
       <main>
-        <InstallationGuideHero />
-        <InstallationGuideBefore />
-
-        <section
-          className="telvis-section telvis-guide-section"
-          aria-labelledby="guide-devices-heading"
-        >
-          <div className="telvis-section-inner">
-            <SectionHeader
-              id="guide-devices-heading"
-              eyebrow="Device setup"
-              title={
-                <>
-                  Set Up <TitleAccent>IPTV UK</TitleAccent> on Firestick, Smart TV,
-                  Mobile and More
-                </>
-              }
-              lead="Choose your device from the list below. Tabs run from Firestick setup through to Kodi. Follow one method at a time and keep your welcome message nearby."
-            />
-            <InstallationGuideTabs />
-          </div>
-        </section>
-
-        <InstallationGuideXtream />
-        <InstallationGuideEpg />
-        <InstallationGuideTroubleshooting />
-        <InstallationGuideSupport />
+        <GuideHero />
+        <GuideBeforeSection />
+        <GuideStepsSection />
+        <GuideDevicesSection />
+        <GuideProblemsSection />
+        <GuideFaqSection />
+        <GuideFinalCta />
       </main>
     </>
   );

@@ -1,22 +1,24 @@
 import type { Metadata } from "next";
-import { CatalogueSection } from "@/components/home/CatalogueSection";
-import { ClaritySection } from "@/components/home/ClaritySection";
-import { ConnectionsSection } from "@/components/home/ConnectionsSection";
+import { AlreadyHaveSection } from "@/components/home/AlreadyHaveSection";
+import { ConnectStepsSection } from "@/components/home/ConnectStepsSection";
 import { DevicesSection } from "@/components/home/DevicesSection";
 import { FaqSection } from "@/components/home/FaqSection";
 import { FinalCtaSection } from "@/components/home/FinalCtaSection";
 import { HeroSection } from "@/components/home/HeroSection";
-import { IncludedSection } from "@/components/home/IncludedSection";
 import { PlansSection } from "@/components/home/PlansSection";
+import { SetupIntroSection } from "@/components/home/SetupIntroSection";
 import { StepsSection } from "@/components/home/StepsSection";
-import { TrialSection } from "@/components/home/TrialSection";
-import { ViewersWantSection } from "@/components/home/ViewersWantSection";
-import { ViewingTipsSection } from "@/components/home/ViewingTipsSection";
+import { SubscriptionSection } from "@/components/home/SubscriptionSection";
 import { WhyChooseSection } from "@/components/home/WhyChooseSection";
+import { WhyTivimateSection } from "@/components/home/WhyTivimateSection";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { canonicalUrl } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
+  title: siteConfig.title,
+  description: siteConfig.description,
+  keywords: [...siteConfig.keywords],
   alternates: {
     canonical: canonicalUrl("/"),
   },
@@ -28,16 +30,14 @@ export default function HomePage() {
       <JsonLd />
       <main>
         <HeroSection />
+        <SetupIntroSection />
+        <ConnectStepsSection />
+        <WhyTivimateSection />
+        <SubscriptionSection />
         <PlansSection />
-        <CatalogueSection />
-        <TrialSection />
-        <IncludedSection />
-        <DevicesSection />
-        <ConnectionsSection />
-        <ViewingTipsSection />
-        <ClaritySection />
         <StepsSection />
-        <ViewersWantSection />
+        <DevicesSection />
+        <AlreadyHaveSection />
         <WhyChooseSection />
         <FaqSection />
         <FinalCtaSection />

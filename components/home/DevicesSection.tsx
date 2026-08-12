@@ -1,11 +1,4 @@
-import {
-  Apple,
-  Monitor,
-  Smartphone,
-  TabletSmartphone,
-  Tv,
-  TvMinimal,
-} from "lucide-react";
+import { Box, Cpu, Tv, TvMinimal } from "lucide-react";
 import Link from "next/link";
 import { GlassIcon } from "@/components/ui/GlassIcon";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
@@ -16,34 +9,29 @@ import { routes } from "@/lib/site";
 
 const devices = [
   {
-    title: "Amazon Firestick and Fire TV",
-    body: "Install the dedicated app through Downloader using the verified code in the Installation Guide. Open the app and enter the details from your welcome message.",
+    title: "Amazon Fire TV / Firestick",
+    body: "Compatible Fire TV and Firestick devices can be used with TiviMate. Confirm your model and installation method before setup.",
     icon: TvMinimal,
   },
   {
-    title: "Android TV and Google TV",
-    body: "Use the dedicated app or a compatible player on supported Android TV, Google TV and Android box devices.",
+    title: "Android TV",
+    body: "TiviMate is designed for compatible Android TV devices and offers a TV-friendly interface for managing IPTV playlists.",
     icon: Tv,
   },
   {
-    title: "Samsung, LG and Other Smart TVs",
-    body: "Install a compatible player from your television's official app store, then add the supplied Xtream Codes details. App availability varies by television model and operating system.",
-    icon: Monitor,
+    title: "Google TV devices",
+    body: "Supported Google TV setups can run TiviMate where the device and OS requirements are met.",
+    icon: Tv,
   },
   {
-    title: "iPhone, iPad and Apple TV",
-    body: "Install a compatible player from the App Store and enter the supplied username, password and server address.",
-    icon: Apple,
+    title: "Android TV boxes",
+    body: "Many Android TV boxes support TiviMate. Always check your particular device before ordering.",
+    icon: Box,
   },
   {
-    title: "Android Phones and Tablets",
-    body: "Use the dedicated Android app or a compatible player. A phone or tablet is also useful for checking whether your account is active.",
-    icon: Smartphone,
-  },
-  {
-    title: "Windows and Mac",
-    body: "Install a reputable compatible player and add the supplied Xtream Codes details. Download software only from its official publisher or a recognised app store.",
-    icon: TabletSmartphone,
+    title: "NVIDIA Shield and similar hardware",
+    body: "Compatible Android TV hardware such as NVIDIA Shield can be used where TiviMate is supported.",
+    icon: Cpu,
   },
 ] as const;
 
@@ -57,14 +45,13 @@ export function DevicesSection() {
       <div className="telvis-section-inner">
         <SectionHeader
           id="devices-heading"
-          eyebrow="Supported devices"
+          eyebrow="Compatible devices"
           title={
             <>
-              Watch <TitleAccent>IPTV UK</TitleAccent> on the Devices You Already
-              Use
+              Compatible Devices for <TitleAccent>TiviMate</TitleAccent>
             </>
           }
-          lead="Use IPTV UK on many popular televisions, streaming devices, phones, tablets and computers. The correct app and setup method depend on your device."
+          lead="TiviMate is designed for compatible Android TV devices. Its official information also distinguishes TV devices from phones and tablets. Your IPTV service can potentially be used on supported setups such as:"
         />
 
         <div className="telvis-device-grid">
@@ -86,11 +73,18 @@ export function DevicesSection() {
           ))}
         </div>
 
-        <ScrollReveal delay={0.1} variant="cta">
+        <ScrollReveal delay={0.08} variant="text">
+          <p className="telvis-section-note">
+            Always confirm your particular device and service compatibility before
+            ordering.
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.12} variant="cta">
           <div className="telvis-inline-actions">
-          <Link href={routes.installation} className="telvis-cta-primary">
-            Open the IPTV UK Installation Guide
-          </Link>
+            <Link href={routes.installation} className="telvis-cta-primary">
+              Open the TiviMate Setup Guide
+            </Link>
           </div>
         </ScrollReveal>
       </div>

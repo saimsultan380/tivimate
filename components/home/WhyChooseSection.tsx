@@ -1,7 +1,7 @@
 import {
-  BadgePoundSterling,
-  FlaskConical,
+  BadgeInfo,
   Headphones,
+  MonitorSmartphone,
   ScrollText,
   Waypoints,
 } from "lucide-react";
@@ -12,29 +12,29 @@ import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
 
 const reasons = [
   {
-    title: "Clear Pricing from £9.99",
-    body: "See the full price and duration before ordering. Choose one month for flexibility or a longer plan for better monthly value.",
-    icon: BadgePoundSterling,
+    title: "Clear Information",
+    body: "We explain the difference between the IPTV service and the TiviMate player so you know exactly what you’re purchasing.",
+    icon: BadgeInfo,
   },
   {
-    title: "Test Before a Longer Purchase",
-    body: "Use the free trial on your own device and home connection before choosing a paid plan.",
-    icon: FlaskConical,
+    title: "Simple Setup",
+    body: "Our installation instructions are written for real users rather than technical experts.",
+    icon: ScrollText,
   },
   {
-    title: "Two Practical Access Methods",
-    body: "Use the dedicated app where supported or a compatible Xtream Codes player. This gives IPTV UK customers a clear setup option across different devices.",
+    title: "Flexible Plans",
+    body: "Choose a subscription duration that fits your requirements.",
     icon: Waypoints,
   },
   {
-    title: "Support Beyond the Sale",
-    body: "Get help with installation, login details, EPG, loading and account questions throughout your active subscription.",
-    icon: Headphones,
+    title: "Device Guidance",
+    body: "Find setup information for the devices commonly used with TiviMate.",
+    icon: MonitorSmartphone,
   },
   {
-    title: "A Published Refund Process",
-    body: "Eligible purchases have a seven-day refund guarantee under the published Refund Policy. Read the conditions before ordering.",
-    icon: ScrollText,
+    title: "Support",
+    body: "If you have trouble configuring your subscription, our support team is available to help according to our support policy.",
+    icon: Headphones,
   },
 ] as const;
 
@@ -48,10 +48,10 @@ export function WhyChooseSection() {
       <div className="telvis-section-inner">
         <SectionHeader
           id="why-choose-heading"
-          eyebrow="Why Choose"
+          eyebrow="What makes us different"
           title={
             <>
-              Why Choose <TitleAccent>IPTV UK</TitleAccent>?
+              What Makes Our <TitleAccent>IPTV</TitleAccent> Setup Different?
             </>
           }
           align="center"

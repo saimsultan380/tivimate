@@ -1,8 +1,10 @@
 import {
   KeyRound,
+  ListPlus,
+  LoaderCircle,
+  MonitorPlay,
   MousePointerClick,
   PlayCircle,
-  Smartphone,
 } from "lucide-react";
 import { GlassIcon } from "@/components/ui/GlassIcon";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
@@ -12,26 +14,38 @@ import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
 const steps = [
   {
     number: "1",
-    title: "Choose Your Plan or Free Trial",
-    body: "Start with the free trial or choose one, three, six or twelve months. Longer plans have a lower average monthly cost.",
+    title: "Select Your Subscription",
+    body: "Choose the plan that suits you.",
     icon: MousePointerClick,
   },
   {
     number: "2",
-    title: "Tell Us Your Device",
-    body: "Let us know whether you use a Firestick, Smart TV, Android device, Apple device, phone, tablet or computer. This helps us give you the correct setup method.",
-    icon: Smartphone,
-  },
-  {
-    number: "3",
-    title: "Receive Your Login and Instructions",
-    body: "After your IPTV UK order is confirmed, you receive the account details and installation instructions needed for the dedicated app or a compatible player. Keep your login private.",
+    title: "Receive Your Access",
+    body: "Your subscription details are provided after activation.",
     icon: KeyRound,
   },
   {
+    number: "3",
+    title: "Open TiviMate",
+    body: "Launch the player on your compatible device.",
+    icon: MonitorPlay,
+  },
+  {
     number: "4",
-    title: "Install, Sign In and Start Watching",
-    body: "Follow the guide, enter your details and allow the categories to load. If you become stuck, send support your device model, app name and exact error.",
+    title: "Add Your Playlist",
+    body: "Enter the supported information supplied with your subscription.",
+    icon: ListPlus,
+  },
+  {
+    number: "5",
+    title: "Allow the Playlist to Load",
+    body: "TiviMate will retrieve the available information from the configured source.",
+    icon: LoaderCircle,
+  },
+  {
+    number: "6",
+    title: "Start Watching",
+    body: "Browse your available categories and channels through the TiviMate interface.",
     icon: PlayCircle,
   },
 ] as const;
@@ -46,13 +60,13 @@ export function StepsSection() {
       <div className="telvis-section-inner">
         <SectionHeader
           id="steps-heading"
-          eyebrow="Getting started"
+          eyebrow="How it works"
           title={
             <>
-              How to Start Your <TitleAccent>IPTV UK</TitleAccent> Subscription in
-              Four Simple Steps
+              How IPTV Works With <TitleAccent>TiviMate</TitleAccent>
             </>
           }
+          lead="You don’t need to be an IPTV expert."
           align="center"
         />
 

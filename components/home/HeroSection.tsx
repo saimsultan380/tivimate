@@ -1,8 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { OrbitVisual } from "@/components/home/OrbitVisual";
-import { HeroTitleReveal } from "@/components/ui/HeroTitleReveal";
+import { MonitorPlay, Settings, ShieldCheck } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { routes } from "@/lib/site";
 
@@ -10,81 +10,79 @@ export function HeroSection() {
   return (
     <section className="telvis-hero" aria-labelledby="telvis-hero-heading">
       <div className="telvis-container">
-        <div className="telvis-content">
+        <div className="telvis-content is-hero-static">
           <div className="telvis-copy-col">
             <ScrollReveal delay={0.05} variant="text">
               <div className="telvis-eyebrow">
                 <span className="telvis-eyebrow-dot" />
-                PREMIUM IPTV STREAMING
+                TiviMate IPTV Player
               </div>
             </ScrollReveal>
 
-            <HeroTitleReveal
-              id="telvis-hero-heading"
-              className="telvis-h1"
-              lines={[
-                <>
-                  IPTV UK Subscription from{" "}
-                  <span className="telvis-h1-accent">£9.99</span>
-                </>,
-                <>
-                  with a Free{" "}
-                  <span className="telvis-h1-accent">24-Hour Trial</span>
-                </>,
-              ]}
-            />
+            <ScrollReveal delay={0.1} variant="text">
+              <h1 id="telvis-hero-heading" className="telvis-h1">
+                <span className="telvis-h1-accent">TiviMate</span> IPTV Player –
+                IPTV for TiviMate
+              </h1>
+            </ScrollReveal>
 
-            <ScrollReveal delay={0.22} variant="text">
+            <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Choose an IPTV UK subscription that lets you check compatibility
-                  before committing to a longer plan. Browse more than 20,000 listed
-                  live channels and over 80,000 listed movies and series on supported
-                  internet-connected devices, with paid plans starting from £9.99.
+                  Already using TiviMate and looking for an IPTV subscription to
+                  add to your player?
                 </p>
                 <p>
-                  Start with a free 24-hour IPTV UK trial on the device and broadband
-                  connection you actually use. If you decide to continue, choose one,
-                  three, six or twelve months and receive the access details,
-                  installation instructions and support needed to get set up.
+                  Get started with an IPTV service designed for a simple setup on
+                  compatible devices. Choose your preferred plan, receive your
+                  access details and follow our step-by-step guide to connect your
+                  subscription to TiviMate.
+                </p>
+                <p>
+                  Whether you&apos;re using a Fire TV device, Android TV or another
+                  compatible setup, our goal is to make the process
+                  straightforward from subscription to setup.
                 </p>
               </div>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.3} variant="cta">
+            <ScrollReveal delay={0.26} variant="cta">
               <div className="telvis-actions">
-                <Link href={routes.trial} className="telvis-cta-primary">
-                  <span className="telvis-play-icon" />
-                  <span>Start Your Free 24-Hour Trial</span>
+                <Link href={routes.plans} className="telvis-cta-primary">
+                  <MonitorPlay size={18} strokeWidth={2} aria-hidden="true" />
+                  <span>View IPTV Plans</span>
                 </Link>
 
-                <Link href={routes.plans} className="telvis-cta-secondary">
-                  View Plans from £9.99
+                <Link href={routes.installation} className="telvis-cta-secondary">
+                  <Settings size={18} strokeWidth={2} aria-hidden="true" />
+                  <span>How to Set Up TiviMate</span>
                 </Link>
               </div>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.38} variant="text">
-              <p className="telvis-hero-trust-line">
-                Free 24-Hour Trial
-                <span className="telvis-hero-trust-sep" aria-hidden="true">
-                  ·
+            <ScrollReveal delay={0.32} variant="text">
+              <div className="telvis-glass telvis-hero-trust-card">
+                <span className="telvis-hero-trust-icon" aria-hidden="true">
+                  <ShieldCheck size={22} strokeWidth={2.25} />
                 </span>
-                VPN Included
-                <span className="telvis-hero-trust-sep" aria-hidden="true">
-                  ·
-                </span>
-                EPG and Selected Catch-Up
-                <span className="telvis-hero-trust-sep" aria-hidden="true">
-                  ·
-                </span>
-                24/7 Support
-              </p>
+                <div className="telvis-hero-trust-copy">
+                  <strong>Trusted IPTV service for TiviMate users worldwide.</strong>
+                  <span>Easy setup • Reliable streaming • 24/7 Support</span>
+                </div>
+              </div>
             </ScrollReveal>
           </div>
 
-          <ScrollReveal delay={0.18} variant="media" className="telvis-visual-wrap">
-            <OrbitVisual />
+          <ScrollReveal delay={0.16} variant="media" className="telvis-hero-image-wrap">
+            <Image
+              src="/hero-image.jpeg"
+              alt="TiviMate IPTV Player interface with Live TV, EPG Guide, Catch Up and Favourites"
+              width={1200}
+              height={900}
+              className="telvis-hero-image"
+              priority
+              sizes="(max-width: 767px) 100vw, 520px"
+            />
           </ScrollReveal>
         </div>
       </div>

@@ -1,70 +1,76 @@
-import {
-  CalendarDays,
-  Check,
-  Clapperboard,
-  Headphones,
-  MonitorPlay,
-  Shield,
-  Sparkles,
-  Tv,
-} from "lucide-react";
+import { CalendarDays, Check } from "lucide-react";
 import Link from "next/link";
 import { GlassIcon } from "@/components/ui/GlassIcon";
-import { CardReveal, CardRevealList, CardRevealListItem, CardRevealPart } from "@/components/ui/CardReveal";
+import {
+  CardReveal,
+  CardRevealList,
+  CardRevealListItem,
+  CardRevealPart,
+} from "@/components/ui/CardReveal";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { staggerDelay } from "@/lib/motion";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
 import { routes } from "@/lib/site";
 
-const sharedFeatures = [
-  { text: "20,000+ listed live channels", icon: Tv },
-  { text: "80,000+ listed movies and series", icon: Clapperboard },
-  { text: "Dedicated app and Xtream Codes support", icon: MonitorPlay },
-  { text: "EPG where available", icon: CalendarDays },
-  { text: "Selected Catch-Up", icon: Sparkles },
-  { text: "VPN included", icon: Shield },
-  { text: "24/7 customer support", icon: Headphones },
-] as const;
-
 const plans = [
   {
     id: "1-month",
-    title: "1-Month Plan",
-    price: "£9.99",
-    perMonth: "£9.99 / mo",
-    summary: "A simple starting option with the shortest paid commitment.",
+    title: "1 Month",
+    price: "Contact for price",
+    summary: "A flexible option for viewers who prefer a shorter commitment.",
+    features: [
+      "Connection allowance confirmed at checkout",
+      "Content and features as listed for this plan",
+      "Support included with your subscription",
+      "Activation details provided after order",
+    ],
     cta: "Choose 1 Month",
     href: "/checkout?plan=1-month",
     featured: false,
   },
   {
     id: "3-month",
-    title: "3-Month Plan",
-    price: "£24.99",
-    perMonth: "~£8.33 / mo",
-    summary: "A three-month option costing approximately £8.33 per month.",
+    title: "3 Months",
+    price: "Contact for price",
+    summary:
+      "A longer option for regular IPTV viewers who want extended access.",
+    features: [
+      "Connection allowance confirmed at checkout",
+      "Content and features as listed for this plan",
+      "Support included with your subscription",
+      "Activation details provided after order",
+    ],
     cta: "Choose 3 Months",
     href: "/checkout?plan=3-month",
     featured: false,
   },
   {
     id: "6-month",
-    title: "6-Month Plan",
-    price: "£39.99",
-    perMonth: "~£6.67 / mo",
-    summary:
-      "A practical choice after completing the trial. The average cost is approximately £6.67 per month.",
+    title: "6 Months",
+    price: "Contact for price",
+    summary: "Suitable for viewers looking for a longer subscription period.",
+    features: [
+      "Connection allowance confirmed at checkout",
+      "Content and features as listed for this plan",
+      "Support included with your subscription",
+      "Activation details provided after order",
+    ],
     cta: "Choose 6 Months",
     href: "/checkout?plan=6-month",
     featured: true,
   },
   {
     id: "12-month",
-    title: "12-Month Plan",
-    price: "£49.99",
-    perMonth: "~£4.17 / mo",
+    title: "12 Months",
+    price: "Contact for price",
     summary:
-      "The lowest average monthly cost at approximately £4.17. Choose this after testing the service and confirming your setup.",
+      "Our longest subscription option for customers who want extended access.",
+    features: [
+      "Connection allowance confirmed at checkout",
+      "Content and features as listed for this plan",
+      "Support included with your subscription",
+      "Activation details provided after order",
+    ],
     cta: "Choose 12 Months",
     href: "/checkout?plan=12-month",
     featured: false,
@@ -81,14 +87,14 @@ export function PlansSection() {
       <div className="telvis-section-inner">
         <SectionHeader
           id="plans-heading"
-          eyebrow="IPTV UK Plans"
+          eyebrow="IPTV plans"
           title={
             <>
-              Choose an <TitleAccent>IPTV UK</TitleAccent> Plan That Fits Your
-              Viewing
+              Choose Your <TitleAccent>IPTV</TitleAccent> Plan
             </>
           }
-          lead="Choose the subscription length that suits you. Start with one month for flexibility or select a longer plan for a lower average monthly cost. Every IPTV UK plan includes the same catalogue, access options and support."
+          lead="Find a subscription that matches the way you watch."
+          align="center"
         />
 
         <div className="telvis-plan-grid">
@@ -109,19 +115,15 @@ export function PlansSection() {
                 <h3 className="telvis-plan-title">
                   <span className="telvis-plan-price">{plan.price}</span>
                 </h3>
-                <p className="telvis-plan-meta">{plan.perMonth}</p>
                 <p className="telvis-plan-summary">{plan.summary}</p>
               </CardRevealPart>
               <CardRevealList className="telvis-feature-list">
-                {sharedFeatures.map((feature) => {
-                  const Icon = feature.icon;
-                  return (
-                    <CardRevealListItem key={feature.text}>
-                      <Icon size={16} strokeWidth={2} aria-hidden="true" />
-                      <span>{feature.text}</span>
-                    </CardRevealListItem>
-                  );
-                })}
+                {plan.features.map((feature) => (
+                  <CardRevealListItem key={feature}>
+                    <Check size={16} strokeWidth={2.25} aria-hidden="true" />
+                    <span>{feature}</span>
+                  </CardRevealListItem>
+                ))}
               </CardRevealList>
               <CardRevealPart variant="content">
                 <Link
@@ -132,7 +134,6 @@ export function PlansSection() {
                       : "telvis-cta-glass telvis-plan-cta"
                   }
                 >
-                  <Check size={16} strokeWidth={2.25} aria-hidden="true" />
                   {plan.cta}
                 </Link>
               </CardRevealPart>
@@ -140,22 +141,14 @@ export function PlansSection() {
           ))}
         </div>
 
-        <ScrollReveal variant="text">
-          <p className="telvis-section-note">
-          Catalogue totals describe listed entries and can change as sources are
-          added, updated or removed. Availability, Catch-Up, EPG and picture
-          quality vary by channel, programme, device, player and location.
-          </p>
-        </ScrollReveal>
-
         <ScrollReveal delay={0.08} variant="cta">
           <div className="telvis-inline-actions is-row">
-          <Link href={routes.trial} className="telvis-cta-primary">
-            Start Your 24-Hour Trial
-          </Link>
-          <Link href={routes.plans} className="telvis-cta-outline">
-            Compare IPTV UK Plans
-          </Link>
+            <Link href={routes.installation} className="telvis-cta-outline">
+              How to Set Up TiviMate
+            </Link>
+            <Link href={routes.contact} className="telvis-cta-primary">
+              Ask About Plans
+            </Link>
           </div>
         </ScrollReveal>
       </div>

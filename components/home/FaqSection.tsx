@@ -5,59 +5,44 @@ import { staggerDelay } from "@/lib/motion";
 
 const faqs = [
   {
-    question: "What is IPTV?",
+    question: "What is TiviMate?",
     answer:
-      "IPTV means television delivered through an internet connection instead of an aerial, cable or satellite feed. A compatible app organises the live and on-demand content supplied through your account.",
+      "TiviMate is a media player designed for compatible TV devices. It allows users to organize and play supported IPTV playlists and other compatible media sources.",
   },
   {
-    question: "How much does IPTV UK cost?",
+    question: "Does TiviMate provide IPTV channels?",
     answer:
-      "Plans cost £9.99 for one month, £24.99 for three months, £39.99 for six months and £49.99 for twelve months. You can test compatibility with the free 24-hour trial first.",
+      "No. TiviMate is the player. You need a separate content source or IPTV subscription.",
   },
   {
-    question: "What do I receive after ordering?",
+    question: "Can I use an IPTV subscription with TiviMate?",
     answer:
-      "You receive the username, password, server information and setup guidance needed for the dedicated app or a compatible Xtream Codes player.",
+      "Yes, when the service provides a playlist or login method supported by TiviMate.",
   },
   {
-    question: "Which devices are supported?",
+    question: "Do I need to download another IPTV player?",
     answer:
-      "Supported options include many Firestick, Fire TV, Android TV, Google TV, Smart TV, Apple, Android mobile, Windows and Mac devices. The correct app depends on your model and operating system.",
+      "If your subscription works with TiviMate and your device is compatible, you can use TiviMate as your player.",
   },
   {
-    question: "Is a player app included?",
+    question: "Can I use IPTV on Firestick with TiviMate?",
     answer:
-      "The dedicated app is available on supported devices. Some third-party players charge their own activation or licence fee, so check before installing one.",
+      "Compatible Fire TV setups can be used with TiviMate. Your specific device and installation method should be checked before setup.",
   },
   {
-    question: "Can I watch on more than one device?",
+    question: "How do I add my IPTV subscription to TiviMate?",
     answer:
-      "You can install the account on compatible devices, but the number of screens playing at once depends on your plan. Confirm this before paying.",
+      "Open TiviMate, select the playlist/add option and enter the supported details supplied by your IPTV provider.",
   },
   {
-    question: "Is every channel available in Catch-Up?",
+    question: "Does my IPTV subscription include TiviMate?",
     answer:
-      "No. Catch-Up works only on selected listings and for a limited period. EPG information can also vary.",
+      "TiviMate is a separate application. The IPTV subscription and the player serve different purposes.",
   },
   {
-    question: "Is 4K guaranteed?",
+    question: "What happens after I order?",
     answer:
-      "No. Available quality depends on the listing, device, player, television and internet connection.",
-  },
-  {
-    question: "What can cause buffering?",
-    answer:
-      "Common causes include weak Wi-Fi, busy home internet, low device storage, an outdated app or a temporary issue with one listing. Follow the Installation Guide before contacting support.",
-  },
-  {
-    question: "How does the seven-day refund guarantee work?",
-    answer:
-      "Contact support within seven days and include your order details and reason. Eligibility depends on the conditions in the published Refund Policy.",
-  },
-  {
-    question: "Is IPTV legal in the UK?",
-    answer:
-      "IPTV is a delivery technology. Legality depends on the rights and permissions held for the content. The service should offer only content it is authorised to distribute, and customers must follow applicable law.",
+      "You’ll receive your subscription/access information according to the activation process described on the relevant plan.",
   },
 ] as const;
 
@@ -75,8 +60,8 @@ export function FaqSection() {
             eyebrow="FAQ"
             title={
               <>
-                Frequently Asked Questions About{" "}
-                <TitleAccent>IPTV UK</TitleAccent>
+                <TitleAccent>TiviMate</TitleAccent> IPTV Frequently Asked
+                Questions
               </>
             }
           />

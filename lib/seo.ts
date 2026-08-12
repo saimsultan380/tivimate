@@ -53,7 +53,8 @@ export function buildBreadcrumbList(items: BreadcrumbItem[]) {
 /** Routes included in sitemap.xml (indexable pages only). */
 export const indexableRoutes = [
   "/",
-  "/contact",
-  "/reviews",
+  "/iptv-plans",
+  "/blog",
+  "/contact-us",
   "/installation-guide",
 ] as const;

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { navLinks, routes } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | Telvis",
+  title: "Page Not Found | TiviMate",
   robots: {
     index: false,
     follow: true,

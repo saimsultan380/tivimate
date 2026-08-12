@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { SiteFooter } from "@/components/home/SiteFooter";
 import { SiteHeader } from "@/components/home/SiteHeader";
 import { ButtonClickSound } from "@/components/ui/ButtonClickSound";
+import { WhatsAppFloat } from "@/components/ui/WhatsAppFloat";
 import { canonicalUrl } from "@/lib/seo";
 import { brandAssets, siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -17,15 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: siteConfig.title,
   description: siteConfig.description,
-  keywords: [
-    "IPTV UK",
-    "IPTV subscription UK",
-    "IPTV service UK",
-    "IPTV plans UK",
-    "UK IPTV subscription",
-    "IPTV free trial",
-    "IPTV installation",
-  ],
+  keywords: [...siteConfig.keywords],
   icons: {
     icon: [
       { url: brandAssets.favicon48, sizes: "48x48", type: "image/png" },
@@ -49,7 +42,7 @@ export const metadata: Metadata = {
         url: brandAssets.ogImage,
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} IPTV UK`,
+        alt: `${siteConfig.name} IPTV Player`,
       },
     ],
   },
@@ -62,9 +55,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-  verification: {
-    google: "Jt2OnqpJWhVGo23q5ZQmyhLU6La_C4ihXbDd4iWohuk",
   },
 };
 
@@ -80,6 +70,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <WhatsAppFloat />
       </body>
     </html>
   );
