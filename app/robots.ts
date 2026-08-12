@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { canonicalUrl } from "@/lib/seo";
+import { sitemapUrl } from "@/lib/seo";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${canonicalUrl("/")}sitemap.xml`,
+    sitemap: sitemapUrl(),
   };
 }

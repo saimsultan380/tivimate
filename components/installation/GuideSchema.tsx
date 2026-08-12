@@ -39,6 +39,7 @@ const jsonLd = {
       name: installationPageSeo.title,
       description: installationPageSeo.description,
       isPartOf: { "@id": `${homeUrl}#website` },
+      breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
     },
     {
       "@type": "HowTo",

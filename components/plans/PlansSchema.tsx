@@ -31,6 +31,7 @@ const jsonLd = {
       description: plansPageSeo.description,
       isPartOf: { "@id": `${homeUrl}#website` },
       about: { "@id": `${homeUrl}#organization` },
+      breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
     },
     ...planRows.map((plan) => ({
       "@type": "Product",

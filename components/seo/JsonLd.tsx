@@ -96,6 +96,16 @@ const jsonLd = {
     buildBreadcrumbList([{ name: "Home", path: "/" }]),
     organization,
     website,
+    {
+      "@type": "WebPage",
+      "@id": `${homeUrl}#webpage`,
+      url: homeUrl,
+      name: siteConfig.title,
+      description: siteConfig.description,
+      isPartOf: { "@id": `${homeUrl}#website` },
+      about: { "@id": `${homeUrl}#organization` },
+      breadcrumb: { "@id": `${homeUrl}#breadcrumb` },
+    },
     ...products,
     {
       "@type": "FAQPage",

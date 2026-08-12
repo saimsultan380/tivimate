@@ -31,16 +31,17 @@ const jsonLd = {
       description: blogPageSeo.description,
       isPartOf: { "@id": `${homeUrl}#website` },
       about: { "@id": `${homeUrl}#organization` },
+      breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
       mainEntity: {
         "@type": "ItemList",
-        itemListElement: blogCategories.flatMap((category) =>
-          category.articles.map((article, index) => ({
+        itemListElement: blogCategories
+          .flatMap((category) => category.articles)
+          .map((article, index) => ({
             "@type": "ListItem",
             position: index + 1,
             name: article.title,
             url: canonicalUrl(article.href.split("#")[0] || routes.blog),
           })),
-        ),
       },
     },
   ],
