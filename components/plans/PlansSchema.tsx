@@ -44,7 +44,8 @@ const jsonLd = {
       offers: {
         "@type": "Offer",
         url: `${pageUrl}#plans`,
-        priceCurrency: "GBP",
+        price: plan.price.replace("$", ""),
+        priceCurrency: "USD",
         availability: "https://schema.org/InStock",
         seller: { "@id": `${homeUrl}#organization` },
       },

@@ -10,7 +10,7 @@ import { GlassIcon } from "@/components/ui/GlassIcon";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
 import { staggerDelay } from "@/lib/motion";
-import { planRows } from "@/lib/plans-data";
+import { planCardFeatures, planRows } from "@/lib/plans-data";
 
 export function PlansCompareSection() {
   return (
@@ -54,22 +54,12 @@ export function PlansCompareSection() {
                 <p className="telvis-plan-summary">{plan.summary}</p>
               </CardRevealPart>
               <CardRevealList className="telvis-feature-list">
-                <CardRevealListItem>
-                  <Check size={16} strokeWidth={2.25} aria-hidden="true" />
-                  <span>{plan.connections}</span>
-                </CardRevealListItem>
-                <CardRevealListItem>
-                  <Check size={16} strokeWidth={2.25} aria-hidden="true" />
-                  <span>Features as listed for this plan</span>
-                </CardRevealListItem>
-                <CardRevealListItem>
-                  <Check size={16} strokeWidth={2.25} aria-hidden="true" />
-                  <span>Support included with your subscription</span>
-                </CardRevealListItem>
-                <CardRevealListItem>
-                  <Check size={16} strokeWidth={2.25} aria-hidden="true" />
-                  <span>Activation details provided after order</span>
-                </CardRevealListItem>
+                {planCardFeatures.map((feature) => (
+                  <CardRevealListItem key={feature}>
+                    <Check size={16} strokeWidth={2.25} aria-hidden="true" />
+                    <span>{feature}</span>
+                  </CardRevealListItem>
+                ))}
               </CardRevealList>
               <CardRevealPart variant="content">
                 <Link

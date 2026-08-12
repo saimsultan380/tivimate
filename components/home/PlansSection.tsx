@@ -9,73 +9,9 @@ import {
 } from "@/components/ui/CardReveal";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { staggerDelay } from "@/lib/motion";
+import { planCardFeatures, planRows } from "@/lib/plans-data";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
 import { routes } from "@/lib/site";
-
-const plans = [
-  {
-    id: "1-month",
-    title: "1 Month",
-    price: "Contact for price",
-    summary: "A flexible option for viewers who prefer a shorter commitment.",
-    features: [
-      "Connection allowance confirmed at checkout",
-      "Content and features as listed for this plan",
-      "Support included with your subscription",
-      "Activation details provided after order",
-    ],
-    cta: "Choose 1 Month",
-    href: "/checkout?plan=1-month",
-    featured: false,
-  },
-  {
-    id: "3-month",
-    title: "3 Months",
-    price: "Contact for price",
-    summary:
-      "A longer option for regular IPTV viewers who want extended access.",
-    features: [
-      "Connection allowance confirmed at checkout",
-      "Content and features as listed for this plan",
-      "Support included with your subscription",
-      "Activation details provided after order",
-    ],
-    cta: "Choose 3 Months",
-    href: "/checkout?plan=3-month",
-    featured: false,
-  },
-  {
-    id: "6-month",
-    title: "6 Months",
-    price: "Contact for price",
-    summary: "Suitable for viewers looking for a longer subscription period.",
-    features: [
-      "Connection allowance confirmed at checkout",
-      "Content and features as listed for this plan",
-      "Support included with your subscription",
-      "Activation details provided after order",
-    ],
-    cta: "Choose 6 Months",
-    href: "/checkout?plan=6-month",
-    featured: true,
-  },
-  {
-    id: "12-month",
-    title: "12 Months",
-    price: "Contact for price",
-    summary:
-      "Our longest subscription option for customers who want extended access.",
-    features: [
-      "Connection allowance confirmed at checkout",
-      "Content and features as listed for this plan",
-      "Support included with your subscription",
-      "Activation details provided after order",
-    ],
-    cta: "Choose 12 Months",
-    href: "/checkout?plan=12-month",
-    featured: false,
-  },
-] as const;
 
 export function PlansSection() {
   return (
@@ -98,7 +34,7 @@ export function PlansSection() {
         />
 
         <div className="telvis-plan-grid">
-          {plans.map((plan, index) => (
+          {planRows.map((plan, index) => (
             <CardReveal
               key={plan.id}
               as="article"
@@ -108,7 +44,7 @@ export function PlansSection() {
               <CardRevealPart variant="icon">
                 <div className="telvis-plan-top">
                   <GlassIcon icon={CalendarDays} />
-                  <p className="telvis-plan-duration">{plan.title}</p>
+                  <p className="telvis-plan-duration">{plan.duration}</p>
                 </div>
               </CardRevealPart>
               <CardRevealPart variant="content">
@@ -118,7 +54,7 @@ export function PlansSection() {
                 <p className="telvis-plan-summary">{plan.summary}</p>
               </CardRevealPart>
               <CardRevealList className="telvis-feature-list">
-                {plan.features.map((feature) => (
+                {planCardFeatures.map((feature) => (
                   <CardRevealListItem key={feature}>
                     <Check size={16} strokeWidth={2.25} aria-hidden="true" />
                     <span>{feature}</span>

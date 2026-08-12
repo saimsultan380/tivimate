@@ -19,13 +19,20 @@ export const plansPageSeo = {
   ],
 } as const;
 
+export const planCardFeatures = [
+  "24/7 Customer Support",
+  "EPG Support Where Available",
+  "Catch-Up Available (Limited)",
+  "Instant Activation",
+] as const;
+
 export const planRows = [
   {
     id: "1-month",
     label: "Monthly",
     duration: "1 Month",
     connections: "Confirmed at checkout",
-    price: "Contact for price",
+    price: "$12.99",
     summary:
       "Choose this option if you prefer flexibility and a shorter subscription period.",
     cta: "Choose 1 Month",
@@ -37,7 +44,7 @@ export const planRows = [
     label: "Quarterly",
     duration: "3 Months",
     connections: "Confirmed at checkout",
-    price: "Contact for price",
+    price: "$29.99",
     summary:
       "A practical option for regular viewers who want longer access.",
     cta: "Choose 3 Months",
@@ -49,7 +56,7 @@ export const planRows = [
     label: "6 Month",
     duration: "6 Months",
     connections: "Confirmed at checkout",
-    price: "Contact for price",
+    price: "$49.99",
     summary:
       "Suitable for customers who prefer a longer subscription and fewer renewals.",
     cta: "Choose 6 Months",
@@ -61,7 +68,7 @@ export const planRows = [
     label: "Annual",
     duration: "12 Months",
     connections: "Confirmed at checkout",
-    price: "Contact for price",
+    price: "$69.99",
     summary:
       "Designed for customers who want the longest available subscription period.",
     cta: "Choose 12 Months",
@@ -101,7 +108,7 @@ export const planFaqs = [
   {
     question: "How quickly will my subscription be activated?",
     answer:
-      "Activation timing is confirmed after your order is processed. You’ll receive your access details once activation is complete.",
+      "Activation is instant after your order is processed. You’ll receive your access details once activation is complete.",
   },
   {
     question: "What login details will I receive?",

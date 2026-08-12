@@ -10,7 +10,7 @@ export function PlansHero() {
   return (
     <section className="telvis-hero" aria-labelledby="plans-hero-heading">
       <div className="telvis-container">
-        <div className="telvis-content is-hero-static">
+        <div className="telvis-content is-hero-stack">
           <div className="telvis-copy-col">
             <ScrollReveal delay={0.05} variant="text">
               <div className="telvis-eyebrow">
@@ -29,17 +29,9 @@ export function PlansHero() {
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Already have TiviMate and looking for an IPTV subscription to
-                  use with it?
-                </p>
-                <p>
-                  Choose from our available plans and get the access information
-                  required to configure your service on a compatible IPTV player.
-                </p>
-                <p>
-                  TiviMate and your IPTV subscription have separate roles:
-                  TiviMate is the player, while the IPTV service provides the
-                  content and access.
+                  Already using TiviMate? Compare our IPTV plans, get your access
+                  details and add the service to your player. TiviMate is the
+                  player — your subscription provides the content access.
                 </p>
               </div>
             </ScrollReveal>
@@ -47,26 +39,14 @@ export function PlansHero() {
             <ScrollReveal delay={0.26} variant="cta">
               <div className="telvis-actions">
                 <Link href="#plans" className="telvis-cta-primary">
-                  <MonitorPlay size={18} strokeWidth={2} aria-hidden="true" />
+                  <MonitorPlay size={16} strokeWidth={2} aria-hidden="true" />
                   <span>Choose Your Plan</span>
                 </Link>
 
                 <Link href={routes.installation} className="telvis-cta-secondary">
-                  <Settings size={18} strokeWidth={2} aria-hidden="true" />
+                  <Settings size={16} strokeWidth={2} aria-hidden="true" />
                   <span>View Installation Guide</span>
                 </Link>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.32} variant="text">
-              <div className="telvis-glass telvis-hero-trust-card">
-                <span className="telvis-hero-trust-icon" aria-hidden="true">
-                  <ShieldCheck size={22} strokeWidth={2.25} />
-                </span>
-                <div className="telvis-hero-trust-copy">
-                  <strong>Clear plans for TiviMate users.</strong>
-                  <span>Compare duration • Connections • Setup guidance</span>
-                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -79,8 +59,20 @@ export function PlansHero() {
               height={900}
               className="telvis-hero-image"
               priority
-              sizes="(max-width: 767px) 100vw, 520px"
+              sizes="(max-width: 767px) 100vw, 720px"
             />
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.32} variant="text" className="telvis-hero-trust-wrap">
+            <div className="telvis-glass telvis-hero-trust-card">
+              <span className="telvis-hero-trust-icon" aria-hidden="true">
+                <ShieldCheck size={22} strokeWidth={2.25} />
+              </span>
+              <div className="telvis-hero-trust-copy">
+                <strong>Clear plans for TiviMate users.</strong>
+                <span>Compare duration • Connections • Setup guidance</span>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </div>

@@ -10,7 +10,7 @@ export function HeroSection() {
   return (
     <section className="telvis-hero" aria-labelledby="telvis-hero-heading">
       <div className="telvis-container">
-        <div className="telvis-content is-hero-static">
+        <div className="telvis-content is-hero-stack">
           <div className="telvis-copy-col">
             <ScrollReveal delay={0.05} variant="text">
               <div className="telvis-eyebrow">
@@ -29,19 +29,9 @@ export function HeroSection() {
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Already using TiviMate and looking for an IPTV subscription to
-                  add to your player?
-                </p>
-                <p>
-                  Get started with an IPTV service designed for a simple setup on
-                  compatible devices. Choose your preferred plan, receive your
-                  access details and follow our step-by-step guide to connect your
-                  subscription to TiviMate.
-                </p>
-                <p>
-                  Whether you&apos;re using a Fire TV device, Android TV or another
-                  compatible setup, our goal is to make the process
-                  straightforward from subscription to setup.
+                  Looking for an IPTV subscription to use with TiviMate? Choose a
+                  plan, get your access details and follow our setup guide to
+                  connect on Fire TV, Android TV and other compatible devices.
                 </p>
               </div>
             </ScrollReveal>
@@ -49,26 +39,14 @@ export function HeroSection() {
             <ScrollReveal delay={0.26} variant="cta">
               <div className="telvis-actions">
                 <Link href={routes.plans} className="telvis-cta-primary">
-                  <MonitorPlay size={18} strokeWidth={2} aria-hidden="true" />
+                  <MonitorPlay size={16} strokeWidth={2} aria-hidden="true" />
                   <span>View IPTV Plans</span>
                 </Link>
 
                 <Link href={routes.installation} className="telvis-cta-secondary">
-                  <Settings size={18} strokeWidth={2} aria-hidden="true" />
+                  <Settings size={16} strokeWidth={2} aria-hidden="true" />
                   <span>How to Set Up TiviMate</span>
                 </Link>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.32} variant="text">
-              <div className="telvis-glass telvis-hero-trust-card">
-                <span className="telvis-hero-trust-icon" aria-hidden="true">
-                  <ShieldCheck size={22} strokeWidth={2.25} />
-                </span>
-                <div className="telvis-hero-trust-copy">
-                  <strong>Trusted IPTV service for TiviMate users worldwide.</strong>
-                  <span>Easy setup • Reliable streaming • 24/7 Support</span>
-                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -81,8 +59,20 @@ export function HeroSection() {
               height={900}
               className="telvis-hero-image"
               priority
-              sizes="(max-width: 767px) 100vw, 520px"
+              sizes="(max-width: 767px) 100vw, 720px"
             />
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.32} variant="text" className="telvis-hero-trust-wrap">
+            <div className="telvis-glass telvis-hero-trust-card">
+              <span className="telvis-hero-trust-icon" aria-hidden="true">
+                <ShieldCheck size={22} strokeWidth={2.25} />
+              </span>
+              <div className="telvis-hero-trust-copy">
+                <strong>Trusted IPTV service for TiviMate users worldwide.</strong>
+                <span>Easy setup • Reliable streaming • 24/7 Support</span>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </div>

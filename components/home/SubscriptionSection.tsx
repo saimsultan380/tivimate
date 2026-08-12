@@ -52,13 +52,13 @@ export function SubscriptionSection() {
           </p>
         </ScrollReveal>
 
-        <div className="telvis-bento">
+        <div className="telvis-subscription-grid">
           {inclusions.map((item, index) => (
             <CardReveal
               key={item.title}
               as="article"
               delay={staggerDelay(index)}
-              className="telvis-glass telvis-bento-card"
+              className="telvis-glass telvis-subscription-card"
             >
               <CardRevealPart variant="icon">
                 <GlassIcon icon={item.icon} />

@@ -1336,37 +1336,28 @@ main > :first-child.telvis-hero-page {
 
 .telvis-actions {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
-  gap: 11px;
-
+  gap: 10px;
   width: 100%;
-
+  max-width: 560px;
   margin-top: 18px;
 }
 
-.telvis-hero:not(.telvis-hero-page) .telvis-cta-primary,
-.telvis-hero:not(.telvis-hero-page) .telvis-cta-secondary {
-  font-size: 13.5px;
-  padding: 10px 12px;
-  white-space: nowrap;
+.telvis-hero .telvis-actions {
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
 }
 
-.telvis-hero:not(.telvis-hero-page) .telvis-cta-primary {
-  gap: 8px;
-}
-
-.telvis-hero.telvis-hero-page .telvis-actions {
-  grid-template-columns: 1fr;
+.telvis-hero .telvis-cta-primary,
+.telvis-hero .telvis-cta-secondary {
   width: 100%;
-  max-width: 420px;
-}
-
-.telvis-hero.telvis-hero-page .telvis-cta-primary,
-.telvis-hero.telvis-hero-page .telvis-cta-secondary {
-  width: 100%;
+  min-height: 44px;
+  padding: 8px 10px;
+  font-size: 12.5px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
   white-space: nowrap;
+  gap: 6px;
 }
 
 /* =========================================================
@@ -2041,6 +2032,49 @@ main > :first-child.telvis-hero-page {
     min-height: 0;
   }
 
+  .telvis-content.is-hero-stack {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 28px;
+    row-gap: 0;
+    min-height: 0;
+  }
+
+  .telvis-content.is-hero-stack .telvis-copy-col {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: none;
+    padding-right: 12px;
+  }
+
+  .telvis-content.is-hero-stack .telvis-hero-image-wrap {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: min(100%, 520px);
+    margin: 0;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .telvis-content.is-hero-stack > .telvis-hero-trust-wrap {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    max-width: 560px;
+    margin: 22px 0 0;
+  }
+
+  .telvis-content.is-hero-stack > .telvis-motion-reveal:has(.telvis-hero-trust-card),
+  .telvis-content.is-hero-stack > .telvis-hero-trust-card {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    max-width: 560px;
+    margin: 22px 0 0;
+  }
+
   .telvis-copy-col {
     padding-right: 12px;
     overflow: visible;
@@ -2136,14 +2170,16 @@ main > :first-child.telvis-hero-page {
     gap: 12px;
   }
 
-  .telvis-bento,
-  .telvis-feature-grid {
+  /* Homepage IPTV Subscription + Plans What's Included: keep 2-up on mobile */
+  .telvis-subscription-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 
   .telvis-plan-card,
   .telvis-bento-card,
   .telvis-feature-tile,
+  .telvis-subscription-card,
   .telvis-device-card,
   .telvis-why-card,
   .telvis-step-card,
@@ -2251,23 +2287,27 @@ main > :first-child.telvis-hero-page {
     margin-top: 12px;
   }
 
-  .telvis-hero .telvis-copy {
+  .telvis-hero .telvis-copy,
+  .telvis-hero .telvis-content.is-hero-stack .telvis-copy {
     margin-bottom: 10px;
+    max-width: min(90%, 340px);
+    font-size: clamp(12px, 3.35vw, 14px);
+    line-height: 1.52;
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-copy {
-    max-width: min(88%, 336px);
-    font-size: clamp(11px, 3.1vw, 13px);
+    max-width: min(90%, 340px);
+    font-size: clamp(12px, 3.35vw, 14px);
     line-height: 1.52;
   }
 
   .telvis-hero.telvis-hero-page .telvis-copy,
   .telvis-page-hero-copy .telvis-copy {
-    max-width: 100%;
+    max-width: min(90%, 340px);
   }
 
   .telvis-hero.telvis-hero-page .telvis-actions {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     max-width: 100%;
   }
@@ -2275,9 +2315,9 @@ main > :first-child.telvis-hero-page {
   .telvis-hero.telvis-hero-page .telvis-cta-primary,
   .telvis-hero.telvis-hero-page .telvis-cta-secondary {
     width: 100%;
-    min-height: 48px;
-    padding: 10px 14px;
-    font-size: clamp(12px, 3.2vw, 14px);
+    min-height: 42px;
+    padding: 7px 8px;
+    font-size: 11px;
     line-height: 1.15;
     white-space: nowrap;
   }
@@ -2289,25 +2329,25 @@ main > :first-child.telvis-hero-page {
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-actions {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 18px;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 16px;
     width: 100%;
     max-width: 100%;
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-cta-primary,
   .telvis-hero:not(.telvis-hero-page) .telvis-cta-secondary {
-    min-height: 48px;
-    padding: 10px 14px;
-    font-size: clamp(12px, 3.2vw, 14px);
+    min-height: 42px;
+    padding: 7px 8px;
+    font-size: 11px;
     line-height: 1.15;
     white-space: nowrap;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-cta-primary {
-    gap: 5px;
+    gap: 4px;
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-play-icon {
@@ -2326,8 +2366,8 @@ main > :first-child.telvis-hero-page {
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-actions {
-    grid-template-columns: 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
     margin-top: 14px;
     margin-bottom: 8px;
   }
@@ -2390,8 +2430,10 @@ main > :first-child.telvis-hero-page {
    ========================================================= */
 
 @media (max-width: 360px) {
-  .telvis-hero:not(.telvis-hero-page) .telvis-copy {
-    max-width: min(86%, 314px);
+  .telvis-hero .telvis-copy,
+  .telvis-hero:not(.telvis-hero-page) .telvis-copy,
+  .telvis-hero .telvis-content.is-hero-stack .telvis-copy {
+    max-width: min(88%, 320px);
   }
 
   .telvis-hero.telvis-hero-page .telvis-cta-primary,
@@ -2433,18 +2475,18 @@ main > :first-child.telvis-hero-page {
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-copy {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-actions {
-    gap: 10px;
+    gap: 8px;
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-cta-primary,
   .telvis-hero:not(.telvis-hero-page) .telvis-cta-secondary {
-    min-height: 46px;
-    padding: 10px 12px;
-    font-size: 12px;
+    min-height: 40px;
+    padding: 6px 7px;
+    font-size: 10.5px;
     white-space: nowrap;
   }
 
@@ -2507,11 +2549,19 @@ main > :first-child.telvis-hero-page {
 
 @media (max-width: 330px) {
   .telvis-actions {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
   }
 
   .telvis-hero:not(.telvis-hero-page) .telvis-actions {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .telvis-hero .telvis-cta-primary,
+  .telvis-hero .telvis-cta-secondary {
+    min-height: 38px;
+    padding: 5px 6px;
+    font-size: 9.5px;
   }
 }
 
@@ -3008,6 +3058,37 @@ main > :first-child.telvis-hero-page {
   margin: 0;
 }
 
+/* Homepage IPTV Subscription + Plans What's Included cards */
+.telvis-subscription-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.telvis-subscription-card {
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  height: 100%;
+  min-height: 100%;
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.telvis-subscription-card:hover {
+  transform: translateY(-3px);
+  border-color: transparent;
+  box-shadow:
+    0 18px 44px rgba(10, 37, 64, 0.1),
+    0 6px 18px rgba(0, 132, 255, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 0 rgba(0, 132, 255, 0.05);
+}
+
 /* Split layouts */
 .telvis-split {
   display: grid;
@@ -3478,6 +3559,11 @@ main > :first-child.telvis-hero-page {
     grid-column: 1 / -1;
   }
 
+  .telvis-subscription-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
   .telvis-split {
     grid-template-columns: 1fr 1.05fr;
     gap: 36px;
@@ -3569,6 +3655,11 @@ main > :first-child.telvis-hero-page {
   .telvis-bento-card:nth-child(4),
   .telvis-bento-card:nth-child(5) {
     grid-column: span 3;
+  }
+
+  .telvis-subscription-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
   }
 
   .telvis-feature-grid {
@@ -4635,10 +4726,33 @@ main > :first-child.telvis-hero-page {
    HERO IMAGE + TRUST CARD (light theme)
    ========================================================= */
 
+.telvis-content.is-hero-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  min-height: 0;
+  grid-template-columns: none;
+}
+
+.telvis-content.is-hero-stack .telvis-copy-col {
+  width: 100%;
+  max-width: 760px;
+  padding-right: 0;
+}
+
+.telvis-content.is-hero-stack .telvis-copy {
+  max-width: 560px;
+}
+
+.telvis-content.is-hero-stack .telvis-h1 {
+  max-width: 640px;
+}
+
 .telvis-hero-image-wrap {
   position: relative;
-  width: min(100%, 560px);
-  margin: 24px auto 0;
+  width: min(100%, 720px);
+  margin: 28px auto 0;
 }
 
 .telvis-hero-image {
@@ -4648,12 +4762,17 @@ main > :first-child.telvis-hero-page {
   border-radius: 20px;
 }
 
+.telvis-hero-trust-wrap {
+  width: min(100%, 720px);
+  margin: 22px auto 0;
+}
+
 .telvis-hero-trust-card {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  width: min(100%, 560px);
-  margin: 22px auto 0;
+  width: 100%;
+  margin: 0;
   padding: 18px 20px;
   text-align: left;
 }
@@ -4709,32 +4828,144 @@ main > :first-child.telvis-hero-page {
 }
 
 @media (min-width: 1024px) {
-  .telvis-hero-image-wrap {
+  .telvis-content.is-hero-stack {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 28px;
+    row-gap: 0;
+  }
+
+  .telvis-content.is-hero-stack .telvis-copy-col {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: none;
+    padding-right: 12px;
+  }
+
+  .telvis-content.is-hero-stack .telvis-copy {
+    max-width: 560px;
+  }
+
+  .telvis-content.is-hero-stack .telvis-hero-image-wrap {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: min(100%, 520px);
+    margin: 0;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .telvis-content.is-hero-stack > .telvis-hero-trust-wrap {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    max-width: 560px;
+    margin: 22px 0 0;
+    justify-self: start;
+  }
+
+  .telvis-content.is-hero-stack > .telvis-motion-reveal:has(.telvis-hero-trust-card),
+  .telvis-content.is-hero-stack > .telvis-hero-trust-card {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    max-width: 560px;
+    margin: 22px 0 0;
+    justify-self: start;
+  }
+
+  .telvis-hero .telvis-actions {
+    max-width: 560px;
+  }
+
+  .telvis-hero .telvis-cta-primary,
+  .telvis-hero .telvis-cta-secondary {
+    min-height: 48px;
+    padding: 10px 14px;
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .telvis-content.is-hero-static:not(.is-hero-stack) {
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  }
+
+  .telvis-content.is-hero-static:not(.is-hero-stack) .telvis-hero-image-wrap {
     width: min(100%, 520px);
     margin: 0;
     justify-self: end;
   }
 
-  .telvis-hero-trust-card {
+  .telvis-content.is-hero-static:not(.is-hero-stack) .telvis-hero-trust-card {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
     max-width: 560px;
   }
-
-  .telvis-content.is-hero-static {
-    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-  }
 }
 
 @media (max-width: 767px) {
+  .telvis-content.is-hero-stack {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    align-items: stretch;
+  }
+
+  .telvis-content.is-hero-stack .telvis-copy-col {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .telvis-content.is-hero-stack .telvis-hero-image-wrap {
+    width: min(100%, 720px);
+    margin: 22px auto 0;
+    justify-self: auto;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .telvis-content.is-hero-stack > .telvis-hero-trust-wrap {
+    width: min(100%, 720px);
+    margin: 18px auto 0;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
   .telvis-hero-image-wrap {
-    margin-top: 18px;
+    margin-top: 22px;
   }
 
   .telvis-hero-trust-card {
-    margin-top: 18px;
+    margin-top: 0;
     padding: 16px;
+  }
+
+  .telvis-hero .telvis-actions {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .telvis-hero .telvis-cta-primary,
+  .telvis-hero .telvis-cta-secondary {
+    min-height: 42px;
+    padding: 7px 8px;
+    font-size: 11px;
+    line-height: 1.15;
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+    gap: 4px;
+  }
+
+  .telvis-hero .telvis-cta-primary svg,
+  .telvis-hero .telvis-cta-secondary svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
   }
 }
 

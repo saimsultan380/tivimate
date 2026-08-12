@@ -1,4 +1,5 @@
 import { buildBreadcrumbList, canonicalUrl, organizationLogoSchema } from "@/lib/seo";
+import { planRows } from "@/lib/plans-data";
 import { siteConfig } from "@/lib/site";
 
 const homeUrl = canonicalUrl("/");
@@ -20,36 +21,20 @@ const website = {
   inLanguage: "en-GB",
 };
 
-const products = [
-  {
-    name: "TiviMate IPTV 1-Month Plan",
-    sku: "tivimate-1-month",
-  },
-  {
-    name: "TiviMate IPTV 3-Month Plan",
-    sku: "tivimate-3-month",
-  },
-  {
-    name: "TiviMate IPTV 6-Month Plan",
-    sku: "tivimate-6-month",
-  },
-  {
-    name: "TiviMate IPTV 12-Month Plan",
-    sku: "tivimate-12-month",
-  },
-].map((plan) => ({
+const products = planRows.map((plan) => ({
   "@type": "Product",
-  name: plan.name,
-  sku: plan.sku,
+  name: `TiviMate IPTV ${plan.duration} Plan`,
+  sku: `tivimate-${plan.id}`,
   brand: {
     "@type": "Brand",
     name: siteConfig.name,
   },
-  description: siteConfig.description,
+  description: plan.summary,
   offers: {
     "@type": "Offer",
     url: `${homeUrl}#plans`,
-    priceCurrency: "GBP",
+    price: plan.price.replace("$", ""),
+    priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     seller: { "@id": `${homeUrl}#organization` },
   },

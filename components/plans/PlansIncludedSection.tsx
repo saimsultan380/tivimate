@@ -48,13 +48,13 @@ export function PlansIncludedSection() {
           align="center"
         />
 
-        <div className="telvis-feature-grid">
+        <div className="telvis-subscription-grid">
           {inclusions.map((item, index) => (
             <CardReveal
               key={item.title}
               as="article"
               delay={staggerDelay(index)}
-              className="telvis-glass telvis-feature-tile"
+              className="telvis-glass telvis-subscription-card"
             >
               <CardRevealPart variant="icon">
                 <GlassIcon icon={item.icon} />

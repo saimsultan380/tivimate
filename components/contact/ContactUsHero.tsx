@@ -10,7 +10,7 @@ export function ContactUsHero() {
   return (
     <section className="telvis-hero" aria-labelledby="contact-hero-heading">
       <div className="telvis-container">
-        <div className="telvis-content is-hero-static">
+        <div className="telvis-content is-hero-stack">
           <div className="telvis-copy-col">
             <ScrollReveal delay={0.05} variant="text">
               <div className="telvis-eyebrow">
@@ -29,12 +29,9 @@ export function ContactUsHero() {
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Have a question about your IPTV subscription, activation or
-                  TiviMate setup?
-                </p>
-                <p>
-                  Send us a message and provide as much relevant information as
-                  possible so our team can understand the issue.
+                  Questions about your IPTV subscription, activation or TiviMate
+                  setup? Send us the details and our team will help you resolve
+                  it.
                 </p>
               </div>
             </ScrollReveal>
@@ -42,26 +39,14 @@ export function ContactUsHero() {
             <ScrollReveal delay={0.26} variant="cta">
               <div className="telvis-actions">
                 <Link href="#contact-form" className="telvis-cta-primary">
-                  <Headphones size={18} strokeWidth={2} aria-hidden="true" />
+                  <Headphones size={16} strokeWidth={2} aria-hidden="true" />
                   <span>Contact Support</span>
                 </Link>
 
                 <Link href={routes.installation} className="telvis-cta-secondary">
-                  <ListChecks size={18} strokeWidth={2} aria-hidden="true" />
+                  <ListChecks size={16} strokeWidth={2} aria-hidden="true" />
                   <span>View Installation Guide</span>
                 </Link>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.32} variant="text">
-              <div className="telvis-glass telvis-hero-trust-card">
-                <span className="telvis-hero-trust-icon" aria-hidden="true">
-                  <ShieldCheck size={22} strokeWidth={2.25} />
-                </span>
-                <div className="telvis-hero-trust-copy">
-                  <strong>TiviMate IPTV support for setup and subscriptions.</strong>
-                  <span>Activation • Installation • Technical help</span>
-                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -74,8 +59,20 @@ export function ContactUsHero() {
               height={900}
               className="telvis-hero-image"
               priority
-              sizes="(max-width: 767px) 100vw, 520px"
+              sizes="(max-width: 767px) 100vw, 720px"
             />
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.32} variant="text" className="telvis-hero-trust-wrap">
+            <div className="telvis-glass telvis-hero-trust-card">
+              <span className="telvis-hero-trust-icon" aria-hidden="true">
+                <ShieldCheck size={22} strokeWidth={2.25} />
+              </span>
+              <div className="telvis-hero-trust-copy">
+                <strong>TiviMate IPTV support for setup and subscriptions.</strong>
+                <span>Activation • Installation • Technical help</span>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </div>
