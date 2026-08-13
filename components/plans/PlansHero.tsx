@@ -29,9 +29,17 @@ export function PlansHero() {
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Already using TiviMate? Compare our IPTV plans, get your access
-                  details and add the service to your player. TiviMate is the
-                  player — your subscription provides the content access.
+                  Already have TiviMate and looking for an IPTV subscription to
+                  use with it?
+                </p>
+                <p>
+                  Choose from our available plans and get the access information
+                  required to configure your service on a compatible IPTV player.
+                </p>
+                <p>
+                  TiviMate and your IPTV subscription have separate roles:
+                  TiviMate is the player, while the IPTV service provides the
+                  content and access.
                 </p>
               </div>
             </ScrollReveal>

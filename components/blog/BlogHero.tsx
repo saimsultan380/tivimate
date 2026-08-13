@@ -28,10 +28,15 @@ export function BlogHero() {
 
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
+                <p>Welcome to our TiviMate IPTV resource hub.</p>
                 <p>
-                  Practical TiviMate IPTV guides covering installation, playlists,
-                  EPG, troubleshooting and device setup — clear steps without the
-                  filler.
+                  Find practical guides covering installation, IPTV setup,
+                  playlists, EPG, device compatibility, troubleshooting and
+                  everyday TiviMate questions.
+                </p>
+                <p>
+                  Our aim is simple: give you the information you need without
+                  unnecessary technical language or filler.
                 </p>
               </div>
             </ScrollReveal>

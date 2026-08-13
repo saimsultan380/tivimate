@@ -29,9 +29,19 @@ export function HeroSection() {
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Looking for an IPTV subscription to use with TiviMate? Choose a
-                  plan, get your access details and follow our setup guide to
-                  connect on Fire TV, Android TV and other compatible devices.
+                  Already using TiviMate and looking for an IPTV subscription to
+                  add to your player?
+                </p>
+                <p>
+                  Get started with an IPTV service designed for a simple setup on
+                  compatible devices. Choose your preferred plan, receive your
+                  access details and follow our step-by-step guide to connect your
+                  subscription to TiviMate.
+                </p>
+                <p>
+                  Whether you&apos;re using a Fire TV device, Android TV or another
+                  compatible setup, our goal is to make the process
+                  straightforward from subscription to setup.
                 </p>
               </div>
             </ScrollReveal>

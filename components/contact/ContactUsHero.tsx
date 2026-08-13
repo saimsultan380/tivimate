@@ -29,9 +29,12 @@ export function ContactUsHero() {
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Questions about your IPTV subscription, activation or TiviMate
-                  setup? Send us the details and our team will help you resolve
-                  it.
+                  Have a question about your IPTV subscription, activation or
+                  TiviMate setup?
+                </p>
+                <p>
+                  Send us a message and provide as much relevant information as
+                  possible so our team can understand the issue.
                 </p>
               </div>
             </ScrollReveal>

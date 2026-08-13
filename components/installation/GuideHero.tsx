@@ -28,10 +28,15 @@ export function GuideHero() {
 
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
+                <p>Have your IPTV subscription ready?</p>
                 <p>
-                  Have your IPTV subscription ready? Follow this guide to add
-                  your playlist to TiviMate, configure EPG and start watching on
-                  compatible devices.
+                  This guide explains how to connect your IPTV service to TiviMate
+                  and configure the basic settings needed to start watching.
+                </p>
+                <p>
+                  The exact screens can vary depending on your TiviMate version,
+                  device and IPTV service, but the general setup process remains
+                  straightforward.
                 </p>
               </div>
             </ScrollReveal>
