@@ -2,10 +2,10 @@ export const siteConfig = {
   name: "TiviMate",
   url: "https://tivimateplayer.us",
   primaryKeyword: "TiviMate IPTV Player",
-  title: "IPTV UK – Premium IPTV Subscription UK | 20,000+ Channels & Free Trial",
+  title: "TiviMate IPTV Player – IPTV Subscription for TiviMate",
   description:
-    "Access IPTV UK with 20,000+ live channels, sports, movies and series. Free trial available, instant activation, guided setup and 24/7 support.",
-  h1: "IPTV UK – Premium IPTV Subscription from £9.99 with Free 24-Hour Trial",
+    "Get IPTV for TiviMate and enjoy your subscription through a familiar TV-friendly player. Explore plans, compatible devices and an easy TiviMate IPTV setup guide.",
+  h1: "TiviMate IPTV Player – IPTV for TiviMate",
   keywords: [
     "TiviMate IPTV Player",
     "TiviMate IPTV",
