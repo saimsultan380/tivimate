@@ -21,8 +21,8 @@ export function HeroSection() {
 
             <ScrollReveal delay={0.1} variant="text">
               <h1 id="telvis-hero-heading" className="telvis-h1">
-                <span className="telvis-h1-accent">TiviMate</span> IPTV Player –
-                IPTV for TiviMate
+                <span className="telvis-h1-accent">IPTV UK</span> – Premium IPTV
+                Subscription from £9.99 with Free 24-Hour Trial
               </h1>
             </ScrollReveal>
 
