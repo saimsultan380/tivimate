@@ -47,7 +47,7 @@ export const routes = {
 } as const;
 
 /** Digits only, country code included (example: 447700900123). */
-const whatsappNumber = "447482794475";
+const whatsappNumber = "17164943064";
 
 const whatsappMessage = encodeURIComponent(
   "Hi, I need help with my TiviMate IPTV subscription.",
@@ -55,7 +55,7 @@ const whatsappMessage = encodeURIComponent(
 
 export const supportConfig = {
   email: "support@tivimateplayer.us",
-  whatsapp: "+44 7482 794475",
+  whatsapp: "+1 716 494 3064",
   whatsappUrl: `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`,
   downloaderCode: "",
 } as const;
