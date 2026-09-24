@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { BlogCategorySection } from "@/components/blog/BlogCategorySection";
 import { BlogFinalCta } from "@/components/blog/BlogFinalCta";
 import { BlogHero } from "@/components/blog/BlogHero";
-import { BlogNewGuidesSection } from "@/components/blog/BlogNewGuidesSection";
+import { BlogPostsSection } from "@/components/blog/BlogPostsSection";
 import { BlogSchema } from "@/components/blog/BlogSchema";
-import { blogCategories, blogPageSeo } from "@/lib/blog-data";
+import { blogPageSeo } from "@/lib/blog-data";
 import { brandAssets, routes, siteConfig } from "@/lib/site";
 import { canonicalUrl } from "@/lib/seo";
 
@@ -47,10 +46,7 @@ export default function BlogPage() {
       <BlogSchema />
       <main>
         <BlogHero />
-        {blogCategories.map((category) => (
-          <BlogCategorySection key={category.id} category={category} />
-        ))}
-        <BlogNewGuidesSection />
+        <BlogPostsSection />
         <BlogFinalCta />
       </main>
     </>
