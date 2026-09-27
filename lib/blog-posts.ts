@@ -3,6 +3,8 @@ import { routes } from "@/lib/site";
 export const blogSlugs = {
   addPlaylist: "how-to-add-playlist-to-tivimate",
   premiumVsFree: "tivimate-premium-vs-tivimate-free",
+  firestickInstall: "how-to-download-or-install-tivimate-on-firestick",
+  stalkerErrors: "tivimate-errors-stalker-portal-and-multiple-screen-issues",
 } as const;
 
 export function blogPostPath(slug: string): string {
@@ -43,6 +45,924 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "tivimate-errors-stalker-portal-and-multiple-screen-issues",
+    title: "TiviMate Errors: Stalker Portal & Multiple Screen Issues Fix",
+    description:
+      "Fix common TiviMate errors including Stalker Portal problems, MAC address issues, device already connected messages, Multiview black screens and connection limits.",
+    excerpt:
+      "Troubleshoot TiviMate Stalker Portal errors, MAC issues, multiple-screen limits and Multiview black screens with practical fixes.",
+    image: "/tivimate-errors-stalker-portal-multiple-screen-issues.png",
+    imageAlt:
+      "TiviMate errors Stalker Portal and multiple screen issues fix with Multiview error examples on TV",
+    datePublished: "2026-09-27",
+    dateModified: "2026-09-27",
+    keywords: [
+      "TiviMate Stalker Portal error",
+      "TiviMate device already connected",
+      "TiviMate Multiview black screen",
+      "TiviMate multiple screen issues",
+      "TiviMate MAC address",
+      "TiviMate connection limit",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "TiviMate usually works smoothly once your IPTV playlist is configured correctly, but some errors can be confusing, especially when using a Stalker Portal or trying to watch multiple streams at the same time.",
+      },
+      {
+        type: "p",
+        text: "Common problems include Stalker Portal errors, MAC address issues, “device already connected” messages, connection-limit errors, black screens in Multiview, channels constantly refreshing, and one stream stopping when another starts.",
+      },
+      {
+        type: "p",
+        text: "The important thing is to identify whether the problem comes from TiviMate, your FireStick or Android TV device, your internet connection, or the IPTV provider.",
+      },
+      {
+        type: "p",
+        parts: [
+          "This guide explains the most common causes and the practical steps you can try. If you are still setting up your IPTV service, start with our ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          ".",
+        ],
+      },
+      { type: "h2", text: "TiviMate Stalker Portal Errors" },
+      {
+        type: "p",
+        text: "Stalker Portal works differently from a normal M3U or Xtream Codes playlist. It commonly uses a MAC address or device identity that must be recognized and activated by the IPTV provider.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If TiviMate shows an error while processing the Stalker playlist, check these things first. For standard playlist methods, see ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      { type: "h3", text: "1. Check the Portal URL" },
+      {
+        type: "p",
+        text: "Enter the portal address exactly as provided by your IPTV service.",
+      },
+      {
+        type: "p",
+        text: "A small difference in the URL can prevent the playlist from loading. Do not automatically add or remove /c, /stalker_portal/, or another path unless your provider specifically gives you that format.",
+      },
+      { type: "h3", text: "2. Check the MAC Address" },
+      {
+        type: "p",
+        text: "If your provider uses MAC-based authentication, the MAC address shown by TiviMate needs to be registered on the provider's side.",
+      },
+      {
+        type: "p",
+        text: "If you recently:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Reset your FireStick",
+          "Reinstalled TiviMate",
+          "Changed devices",
+          "Created a new Stalker playlist",
+          "Changed the MAC address",
+        ],
+      },
+      {
+        type: "p",
+        text: "ask your provider to confirm that the correct MAC is active.",
+      },
+      {
+        type: "p",
+        text: "A factory reset or new installation can result in a different device identity, which can cause an account that previously worked to stop working.",
+      },
+      { type: "h3", text: "3. Avoid Changing Extra Stalker Settings" },
+      {
+        type: "p",
+        text: "Do not randomly change the MAC, device ID, serial number, or User Agent simply because the playlist is not loading.",
+      },
+      {
+        type: "p",
+        text: "These values can be part of the provider's authentication system. If your provider has given you specific values, use those values.",
+      },
+      {
+        type: "p",
+        text: "If the same Stalker account works on another supported device but fails in TiviMate, ask the provider whether TiviMate is supported for that portal.",
+      },
+      { type: "h3", text: "4. “Device Already Connected” Error" },
+      {
+        type: "p",
+        text: "This normally means the provider's system believes the account or MAC is already being used.",
+      },
+      {
+        type: "p",
+        text: "Close the IPTV application on other devices and wait a few minutes before trying again.",
+      },
+      {
+        type: "p",
+        text: "If the problem continues, ask the provider to check whether the MAC is still registered to another device or whether the active connection needs to be reset.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Multiple Screen and Connection Issues",
+      },
+      {
+        type: "p",
+        text: "One of the biggest misunderstandings with IPTV is the difference between number of devices and number of simultaneous connections.",
+      },
+      {
+        type: "p",
+        text: "You may be able to install TiviMate on several devices, but your IPTV subscription may allow only one stream at a time.",
+      },
+      {
+        type: "p",
+        text: "For example:",
+      },
+      {
+        type: "ul",
+        items: [
+          "1 connection: one stream at a time",
+          "2 connections: two streams at the same time",
+          "3 connections: three simultaneous streams",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your subscription allows one connection and you start a second channel on another TV, the first stream may stop, buffer, refresh, or display a connection-limit message.",
+      },
+      {
+        type: "p",
+        parts: [
+          "This is usually a provider-side restriction, not a ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          " problem.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why Does One Screen Stop When I Open Another?",
+      },
+      {
+        type: "p",
+        text: "If one IPTV stream works perfectly until you start another, check your provider's connection limit first.",
+      },
+      {
+        type: "p",
+        text: "Also remember that a stream may count as a connection even when you are not actively watching it in the way you expect. Recording, Multiview, background playback, or another active device can potentially consume an additional connection depending on how the provider counts streams.",
+      },
+      {
+        type: "p",
+        text: "Close TiviMate completely on other devices and test again with only one stream active.",
+      },
+      {
+        type: "p",
+        text: "If one stream works but two streams do not, ask your provider how many simultaneous connections your account actually supports.",
+      },
+      { type: "h2", text: "TiviMate Multiview Shows a Black Screen" },
+      {
+        type: "p",
+        text: "Multiview lets you watch multiple channels at the same time, but it requires more from both your IPTV service and your streaming device.",
+      },
+      {
+        type: "p",
+        text: "If the second screen becomes black, try these steps:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Test each channel separately.",
+          "Confirm your IPTV plan supports enough simultaneous connections.",
+          "Try two channels from the same provider.",
+          "Try channels with similar resolution and frame rates.",
+          "Restart TiviMate.",
+          "Restart your streaming device.",
+          "Check TiviMate's playback settings.",
+        ],
+      },
+      {
+        type: "p",
+        text: "A recent TiviMate community report found that disabling Tunnelled Playback resolved a problem where one Multiview screen remained black. This is worth testing when both streams should be available but one screen refuses to display video.",
+      },
+      {
+        type: "p",
+        text: "However, do not assume every Multiview problem is a playback setting. If your IPTV subscription supports only one connection, changing TiviMate settings will not create a second connection.",
+      },
+      { type: "h2", text: "Multiple Screens Keep Refreshing" },
+      {
+        type: "p",
+        text: "If two devices are being used and one repeatedly refreshes while the other plays, check the subscription's simultaneous connection limit.",
+      },
+      {
+        type: "p",
+        text: "This is particularly important when using the same IPTV account on multiple TVs.",
+      },
+      {
+        type: "p",
+        text: "If your provider confirms that you have enough connections, test the following:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Restart both devices.",
+          "Close TiviMate completely on unused devices.",
+          "Remove duplicate playlists that may still be active.",
+          "Test each playlist separately.",
+          "Check your internet connection.",
+          "Test with lower-resolution channels.",
+          "Check whether the issue happens with every channel or only specific streams.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Community troubleshooting discussions repeatedly point to the IPTV provider's connection allowance as an important factor in these situations.",
+      },
+      { type: "h2", text: "TiviMate Multiview Is Slow or Choppy" },
+      {
+        type: "p",
+        text: "Running several streams at once requires more processing power, decoding capability, bandwidth, and provider connections.",
+      },
+      {
+        type: "p",
+        text: "If one 1080p stream works normally but two or three streams become unstable, your device may be reaching its limits.",
+      },
+      {
+        type: "p",
+        text: "Try two lower-resolution streams first. If they work but higher-resolution streams do not, the problem may be related to device performance rather than your subscription.",
+      },
+      {
+        type: "p",
+        text: "You can also restart the device and close unnecessary background applications before using Multiview.",
+      },
+      {
+        type: "h2",
+        text: "When the Problem Is Probably Your IPTV Provider",
+      },
+      {
+        type: "p",
+        text: "Contact your provider when:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your MAC is not activated.",
+          "The Stalker portal rejects your device.",
+          "Your subscription has expired.",
+          "Your connection limit is being reached.",
+          "The same playlist fails on multiple devices.",
+          "Channels suddenly stop working across different players.",
+          "Your provider's server is unavailable.",
+          "You need a MAC binding reset.",
+        ],
+      },
+      {
+        type: "p",
+        text: "TiviMate cannot change a provider's server-side connection limit or activate a MAC address that has not been registered.",
+      },
+      { type: "h2", text: "Quick TiviMate Error Checklist" },
+      {
+        type: "p",
+        text: "Before reinstalling TiviMate, check these in order:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Stalker Portal: Confirm the portal URL and registered MAC.",
+          "Playlist: Make sure the correct IPTV account is being used.",
+          "Multiple screens: Check your simultaneous connection limit.",
+          "Multiview: Test individual streams first.",
+          "Black screen: Try changing playback settings, including Tunnelled Playback.",
+          "Refreshing: Close TiviMate on other devices and test one connection.",
+          "Provider issue: Ask the provider to verify your account, MAC binding and active connections.",
+          "Device issue: Restart your FireStick, Android TV or streaming box and test again.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Most TiviMate errors become much easier to solve once you determine whether the problem is caused by the player, device, internet connection, or IPTV provider. Avoid changing several settings at once. Test one thing at a time so you can identify the actual cause.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you are still setting up your IPTV service, start with our ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          " and then learn ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          " correctly. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Why is my Stalker Portal not working on TiviMate?",
+            answer:
+              "Check the portal URL, MAC address and provider activation first. If the MAC is not registered or is still linked to another device, the portal may reject the connection. Ask your IPTV provider to confirm the MAC currently assigned to your account.",
+          },
+          {
+            question: "Why does TiviMate say “Device Already Connected”?",
+            answer:
+              "This usually indicates that the IPTV provider has detected an existing connection or that your MAC/device is still registered elsewhere. Close the IPTV service on other devices and ask your provider to reset the active connection if necessary.",
+          },
+          {
+            question:
+              "How many screens can I use with one IPTV subscription?",
+            answer:
+              "It depends on the number of simultaneous connections included with your IPTV subscription. A one-connection subscription generally supports one active stream at a time, while a two-connection plan can support two simultaneous streams.",
+          },
+          {
+            question:
+              "Why does TiviMate stop one channel when I open another?",
+            answer:
+              "Your IPTV provider may allow only one simultaneous connection. Starting a second stream can cause the first one to stop or refresh. Check the connection limit attached to your IPTV account.",
+          },
+          {
+            question: "Why is TiviMate Multiview showing a black screen?",
+            answer:
+              "First confirm that your IPTV account supports enough simultaneous connections. Then test the streams individually and restart TiviMate. If both streams are available but one remains black, try disabling Tunnelled Playback in the playback settings. This has resolved a similar Multiview issue reported by a TiviMate user.",
+          },
+          {
+            question:
+              "Why does TiviMate keep refreshing when I use two TVs?",
+            answer:
+              "The most common thing to check is the IPTV provider's simultaneous connection limit. If your account allows only one connection, the second TV may interrupt or refresh the first stream.",
+          },
+          {
+            question: "Can I use the same Stalker Portal on two devices?",
+            answer:
+              "Usually, Stalker Portal access is tied to a MAC/device identity, so you should not assume that one Stalker account can be used independently on multiple devices. Ask your IPTV provider whether your subscription supports multiple registered devices or MAC addresses.",
+          },
+          {
+            question:
+              "Why did my Stalker Portal stop working after resetting my device?",
+            answer:
+              "A reset or reinstallation can result in a different device identity or MAC being used. Compare the current information shown by TiviMate with the information registered by your provider and ask them to update or reset the binding if needed.",
+          },
+          {
+            question:
+              "Why does Stalker Portal work on another app but not TiviMate?",
+            answer:
+              "The provider may have different compatibility requirements for its Stalker implementation. Confirm that the provider supports TiviMate and ask whether specific portal, MAC, device ID, serial number, or User Agent information is required. Community reports show that some Stalker services are configured specifically around supported device types.",
+          },
+          {
+            question:
+              "Does TiviMate Premium give me more IPTV connections?",
+            answer:
+              "No. TiviMate Premium features and your IPTV provider's simultaneous-stream allowance are separate things. Premium does not automatically increase the number of streams allowed by your IPTV subscription.",
+          },
+          {
+            question:
+              "Why does Multiview work with one provider but not another?",
+            answer:
+              "Different IPTV providers can impose different connection limits and server restrictions. If one provider allows two simultaneous streams while another allows only one, Multiview can behave differently even on the same device.",
+          },
+          {
+            question:
+              "Should I reinstall TiviMate to fix a Stalker Portal error?",
+            answer:
+              "Not as your first step. Check the portal URL, MAC registration, provider account and connection status first. Reinstalling TiviMate may create a new device identity and can make a MAC-based setup more complicated if the provider has not updated your registration.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-download-or-install-tivimate-on-firestick",
+    title: "How to Download or Install TiviMate on FireStick: Easy Guide",
+    description:
+      "Learn how to install TiviMate on FireStick, add M3U or Xtream Codes, set up EPG and fix common IPTV problems with this easy Fire TV guide.",
+    excerpt:
+      "Install TiviMate on FireStick, add your IPTV playlist, configure EPG and get started with a clear step-by-step setup.",
+    image: "/how-to-download-or-install-tivimate-on-firestick.png",
+    imageAlt:
+      "How to download or install TiviMate on FireStick easy guide with Fire TV Stick and TiviMate player",
+    datePublished: "2026-09-27",
+    dateModified: "2026-09-27",
+    keywords: [
+      "Install TiviMate on FireStick",
+      "Download TiviMate FireStick",
+      "IPTV on FireStick",
+      "TiviMate Fire TV",
+      "FireStick IPTV setup",
+      "TiviMate APK FireStick",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "Want to watch IPTV on your FireStick but not sure where to start?",
+      },
+      {
+        type: "p",
+        text: "The process is straightforward once you understand that there are two separate parts: the IPTV player and the IPTV service. TiviMate is a popular player for organising and playing compatible IPTV playlists, while your IPTV provider supplies the channels and streaming information.",
+      },
+      {
+        type: "p",
+        parts: [
+          "In this guide, you will learn how to install IPTV on FireStick, set up TiviMate, add an M3U playlist or Xtream Codes, configure your TV guide and troubleshoot the most common problems. If you need the complete player setup process, see our ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Quick Answer" },
+      {
+        type: "p",
+        text: "To install IPTV on FireStick, first prepare your Fire TV device for the required app installation method, then install a compatible IPTV player such as TiviMate. After installing TiviMate, add your IPTV provider's M3U playlist or Xtream Codes, allow the channels to load, and configure EPG if your provider supplies it.",
+      },
+      {
+        type: "h2",
+        text: "What Do You Need to Install IPTV on FireStick?",
+      },
+      {
+        type: "p",
+        text: "Before starting, make sure you have:",
+      },
+      {
+        type: "ul",
+        items: [
+          "An Amazon FireStick or compatible Fire TV device",
+          "A stable internet connection",
+          "TiviMate or another compatible IPTV player",
+          "An active IPTV subscription, if required",
+          "An M3U playlist URL or Xtream Codes login",
+          "EPG information, if supplied by your provider",
+        ],
+      },
+      {
+        type: "p",
+        text: "TiviMate itself does not provide TV channels. It works as a media player that connects to compatible playlists or login details supplied by an IPTV service.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you need the complete TiviMate setup process, see our ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Step 1: Prepare Your FireStick" },
+      {
+        type: "p",
+        text: "Turn on your FireStick and make sure it is connected to the internet.",
+      },
+      {
+        type: "p",
+        text: "Go to the Fire TV settings and check your device software and available installation options.",
+      },
+      {
+        type: "p",
+        text: "The exact menus can differ between Fire TV versions. Amazon's current documentation shows that Fire TV is moving across different operating-system environments, so instructions written for older FireStick versions may not appear exactly the same on every device.",
+      },
+      {
+        type: "p",
+        text: "If your Fire TV device supports installing applications from outside the Amazon Appstore, you may need to enable the appropriate installation permission in its Developer Options.",
+      },
+      {
+        type: "p",
+        text: "On supported older Fire OS devices, this has commonly been found under:",
+      },
+      {
+        type: "note",
+        text: "Settings → My Fire TV → Developer Options",
+      },
+      {
+        type: "p",
+        text: "Amazon also documents Apps from Unknown Sources as a Fire TV sideloading setting on supported devices.",
+      },
+      {
+        type: "note",
+        text: "Important: Do not enable settings or install files from sources you do not trust. Only use a legitimate application source and verify the APK before installing it.",
+      },
+      {
+        type: "h2",
+        text: "Step 2: Install a Downloader App if Required",
+      },
+      {
+        type: "p",
+        text: "For Fire TV devices that support traditional Android APK sideloading, Downloader is commonly used to retrieve an APK.",
+      },
+      {
+        type: "p",
+        text: "You can search for Downloader from the Fire TV interface and install it if it is available for your device.",
+      },
+      {
+        type: "p",
+        text: "Open Downloader and use its URL field only with a download address you trust.",
+      },
+      {
+        type: "p",
+        text: "Amazon officially describes installing applications outside the Appstore as sideloading and documents alternative methods such as ADB for Fire TV.",
+      },
+      {
+        type: "p",
+        text: "Because Fire TV software is changing, the exact sideloading process may differ on newer devices.",
+      },
+      { type: "h2", text: "Step 3: Install TiviMate on FireStick" },
+      {
+        type: "p",
+        text: "Once you have a supported method for installing the TiviMate APK, download the current TiviMate application package from a trusted source.",
+      },
+      {
+        type: "p",
+        text: "Follow the installation prompt and wait for the installation to finish.",
+      },
+      {
+        type: "p",
+        text: "Then open TiviMate from your FireStick's applications.",
+      },
+      {
+        type: "p",
+        text: "You should see the option to add a playlist during the initial setup.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you need a more detailed installation walkthrough, use our ",
+          { label: "TiviMate installation guide", href: routes.installation },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Step 4: Add Your IPTV Playlist" },
+      {
+        type: "p",
+        text: "After opening TiviMate, select:",
+      },
+      {
+        type: "note",
+        text: "Add Playlist",
+      },
+      {
+        type: "p",
+        text: "You will normally use one of the connection methods provided by your IPTV service.",
+      },
+      { type: "h3", text: "Option 1: M3U Playlist" },
+      {
+        type: "p",
+        text: "If your provider gives you an M3U URL:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Select the M3U playlist option.",
+          "Choose the URL method.",
+          "Enter the complete M3U link.",
+          "Continue.",
+          "Give the playlist a name if requested.",
+          "Wait for TiviMate to load the channels.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Copy the complete URL carefully. One missing character can prevent the playlist from loading.",
+      },
+      { type: "h3", text: "Option 2: Xtream Codes" },
+      {
+        type: "p",
+        text: "If your provider gives you Xtream Codes details:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Select the Xtream Codes option.",
+          "Enter the server URL.",
+          "Enter your username.",
+          "Enter your password.",
+          "Continue.",
+          "Wait for TiviMate to load your content.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Your username and password are normally case-sensitive, so copy them exactly as provided.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For a complete explanation of both methods, read our guide on ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Step 5: Set Up the EPG" },
+      {
+        type: "p",
+        text: "EPG means Electronic Programme Guide.",
+      },
+      {
+        type: "p",
+        text: "It displays programme information, schedules and upcoming shows inside your IPTV player.",
+      },
+      {
+        type: "p",
+        text: "Some IPTV providers supply EPG information automatically. Others provide a separate EPG URL.",
+      },
+      {
+        type: "p",
+        text: "If your provider gives you an EPG URL, add it through the EPG settings in TiviMate.",
+      },
+      {
+        type: "p",
+        text: "If your channels appear but the guide says No Information, check whether your provider has supplied an EPG source and whether the URL was entered correctly.",
+      },
+      { type: "h2", text: "Step 6: Test Your IPTV Channels" },
+      {
+        type: "p",
+        text: "After your playlist has loaded, open Live TV and test several channels.",
+      },
+      {
+        type: "p",
+        text: "Check:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Channel playback",
+          "Channel groups",
+          "EPG information",
+          "Audio",
+          "Picture quality",
+          "Channel switching",
+        ],
+      },
+      {
+        type: "p",
+        text: "Do not test only one channel. If one channel does not work while others play normally, the issue may be with that particular stream rather than your FireStick setup.",
+      },
+      {
+        type: "h2",
+        text: "How to Improve IPTV Performance on FireStick",
+      },
+      {
+        type: "p",
+        text: "A stable connection is more important than simply having a high advertised internet speed.",
+      },
+      {
+        type: "p",
+        text: "For better IPTV performance:",
+      },
+      { type: "h3", text: "Use a Strong Wi-Fi Connection" },
+      {
+        type: "p",
+        text: "Keep the FireStick within a reasonable range of your router.",
+      },
+      {
+        type: "p",
+        text: "If possible, reduce interference between the FireStick and router.",
+      },
+      { type: "h3", text: "Restart Your FireStick" },
+      {
+        type: "p",
+        text: "If IPTV suddenly starts buffering or applications become slow, restart the FireStick.",
+      },
+      {
+        type: "p",
+        text: "A restart can clear temporary system and application issues.",
+      },
+      { type: "h3", text: "Clear Unnecessary App Cache" },
+      {
+        type: "p",
+        text: "FireStick devices have limited storage. Too many applications and cached files can contribute to performance problems.",
+      },
+      {
+        type: "p",
+        text: "Remove applications you no longer use and clear unnecessary cache where appropriate.",
+      },
+      { type: "h3", text: "Test Different Channels" },
+      {
+        type: "p",
+        text: "If only one or two channels buffer while others work correctly, the issue may be related to those streams or the IPTV provider.",
+      },
+      {
+        type: "p",
+        text: "If every channel buffers, investigate your internet connection, device performance and IPTV service.",
+      },
+      { type: "h2", text: "Common IPTV Problems on FireStick" },
+      {
+        type: "table",
+        headers: ["Problem", "What to Check"],
+        rows: [
+          [
+            "IPTV app will not install",
+            "Check device compatibility and available storage",
+          ],
+          [
+            "TiviMate will not open",
+            "Restart FireStick and check the installed app",
+          ],
+          [
+            "Playlist will not load",
+            "Recheck M3U URL or Xtream Codes",
+          ],
+          [
+            "Login failed",
+            "Confirm server, username and password",
+          ],
+          [
+            "EPG shows no information",
+            "Check the EPG source supplied by your provider",
+          ],
+          [
+            "IPTV keeps buffering",
+            "Test your connection and other channels",
+          ],
+          [
+            "Some channels are missing",
+            "Check your IPTV subscription and channel groups",
+          ],
+          [
+            "FireStick storage is full",
+            "Remove unused apps and clear unnecessary cache",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        text: "Is TiviMate Free or Premium on FireStick?",
+      },
+      {
+        type: "p",
+        text: "TiviMate has free and Premium functionality.",
+      },
+      {
+        type: "p",
+        text: "The free version can be useful for basic IPTV playback, while Premium provides additional features depending on the current version.",
+      },
+      {
+        type: "p",
+        text: "If you are only testing an IPTV service, start with the features you actually need.",
+      },
+      {
+        type: "p",
+        text: "If you require advanced features such as additional playlist management or other Premium functionality, review the current Premium options before purchasing.",
+      },
+      {
+        type: "p",
+        parts: [
+          "You can also read our ",
+          {
+            label: "TiviMate Premium vs Free comparison",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          " to understand the differences.",
+        ],
+      },
+      { type: "h2", text: "Do You Need an IPTV Subscription?" },
+      {
+        type: "p",
+        text: "Yes, if you want access to IPTV channels.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is the player. It does not automatically provide the channels you want to watch.",
+      },
+      {
+        type: "p",
+        text: "You need a compatible IPTV service that provides supported access details such as an M3U playlist or Xtream Codes.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you are looking for a compatible service, you can review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          " before choosing a subscription.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Always make sure that the IPTV content you access is authorised for your use.",
+      },
+      { type: "h2", text: "Final FireStick IPTV Setup Checklist" },
+      {
+        type: "p",
+        text: "Before you finish, check the following:",
+      },
+      {
+        type: "ul",
+        items: [
+          "FireStick is connected to the internet.",
+          "Your Fire TV software supports the required installation method.",
+          "TiviMate is installed successfully.",
+          "Your IPTV subscription is active.",
+          "You have the correct M3U or Xtream Codes details.",
+          "Your playlist loads successfully.",
+          "Your channels play correctly.",
+          "EPG is configured if supplied.",
+          "You have tested several channels.",
+          "You are using a trusted application source.",
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "Installing IPTV on FireStick becomes much easier when you separate the process into three steps: install the player, connect your IPTV service and test playback.",
+      },
+      {
+        type: "p",
+        text: "TiviMate can handle the player side of the setup, while your IPTV provider supplies the playlist or login details.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you are starting from scratch, begin with our ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          ". If you already have your IPTV credentials, follow our ",
+          {
+            label: "M3U and Xtream Codes playlist guide",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          " to connect your service and start watching.",
+        ],
+      },
+      { type: "h2", text: "Call-To-Action" },
+      {
+        type: "p",
+        parts: [
+          "If you already have TiviMate installed, the next step is connecting your IPTV service. Check our ",
+          { label: "IPTV Plans", href: routes.plans },
+          " to see the available options, then use your M3U or Xtream Codes details to complete the setup.",
+        ],
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Can I install IPTV on a FireStick?",
+            answer:
+              "Yes. You can use an IPTV player such as TiviMate on a FireStick and connect it to an IPTV service using an M3U playlist or Xtream Codes login. If the player is not available through the Amazon Appstore, it may need to be sideloaded. Amazon refers to installing apps outside the Appstore as sideloading.",
+          },
+          {
+            question: "How do I install TiviMate on FireStick?",
+            answer:
+              "To install TiviMate, prepare your FireStick, install a suitable downloader or sideloading method when required, download the TiviMate APK from a trusted source, and complete the installation. After installing TiviMate, you need an IPTV subscription or playlist to load channels.",
+          },
+          {
+            question: "Do I need an IPTV subscription to use TiviMate?",
+            answer:
+              "Yes, if you want to watch live channels or other IPTV content. TiviMate is a media player, so you need a playlist or login details from an IPTV service. The player itself does not provide your TV channels.",
+          },
+          {
+            question: "How do I add IPTV to TiviMate on FireStick?",
+            answer:
+              "Open TiviMate and select Add Playlist. You can normally choose between an M3U playlist and Xtream Codes. For Xtream Codes, enter the server URL, username, and password provided by your IPTV service. For M3U, paste the complete playlist URL.",
+          },
+          {
+            question: "What is the difference between M3U and Xtream Codes?",
+            answer:
+              "An M3U playlist generally uses one long URL containing your playlist information. Xtream Codes uses separate fields for the server URL, username, and password. The correct option depends on what your IPTV provider gives you.",
+          },
+          {
+            question: "Why is my IPTV not working on FireStick?",
+            answer:
+              "Common causes include incorrect login details, an expired subscription, poor internet connection, an incorrect playlist URL, or a temporary provider server problem. First, check your internet connection and make sure your username, password, server URL, or M3U link was entered exactly as provided.",
+          },
+          {
+            question: "Why are my IPTV channels not loading in TiviMate?",
+            answer:
+              "Give TiviMate some time to process the playlist, especially if it contains many channels. If nothing loads, check the playlist credentials and internet connection. You can also refresh the playlist from TiviMate's settings.",
+          },
+          {
+            question: "How do I get the TV guide or EPG on TiviMate?",
+            answer:
+              "EPG stands for Electronic Program Guide and shows program information for your channels. Depending on your IPTV service and playlist format, EPG information may load automatically or you may need to enter an XMLTV EPG URL provided by your IPTV service.",
+          },
+          {
+            question: "Can I use TiviMate on multiple FireStick devices?",
+            answer:
+              "This depends on your TiviMate account and IPTV subscription terms. Your IPTV provider may also limit the number of simultaneous connections allowed by your subscription, so check the conditions of your service before using the same account on multiple devices.",
+          },
+          {
+            question: "Is TiviMate Free on FireStick?",
+            answer:
+              "TiviMate has a free version, while Premium provides additional features. The FireStick installation itself and your IPTV subscription are separate from the TiviMate Premium upgrade. If you are deciding whether Premium is worthwhile, see our TiviMate Premium vs Free comparison.",
+          },
+          {
+            question:
+              "What should I do if TiviMate says the playlist is invalid?",
+            answer:
+              "Check the playlist URL or Xtream Codes credentials carefully. Make sure there are no extra spaces or missing characters. If the details are correct but the playlist still fails, contact your IPTV provider to confirm that your subscription and server are active.",
+          },
+          {
+            question: "Is IPTV legal on FireStick?",
+            answer:
+              "Using a FireStick or an IPTV player is not, by itself, illegal. The important issue is whether the content you access is properly licensed and authorized for distribution in your location. Use IPTV services and content that you are legally entitled to access.",
+          },
+        ],
+      },
+    ],
+  },
   {
     slug: "how-to-add-playlist-to-tivimate",
     title: "How to Add Playlist to TiviMate (M3U & Xtream Codes) Easily",
@@ -527,7 +1447,14 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "The playlist process is similar after TiviMate has been installed on your Firestick.",
+        parts: [
+          "The playlist process is similar after TiviMate has been installed on your Firestick. If you still need to install the app, follow our guide on ",
+          {
+            label: "how to download or install TiviMate on FireStick",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
       },
       {
         type: "p",
