@@ -78,7 +78,7 @@ export function BlogPostSchema({ slug }: BlogPostSchemaProps) {
       {
         "@type": "BlogPosting",
         "@id": `${postUrl}#article`,
-        headline: post.title,
+        headline: post.seoTitle ?? post.title,
         description: post.description,
         image: [imageUrl],
         datePublished: post.datePublished,

@@ -5,6 +5,9 @@ export const blogSlugs = {
   premiumVsFree: "tivimate-premium-vs-tivimate-free",
   firestickInstall: "how-to-download-or-install-tivimate-on-firestick",
   stalkerErrors: "tivimate-errors-stalker-portal-and-multiple-screen-issues",
+  bufferingFix: "how-to-fix-tivimate-buffering",
+  rokuInstall: "how-to-install-tivimate-on-roku",
+  epgNotUpdating: "tivimate-epg-not-updating",
 } as const;
 
 export function blogPostPath(slug: string): string {
@@ -34,6 +37,8 @@ export type BlogContentBlock =
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Optional SERP/meta title. Falls back to `title` when omitted. */
+  seoTitle?: string;
   description: string;
   excerpt: string;
   image: string;
@@ -45,6 +50,1666 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "tivimate-epg-not-updating",
+    title:
+      "TiviMate EPG Not Updating Fixes: Fix No Information & Outdated Guide",
+    seoTitle: "TiviMate EPG Not Updating: Fixes That Work",
+    description:
+      "TiviMate EPG not updating? Fix “No Information,” outdated listings, wrong times, and failed updates with these simple TiviMate EPG fixes.",
+    excerpt:
+      "Fix TiviMate EPG not updating, No Information, outdated listings and wrong times with clear cache, source and channel-matching checks.",
+    image: "/tivimate-epg-not-updating.png",
+    imageAlt:
+      "TiviMate EPG not updating fix guide for No Information and outdated TV guide listings",
+    datePublished: "2026-10-02",
+    dateModified: "2026-10-02",
+    keywords: [
+      "TiviMate EPG not updating",
+      "TiviMate No Information",
+      "TiviMate EPG fix",
+      "TiviMate TV guide",
+      "TiviMate EPG update",
+      "TiviMate EPG wrong time",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "When the TiviMate EPG is not updating, your channels may still play normally while the TV guide shows “No Information,” old programs, missing listings, or incorrect times. This can happen because of an outdated EPG cache, an incorrect EPG source, channel matching problems, a provider-side issue, or a problem with the device or internet connection.",
+      },
+      {
+        type: "p",
+        text: "The good news is that you usually do not need to reinstall TiviMate or delete your playlist.",
+      },
+      {
+        type: "p",
+        parts: [
+          "This guide explains the most effective TiviMate EPG not updating fixes and shows what to check before resetting your entire setup. If you still need to connect your service, see ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "What Is EPG in TiviMate?" },
+      {
+        type: "p",
+        text: "EPG stands for Electronic Program Guide. It provides the program information displayed in TiviMate, including:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Current programs",
+          "Upcoming programs",
+          "Program names",
+          "Start and end times",
+          "Program descriptions",
+          "Channel schedules",
+        ],
+      },
+      {
+        type: "p",
+        text: "TiviMate does not create this program information itself. It receives EPG data from an IPTV provider or another EPG source and then matches that information with the channels in your playlist.",
+      },
+      {
+        type: "p",
+        text: "This means your channels can work while the EPG does not. A working IPTV stream does not necessarily mean the EPG source is working correctly.",
+      },
+      { type: "h2", text: "Why Is TiviMate EPG Not Updating?" },
+      {
+        type: "p",
+        text: "The most common causes include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The EPG source is incorrect or expired.",
+          "The EPG update has failed.",
+          "Old EPG data is stuck in the app.",
+          "The playlist and EPG channel IDs do not match.",
+          "Your IPTV provider's EPG server is having an issue.",
+          "The device has a network or DNS problem.",
+          "The device date or time is incorrect.",
+          "TiviMate has a temporary cache problem.",
+          "The EPG update interval is too long.",
+          "A recent TiviMate update may have introduced a temporary issue.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The right fix depends on whether all channels or only some channels are missing guide information.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate EPG Not Updating? Try These Fixes First",
+      },
+      {
+        type: "p",
+        text: "Before changing advanced settings, start with these basic fixes.",
+      },
+      {
+        type: "h3",
+        text: "1. Check That Your Channels Still Work",
+      },
+      {
+        type: "p",
+        text: "Open a few live channels.",
+      },
+      {
+        type: "p",
+        text: "If channels play normally but the guide says “No Information,” the problem is probably related to the EPG rather than your entire IPTV playlist.",
+      },
+      {
+        type: "p",
+        text: "If channels also fail to load, check your playlist, login details, internet connection, or IPTV provider first.",
+      },
+      { type: "h3", text: "2. Manually Update the EPG" },
+      {
+        type: "p",
+        text: "The first thing to try is a manual EPG update.",
+      },
+      {
+        type: "p",
+        text: "Go to:",
+      },
+      {
+        type: "note",
+        text: "TiviMate → Settings → EPG → Update EPG",
+      },
+      {
+        type: "p",
+        text: "Depending on your TiviMate version and playlist configuration, the EPG update option may appear in a slightly different location.",
+      },
+      {
+        type: "p",
+        text: "Wait for the update to finish before opening the guide again. Large EPG files can take some time to process.",
+      },
+      { type: "h3", text: "3. Clear the EPG and Update Again" },
+      {
+        type: "p",
+        text: "If the manual update does not work, clear the existing EPG data.",
+      },
+      {
+        type: "p",
+        text: "Go to:",
+      },
+      {
+        type: "note",
+        text: "Settings → EPG → Clear EPG",
+      },
+      {
+        type: "p",
+        text: "Then select:",
+      },
+      {
+        type: "note",
+        text: "Update EPG",
+      },
+      {
+        type: "p",
+        text: "This forces TiviMate to remove the stored guide information and download it again.",
+      },
+      {
+        type: "p",
+        text: "This is one of the safest fixes because you are clearing the guide data rather than deleting your entire TiviMate setup.",
+      },
+      {
+        type: "note",
+        text: "Important: Do not use your device's Clear Data option unless you understand what it will remove. Clearing app data can remove playlists, settings, favorites, and other local configuration.",
+      },
+      { type: "h3", text: "4. Restart TiviMate" },
+      {
+        type: "p",
+        text: "Completely close TiviMate and open it again.",
+      },
+      {
+        type: "p",
+        text: "If you are using a FireStick, Android TV box, Google TV device, or NVIDIA Shield, you can also force-stop TiviMate from the device's app settings.",
+      },
+      {
+        type: "p",
+        text: "Then run another EPG update.",
+      },
+      {
+        type: "p",
+        text: "Recent TiviMate community reports have also described EPG synchronization problems where force-stopping the app, clearing its cache, restarting the device, and allowing the first EPG sync to finish resolved the problem for some users. These reports are user experiences, not a guarantee that every version or device will behave the same way.",
+      },
+      { type: "h3", text: "5. Check Your EPG Source" },
+      {
+        type: "p",
+        text: "If TiviMate says the EPG update failed, the EPG source may be the problem.",
+      },
+      {
+        type: "p",
+        text: "Your IPTV provider may give you:",
+      },
+      {
+        type: "ul",
+        items: [
+          "An M3U playlist",
+          "Xtream Codes credentials",
+          "A separate XMLTV EPG URL",
+          "An EPG source automatically connected to your account",
+        ],
+      },
+      {
+        type: "p",
+        text: "Check the EPG source assigned to the playlist you are actually using.",
+      },
+      {
+        type: "p",
+        text: "If you have multiple playlists, make sure you have not accidentally assigned an EPG source from one provider to another playlist.",
+      },
+      {
+        type: "p",
+        text: "An EPG source can download successfully but still provide no useful information if its channel data does not match your playlist.",
+      },
+      {
+        type: "h2",
+        text: "Check Whether Your EPG URL Still Works",
+      },
+      {
+        type: "p",
+        text: "If you manually added an XMLTV EPG URL, make sure it is still active.",
+      },
+      {
+        type: "p",
+        text: "Copy the EPG URL and test it in a web browser.",
+      },
+      {
+        type: "p",
+        text: "A working XMLTV source may download an XML or compressed XML file. If the URL returns an error such as 404, 401, or a timeout, the source may be expired, restricted, or unavailable.",
+      },
+      {
+        type: "p",
+        text: "In that situation, changing TiviMate settings will not fix the source itself.",
+      },
+      {
+        type: "p",
+        text: "Ask your IPTV provider for the current EPG URL if the previous one has stopped working.",
+      },
+      {
+        type: "h2",
+        text: "Update Your Playlist Before Updating the EPG",
+      },
+      {
+        type: "p",
+        text: "Sometimes the playlist and EPG become out of sync.",
+      },
+      {
+        type: "p",
+        text: "For example, your IPTV provider may change:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Channel names",
+          "Channel IDs",
+          "EPG IDs",
+          "Server information",
+          "Channel groups",
+          "Playlist data",
+        ],
+      },
+      {
+        type: "p",
+        text: "Try updating your playlist first, then update the EPG.",
+      },
+      {
+        type: "p",
+        text: "Go to:",
+      },
+      {
+        type: "note",
+        text: "Settings → Playlists → Your Playlist → Update",
+      },
+      {
+        type: "p",
+        text: "After the playlist finishes updating, go back to:",
+      },
+      {
+        type: "note",
+        text: "Settings → EPG → Update EPG",
+      },
+      {
+        type: "p",
+        text: "This can help when the provider has changed channel information.",
+      },
+      {
+        type: "h2",
+        text: "Fix TiviMate EPG Channel Matching Problems",
+      },
+      {
+        type: "p",
+        text: "If only some channels show “No Information,” the problem may not be an EPG download failure.",
+      },
+      {
+        type: "p",
+        text: "It could be a channel matching problem.",
+      },
+      {
+        type: "p",
+        text: "TiviMate needs to connect the channel in your playlist with the correct channel information in the EPG source.",
+      },
+      {
+        type: "p",
+        text: "For example:",
+      },
+      {
+        type: "ul",
+        items: ["Playlist: ESPN HD USA", "EPG: ESPN USA"],
+      },
+      {
+        type: "p",
+        text: "If the channel identifiers do not match correctly, TiviMate may not know which program data belongs to that channel.",
+      },
+      {
+        type: "p",
+        text: "In this situation, check the channel's EPG assignment or mapping options.",
+      },
+      {
+        type: "p",
+        text: "If your provider's EPG does not contain information for a particular channel, TiviMate cannot create that missing schedule itself.",
+      },
+      { type: "h2", text: "TiviMate EPG Shows the Wrong Time" },
+      {
+        type: "p",
+        text: "Sometimes the EPG is updating correctly, but the programs appear several hours early or late.",
+      },
+      {
+        type: "p",
+        text: "This usually points toward a time zone or time-shift issue.",
+      },
+      {
+        type: "p",
+        text: "First, check your device's date, time zone, and automatic time settings.",
+      },
+      {
+        type: "p",
+        text: "On your streaming device, make sure:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Automatic date and time is enabled",
+          "The correct time zone is selected",
+          "Daylight saving settings are correct where applicable",
+        ],
+      },
+      {
+        type: "p",
+        text: "Then check TiviMate's EPG time-shift settings if your provider's EPG uses a different time zone.",
+      },
+      {
+        type: "p",
+        text: "For example, if every program is consistently several hours early or late, the issue is different from an EPG that randomly stops updating.",
+      },
+      {
+        type: "p",
+        text: "Do not keep changing the time shift if only one or two channels have incorrect listings. That may indicate a channel-specific EPG problem instead.",
+      },
+      { type: "h2", text: "Check the EPG Update Interval" },
+      {
+        type: "p",
+        text: "TiviMate includes settings for automatic EPG updates.",
+      },
+      {
+        type: "p",
+        text: "You can find them under:",
+      },
+      {
+        type: "note",
+        text: "Settings → EPG",
+      },
+      {
+        type: "p",
+        text: "Look for options such as:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Update interval",
+          "Update on app start",
+          "Update on playlist change",
+          "Update EPG",
+        ],
+      },
+      {
+        type: "p",
+        text: "The appropriate interval depends on your provider and setup. TiviMate user guides document 24 hours as a commonly recommended update interval, while some users prefer shorter intervals when their provider frequently changes listings.",
+      },
+      {
+        type: "p",
+        text: "There is no universal setting that fixes every EPG problem.",
+      },
+      {
+        type: "p",
+        text: "If your guide becomes outdated before the next scheduled update, try a shorter interval. If updates are causing unnecessary loading or network activity, a longer interval may be more suitable.",
+      },
+      { type: "h2", text: "Clear TiviMate's App Cache" },
+      {
+        type: "p",
+        text: "If clearing the EPG does not help, try clearing the TiviMate app cache from your device.",
+      },
+      {
+        type: "p",
+        text: "On many Android-based devices:",
+      },
+      {
+        type: "note",
+        text: "Settings → Apps → TiviMate → Storage → Clear Cache",
+      },
+      {
+        type: "p",
+        text: "Then:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Force-stop TiviMate.",
+          "Restart the device.",
+          "Open TiviMate.",
+          "Wait for it to load.",
+          "Run an EPG update.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Do not confuse Clear Cache with Clear Data.",
+      },
+      {
+        type: "p",
+        text: "Clear Cache removes temporary files. Clear Data can reset the application's stored information.",
+      },
+      { type: "h2", text: "Check Your Internet Connection" },
+      {
+        type: "p",
+        text: "The EPG has to be downloaded from its source.",
+      },
+      {
+        type: "p",
+        text: "If your internet connection is unstable, the EPG may fail even though some cached channels continue to play.",
+      },
+      {
+        type: "p",
+        text: "Try:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Restarting your router",
+          "Switching from Wi-Fi to Ethernet",
+          "Moving closer to the router",
+          "Testing another network",
+          "Restarting your streaming device",
+        ],
+      },
+      {
+        type: "p",
+        text: "If the EPG works on another network but not your normal connection, the issue may involve your local network, DNS, ISP routing, or access to the EPG server.",
+      },
+      { type: "h2", text: "Test Without a VPN" },
+      {
+        type: "p",
+        text: "A VPN can sometimes affect access to an IPTV or EPG server.",
+      },
+      {
+        type: "p",
+        text: "If you normally use a VPN, temporarily test the EPG without it.",
+      },
+      {
+        type: "p",
+        text: "If you normally do not use a VPN and suspect your network is interfering with the EPG source, testing through a reputable VPN can help determine whether the problem is network-path related.",
+      },
+      {
+        type: "p",
+        text: "Do not assume a VPN is always the solution. It is better to use it as a troubleshooting test.",
+      },
+      { type: "h2", text: "Check Your Device's Free Storage" },
+      {
+        type: "p",
+        text: "Large playlists and EPG files can require local storage for processing and caching.",
+      },
+      {
+        type: "p",
+        text: "If your FireStick, Android TV device, Google TV device, or TV box is almost full, TiviMate may have difficulty storing updated guide data.",
+      },
+      {
+        type: "p",
+        text: "Remove unnecessary apps or files and make some free storage available.",
+      },
+      {
+        type: "p",
+        text: "Then restart the device and try the EPG update again.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate EPG Not Updating on FireStick",
+      },
+      {
+        type: "p",
+        text: "If you are specifically experiencing this problem on a FireStick, follow this order:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Check that live channels still work.",
+          "Restart the FireStick.",
+          "Force-stop TiviMate.",
+          "Clear TiviMate's cache.",
+          "Open TiviMate.",
+          "Update the playlist.",
+          "Clear the EPG.",
+          "Update the EPG again.",
+          "Check your EPG source.",
+          "Test your network connection.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If the same EPG source works on another compatible device but not your FireStick, the problem may be local to the FireStick setup.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For more FireStick IPTV setup help, see our ",
+          {
+            label: "How to Install TiviMate on FireStick guide",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "TiviMate EPG Not Updating After an App Update",
+      },
+      {
+        type: "p",
+        text: "If the EPG stopped working immediately after a TiviMate update, check whether the problem affects other users of the same version.",
+      },
+      {
+        type: "p",
+        text: "This matters because an app update can sometimes introduce temporary bugs or change how certain data is processed.",
+      },
+      {
+        type: "p",
+        text: "For example, TiviMate users reported EPG and playlist problems around some 5.3.x releases in 2026, while other users reported normal operation. This shows why it is important to separate an app-version issue from a provider or device issue.",
+      },
+      {
+        type: "p",
+        text: "If the problem started immediately after an update:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Restart the device.",
+          "Clear the TiviMate cache.",
+          "Clear and rebuild the EPG.",
+          "Check for a newer TiviMate release.",
+          "Check recent community reports.",
+          "Back up your TiviMate configuration before making major changes.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Avoid deleting your entire setup as the first step.",
+      },
+      {
+        type: "h2",
+        text: "What If EPG Works on Some Channels but Not Others?",
+      },
+      {
+        type: "p",
+        text: "This is an important distinction.",
+      },
+      {
+        type: "h3",
+        text: "All channels show “No Information”",
+      },
+      {
+        type: "p",
+        text: "Possible causes include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "EPG source unavailable",
+          "Incorrect EPG URL",
+          "EPG cache problem",
+          "Failed EPG update",
+          "Provider-side EPG outage",
+          "Network problem",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Only a few channels show “No Information”",
+      },
+      {
+        type: "p",
+        text: "Possible causes include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Missing EPG data for those channels",
+          "Incorrect channel mapping",
+          "Channel ID mismatch",
+          "Provider changed the channel information",
+          "The EPG source does not cover those channels",
+        ],
+      },
+      {
+        type: "p",
+        text: "If only a few channels are affected, changing your entire TiviMate installation is usually unnecessary.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate EPG Update Is Successful but Still Shows No Information",
+      },
+      {
+        type: "p",
+        text: "This can be confusing.",
+      },
+      {
+        type: "p",
+        text: "TiviMate may appear to complete the EPG update, but the guide can remain empty.",
+      },
+      {
+        type: "p",
+        text: "In this situation, check:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Is the correct EPG source assigned?",
+          "Does the EPG source contain your channels?",
+          "Do the channel IDs match?",
+          "Is the playlist current?",
+          "Are you using the correct provider's EPG?",
+          "Does the provider's EPG actually contain current listings?",
+        ],
+      },
+      {
+        type: "p",
+        text: "A successful download does not necessarily mean that TiviMate found matching program information for every channel.",
+      },
+      {
+        type: "h2",
+        text: "Quick TiviMate EPG Troubleshooting Checklist",
+      },
+      {
+        type: "table",
+        headers: ["Problem", "What to Try"],
+        rows: [
+          [
+            "All EPG information is missing",
+            "Clear EPG and update again",
+          ],
+          [
+            "EPG says “No Information”",
+            "Check EPG source and channel matching",
+          ],
+          [
+            "EPG update fails",
+            "Check URL, internet and provider",
+          ],
+          [
+            "Only some channels have no EPG",
+            "Check channel mapping and provider coverage",
+          ],
+          [
+            "Programs show wrong times",
+            "Check time zone and time shift",
+          ],
+          [
+            "EPG works on another device",
+            "Check local device cache, storage and network",
+          ],
+          [
+            "EPG stopped after an update",
+            "Restart, clear cache and check the app version",
+          ],
+          [
+            "Guide is outdated",
+            "Check update interval and force an update",
+          ],
+          [
+            "EPG URL gives an error",
+            "Ask provider for a current EPG source",
+          ],
+          [
+            "Channels also stopped working",
+            "Troubleshoot the playlist/provider first",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        text: "When the Problem Is Your IPTV Provider",
+      },
+      {
+        type: "p",
+        text: "Sometimes TiviMate is not the problem.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is a media player. It depends on your playlist and EPG source for channel and program information.",
+      },
+      {
+        type: "p",
+        text: "If:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your EPG URL has expired",
+          "The provider's EPG server is offline",
+          "The provider removed guide data",
+          "Channel IDs have changed",
+          "The provider stopped supplying EPG for certain channels",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "you may need to contact the provider. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "Before contacting support, record:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your affected channels",
+          "Whether all or only some channels are affected",
+          "The time the problem started",
+          "Whether live channels still work",
+          "Whether the EPG update succeeds or fails",
+          "Any error message shown by TiviMate",
+        ],
+      },
+      {
+        type: "p",
+        text: 'This gives the provider much more useful information than simply saying, “My EPG doesn\'t work.”',
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Why is my TiviMate EPG not updating?",
+            answer:
+              "The most common reasons are an incorrect EPG source, failed update, outdated cache, channel matching problem, network issue, or provider-side EPG problem. Start by clearing the EPG and running a manual update.",
+          },
+          {
+            question: "How do I refresh EPG on TiviMate?",
+            answer:
+              "Open Settings → EPG → Update EPG and wait for the update to finish. Menu names can vary slightly between versions.",
+          },
+          {
+            question: "How do I fix “No Information” on TiviMate?",
+            answer:
+              "First, update the EPG. If that does not work, use Clear EPG, then update again. If only certain channels show “No Information,” check channel mapping and whether your provider supplies EPG data for those channels.",
+          },
+          {
+            question:
+              "Why does TiviMate EPG work on some channels but not others?",
+            answer:
+              "Usually, the affected channels are missing from the EPG source or their channel IDs do not match the playlist. Check the EPG mapping and ask your provider whether those channels have guide data.",
+          },
+          {
+            question: "Why is TiviMate EPG showing the wrong time?",
+            answer:
+              "Check your device's time zone and TiviMate's EPG time-shift settings. If all programs are consistently early or late, a time zone or offset issue is likely.",
+          },
+          {
+            question: "How often should TiviMate update EPG?",
+            answer:
+              "A 12 to 24-hour interval is reasonable for many setups, but the best interval depends on how frequently your provider updates its guide data. TiviMate documentation has traditionally listed 24 hours as a recommended interval.",
+          },
+          {
+            question: "Will clearing TiviMate cache delete my playlist?",
+            answer:
+              "Clearing the app cache normally removes temporary files rather than your stored playlist configuration. However, avoid selecting Clear Data unless you are prepared to set up TiviMate again.",
+          },
+          {
+            question: "Why is TiviMate EPG not updating on FireStick?",
+            answer:
+              "Check the FireStick's internet connection, restart the device, force-stop TiviMate, clear its cache, then clear and update the EPG. Also verify that the EPG source is still valid.",
+          },
+          {
+            question: "Can an IPTV provider cause TiviMate EPG problems?",
+            answer:
+              "Yes. If the provider's EPG source is unavailable, outdated, incomplete, or incorrectly mapped, TiviMate cannot create the missing program information itself.",
+          },
+          {
+            question: "Does TiviMate provide the EPG?",
+            answer:
+              "No. TiviMate displays EPG information supplied through your playlist or configured EPG sources. The availability and accuracy of the guide depend largely on the source providing the data.",
+          },
+          {
+            question: "Why did my TiviMate EPG stop working suddenly?",
+            answer:
+              "A provider may have changed its EPG source or channel IDs, the cached EPG may have become stale, your network may be blocking access to the source, or an app/device issue may have occurred. Start with a manual update and check the EPG source.",
+          },
+          {
+            question:
+              "Should I reinstall TiviMate if the EPG is not updating?",
+            answer:
+              "Usually, no. Reinstalling should not be your first step. Try updating the playlist, clearing the EPG, clearing the app cache, checking the EPG source, and restarting the device first.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final TiviMate EPG Fix" },
+      {
+        type: "p",
+        text: "When TiviMate EPG is not updating, do not immediately delete your playlist or reinstall the app.",
+      },
+      {
+        type: "p",
+        text: "Start with the simple sequence:",
+      },
+      {
+        type: "note",
+        text: "Update playlist → Clear EPG → Update EPG → Restart TiviMate → Check EPG source → Check channel mapping → Check network and device settings.",
+      },
+      {
+        type: "p",
+        text: "If all channels still show “No Information”, investigate the EPG source and your IPTV provider. If only a few channels are affected, focus on channel mapping and EPG coverage.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For more TiviMate troubleshooting, you can also read our ",
+          {
+            label: "TiviMate Buffering Fix guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          " and ",
+          {
+            label: "How to Add Playlist to TiviMate guide",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-install-tivimate-on-roku",
+    title: "Tivimate on Roku: How to Install Tivimate on Roku & Alternatives",
+    seoTitle: "TiviMate on Roku: Does It Work? Setup Guide & Alternatives",
+    description:
+      "Want TiviMate on Roku? Learn if TiviMate works on Roku, why you can't install it directly, and the easiest way to use TiviMate with Roku TV.",
+    excerpt:
+      "TiviMate does not install directly on Roku. Learn why, and how to use TiviMate with a Roku TV via a compatible Android TV or Fire TV device.",
+    image: "/how-to-install-tivimate-on-roku.png",
+    imageAlt:
+      "TiviMate on Roku setup guide showing Roku TV with HDMI Android TV device running TiviMate",
+    datePublished: "2026-10-02",
+    dateModified: "2026-10-02",
+    keywords: [
+      "TiviMate on Roku",
+      "Install TiviMate on Roku",
+      "Roku TiviMate",
+      "TiviMate Roku TV",
+      "Does TiviMate work on Roku",
+      "TiviMate APK Roku",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "If you are searching for TiviMate on Roku, Roku TiviMate, or how to install TiviMate on Roku, there is an important compatibility issue to understand first.",
+      },
+      {
+        type: "p",
+        text: "TiviMate does not currently have a native Roku app. TiviMate is designed for Android TV devices and is distributed through Google Play and its official Android TV APK. Roku uses its own operating system and app platform, so you cannot install the Android TiviMate APK directly on a Roku device.",
+      },
+      {
+        type: "p",
+        text: "This does not mean you have to replace your Roku TV. There are practical ways to keep using your Roku TV while running TiviMate through a compatible external streaming device.",
+      },
+      { type: "h2", text: "Does TiviMate Work on Roku?" },
+      {
+        type: "p",
+        text: "No, TiviMate does not currently work natively on Roku.",
+      },
+      {
+        type: "p",
+        text: "You will not find the official TiviMate application in the Roku Streaming Store. Roku's official installation process is based on adding supported apps through its Streaming Store, Roku website, or mobile app.",
+      },
+      {
+        type: "p",
+        text: "TiviMate, on the other hand, is specifically designed for Android TV and remote-controlled Android TV devices. Its official listing identifies Android TV as the intended platform.",
+      },
+      {
+        type: "p",
+        text: 'This is why searching the Roku Store for "TiviMate" will not give you the official application.',
+      },
+      {
+        type: "h2",
+        text: "Why Can't You Install TiviMate on Roku?",
+      },
+      {
+        type: "p",
+        text: "The main issue is the operating platform.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is an Android TV application, while Roku uses Roku's own software environment. An Android APK is not the same type of application package used by Roku.",
+      },
+      {
+        type: "p",
+        text: "This means methods such as:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Downloading the TiviMate APK",
+          "Using Downloader",
+          "Sending the APK from a phone",
+          "Installing TiviMate from Google Play",
+          "Sideloading an Android APK",
+        ],
+      },
+      {
+        type: "p",
+        text: "do not provide a normal TiviMate installation on Roku.",
+      },
+      {
+        type: "p",
+        parts: [
+          "This is different from FireStick or Android TV, where Android applications can be installed through supported methods. For Fire TV setup, see ",
+          {
+            label: "how to download or install TiviMate on FireStick",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Can You Install TiviMate on a Roku TV?",
+      },
+      {
+        type: "p",
+        text: "If you have a Roku TV, the answer is still no for direct installation.",
+      },
+      {
+        type: "p",
+        text: "A Roku TV may have a large screen and HDMI ports, but the television's operating system remains Roku OS. You cannot turn the Roku TV's built-in Roku environment into Android TV simply by downloading an APK.",
+      },
+      {
+        type: "p",
+        text: "However, there is an easy workaround.",
+      },
+      { type: "h3", text: "Use an External Android TV Device" },
+      {
+        type: "p",
+        text: "You can connect a compatible Android TV or Fire TV streaming device to one of your Roku TV's HDMI ports.",
+      },
+      {
+        type: "p",
+        text: "The basic setup looks like this:",
+      },
+      {
+        type: "note",
+        text: "Roku TV → HDMI port → Android TV/Fire TV device → TiviMate",
+      },
+      {
+        type: "p",
+        text: "The Roku TV is then being used as the display, while the external device runs TiviMate.",
+      },
+      {
+        type: "p",
+        text: "This is why some people who own Roku TVs still use TiviMate. Recent TiviMate community discussions describe users running TiviMate on external Android-based devices connected to Roku televisions.",
+      },
+      { type: "h2", text: "How to Use TiviMate on Roku TV" },
+      {
+        type: "p",
+        text: "If you already own a Roku TV, you do not necessarily need a new television.",
+      },
+      { type: "h3", text: "Step 1: Get a Compatible Streaming Device" },
+      {
+        type: "p",
+        text: "Choose an Android TV or Fire TV device that supports TiviMate.",
+      },
+      {
+        type: "p",
+        text: "Common options include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Amazon Fire TV devices",
+          "Google TV devices",
+          "Android TV boxes",
+          "NVIDIA Shield TV",
+          "Other compatible Android TV streaming devices",
+        ],
+      },
+      {
+        type: "p",
+        text: "TiviMate's official application is intended for Android TV devices and remote navigation.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Connect the Device to Your Roku TV",
+      },
+      {
+        type: "p",
+        text: "Connect the streaming device to an available HDMI port on your Roku TV.",
+      },
+      {
+        type: "p",
+        text: "Use your Roku remote or TV input controls to select the HDMI input connected to the new device.",
+      },
+      {
+        type: "p",
+        text: "Your television is now acting as the screen, while the external device handles TiviMate.",
+      },
+      {
+        type: "h3",
+        text: "Step 3: Install TiviMate on the External Device",
+      },
+      {
+        type: "p",
+        text: "If the device has Google Play, search for TiviMate IPTV Player and install the official application.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For compatible Fire TV devices, TiviMate can also be installed using its supported APK installation method. Always use the official TiviMate source rather than random APK websites. Follow our ",
+          {
+            label: "FireStick TiviMate install guide",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          " or the full ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          ".",
+        ],
+      },
+      { type: "h3", text: "Step 4: Add Your IPTV Playlist" },
+      {
+        type: "p",
+        text: "TiviMate is only a media player. It does not provide live channels or an IPTV subscription.",
+      },
+      {
+        type: "p",
+        parts: [
+          "After installation, you need to add your own playlist supplied by your IPTV service. TiviMate supports playlist-based IPTV setups, including common M3U and Xtream Codes configurations. See ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "You can then organize channels, use the TV guide where supported, create favorites, and use other TiviMate features available on your plan.",
+      },
+      {
+        type: "h2",
+        text: "Can You Cast TiviMate From Your Phone to Roku?",
+      },
+      {
+        type: "p",
+        text: "Casting is not the same as installing TiviMate on Roku.",
+      },
+      {
+        type: "p",
+        text: "Simply installing TiviMate on an Android phone does not turn Roku into a TiviMate-compatible device. TiviMate itself is designed for Android TV rather than touch-based phones and tablets.",
+      },
+      {
+        type: "p",
+        text: "If your goal is to have the full TiviMate interface, remote navigation, playlist management, EPG, recording, and Multiview features, using a compatible Android TV or Fire TV device connected through HDMI is a more direct approach.",
+      },
+      { type: "h2", text: "What About Roku IPTV Apps?" },
+      {
+        type: "p",
+        text: "Roku has its own app ecosystem, so you may find other streaming or IPTV-related applications depending on your region and current Roku Store availability.",
+      },
+      {
+        type: "p",
+        text: "However, these are not TiviMate.",
+      },
+      {
+        type: "p",
+        text: 'Do not assume that an app with "TiviMate" in its name is the official TiviMate application. The official TiviMate sources identify the application as an Android TV media player.',
+      },
+      {
+        type: "p",
+        text: "If you specifically want the TiviMate interface and features, use a compatible Android TV or Fire TV device rather than trying to force an Android APK onto Roku.",
+      },
+      {
+        type: "h2",
+        text: "Can You Use Your Roku TV and TiviMate Together?",
+      },
+      {
+        type: "p",
+        text: "Yes, but they work as two separate parts of the setup.",
+      },
+      {
+        type: "p",
+        text: "Your Roku TV provides:",
+      },
+      {
+        type: "ul",
+        items: ["Display + speakers + television hardware"],
+      },
+      {
+        type: "p",
+        text: "The external Android TV or Fire TV device provides:",
+      },
+      {
+        type: "ul",
+        items: ["TiviMate + IPTV playlist + playback"],
+      },
+      {
+        type: "p",
+        text: "You can switch between the Roku TV's built-in apps and the HDMI input connected to your TiviMate device whenever you want.",
+      },
+      {
+        type: "p",
+        text: "This can be useful if you already like Roku for services available through its platform but want TiviMate for IPTV playback.",
+      },
+      { type: "h2", text: "Best Solution If You Want TiviMate" },
+      {
+        type: "p",
+        text: "If TiviMate is specifically the player you want, do not spend time looking for a hidden Roku APK installer.",
+      },
+      {
+        type: "p",
+        text: "Instead:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Keep your Roku TV if you like it.",
+          "Connect a compatible Android TV or Fire TV streaming device.",
+          "Install TiviMate on that device.",
+          "Add your IPTV playlist.",
+          "Select the corresponding HDMI input on your Roku TV.",
+          "Use the external device's remote to control TiviMate.",
+        ],
+      },
+      {
+        type: "p",
+        text: "This gives you TiviMate on your Roku TV's screen without trying to install an Android application into Roku OS.",
+      },
+      { type: "h2", text: "Best Alternatives to Roku for TiviMate" },
+      {
+        type: "p",
+        text: "If you want to use TiviMate, consider these Roku alternatives:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Fire TV Stick: A popular option for running TiviMate on compatible Fire TV devices.",
+          "Google TV: Devices such as Google TV Streamer support Android TV apps like TiviMate.",
+          "NVIDIA Shield TV: A powerful Android TV option for smooth IPTV streaming.",
+          "Android TV devices: Many Android TV and Google TV devices support TiviMate directly.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you already have a Roku TV, you can simply connect one of these compatible devices through HDMI and use TiviMate on it.",
+      },
+      { type: "h2", text: "TiviMate on Roku: Quick Answer" },
+      {
+        type: "ul",
+        items: [
+          "Can you install TiviMate directly on Roku? No.",
+          "Is there an official TiviMate Roku app? No.",
+          "Can you install the TiviMate APK on Roku? No. The Android APK is intended for compatible Android TV devices.",
+          "Can you use TiviMate with a Roku TV? Yes. Connect a compatible Android TV or Fire TV device through HDMI and run TiviMate on that external device.",
+          "Does Roku need to be removed? No. You can continue using the Roku TV and switch between Roku and the HDMI-connected TiviMate device.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The key difference is simple: TiviMate cannot currently be installed directly on Roku, but a Roku TV can still be used as the display for a compatible device running TiviMate.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you are ready to set up TiviMate on a compatible device, follow our ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          " and then learn ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ". Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Can you get TiviMate on Roku?",
+            answer:
+              "No. TiviMate does not currently have a native Roku application. The official TiviMate listing identifies Android TV as its intended platform.",
+          },
+          {
+            question: "How do I install TiviMate on Roku?",
+            answer:
+              "You cannot install TiviMate directly on Roku. Instead, connect a compatible Android TV or Fire TV device to your Roku TV through HDMI and install TiviMate on that external device.",
+          },
+          {
+            question: "Is there a TiviMate app for Roku TV?",
+            answer:
+              "There is currently no official TiviMate app for Roku TV. Roku apps are installed through the Roku Streaming Store, while TiviMate is designed for Android TV.",
+          },
+          {
+            question: "Can I install TiviMate APK on Roku?",
+            answer:
+              "No. The TiviMate APK is an Android application and cannot be installed directly on Roku OS.",
+          },
+          {
+            question: "Can I use TiviMate on a TCL Roku TV?",
+            answer:
+              "Yes, but not directly through the TCL Roku TV's built-in Roku system. Connect a compatible Android TV or Fire TV device to an HDMI port and run TiviMate on that device.",
+          },
+          {
+            question: "Can I use TiviMate on Roku Stick?",
+            answer:
+              "TiviMate cannot be installed directly on a Roku Stick. If you want TiviMate, use a compatible Android TV or Fire TV streaming device instead.",
+          },
+          {
+            question: "Can I use my Roku TV screen for TiviMate?",
+            answer:
+              "Yes. Connect an Android TV or Fire TV device to an HDMI port on the Roku TV. The external device runs TiviMate, while the Roku TV acts as the display.",
+          },
+          {
+            question: "Can I cast TiviMate from Android to Roku?",
+            answer:
+              "Installing TiviMate on an Android phone does not make Roku compatible with TiviMate. TiviMate is designed for Android TV and remote-controlled TV devices rather than phones and tablets.",
+          },
+          {
+            question: "Why can't I find TiviMate in the Roku Store?",
+            answer:
+              "Because there is currently no official TiviMate Roku application. Roku's official system allows users to browse and add apps through its Streaming Store.",
+          },
+          {
+            question: "What device should I use instead of Roku for TiviMate?",
+            answer:
+              "Use a compatible Android TV or Fire TV device. TiviMate's official platform support is centered on Android TV.",
+          },
+          {
+            question: "Can I keep Roku and use TiviMate?",
+            answer:
+              "Yes. You can keep using Roku's built-in platform and connect a separate TiviMate-compatible device to another HDMI input. Switch inputs whenever you want to use TiviMate.",
+          },
+          {
+            question: "Does TiviMate provide IPTV channels?",
+            answer:
+              "No. TiviMate is a media player and does not provide channels or IPTV content. You need to add your own playlist from a service you are authorized to use.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-fix-tivimate-buffering",
+    title: "TiviMate Buffering Fix: How to Stop TiviMate Buffering",
+    seoTitle: "TiviMate Buffering Fix: Stop Buffering, Lagging & Freezing",
+    description:
+      "Fix TiviMate buffering issues fast. Learn how to stop TiviMate buffering, adjust buffer and decoder settings, fix Wi-Fi, HLS, and IPTV provider problems.",
+    excerpt:
+      "Stop TiviMate buffering with practical checks for Wi-Fi, buffer size, decoder, HLS/MPEG-TS, VPN and IPTV provider issues.",
+    image: "/how-to-fix-tivimate-buffering.png",
+    imageAlt:
+      "TiviMate buffering fix guide showing how to stop buffering, lagging and freezing on IPTV",
+    datePublished: "2026-10-02",
+    dateModified: "2026-10-02",
+    keywords: [
+      "TiviMate buffering",
+      "TiviMate buffering fix",
+      "Stop TiviMate buffering",
+      "TiviMate buffer size",
+      "TiviMate lagging",
+      "TiviMate freezing",
+      "IPTV buffering",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "TiviMate buffering can be frustrating, especially when a channel freezes during a live match, movie, or important program. The spinning circle does not always mean your internet is slow. TiviMate buffering issues can come from your Wi-Fi, streaming device, playback settings, IPTV stream format, VPN, or the IPTV provider's server.",
+      },
+      {
+        type: "p",
+        text: "The good news is that you can usually identify the cause with a few simple tests.",
+      },
+      {
+        type: "p",
+        parts: [
+          "This guide explains how to fix TiviMate buffering, what to change in the TiviMate buffer settings, and how to determine whether the problem is actually TiviMate or your IPTV service. If you are still setting up your player, start with our ",
+          { label: "TiviMate IPTV Setup Guide", href: routes.installation },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Why Does TiviMate Keep Buffering?" },
+      {
+        type: "p",
+        text: "Before changing settings, identify when the buffering happens.",
+      },
+      {
+        type: "table",
+        headers: ["What you notice", "Possible cause"],
+        rows: [
+          ["Every channel buffers", "Internet, Wi-Fi, device, or provider"],
+          ["Only one channel buffers", "Channel or provider server"],
+          [
+            "Buffering during peak hours",
+            "Provider congestion or network routing",
+          ],
+          [
+            "TiviMate buffers but another player works",
+            "TiviMate settings or device compatibility",
+          ],
+          [
+            "4K channels buffer",
+            "Bandwidth, device decoding, or stream source",
+          ],
+          ["Buffering on multiple devices", "Internet or IPTV provider"],
+          ["Only one FireStick buffers", "Device or playback configuration"],
+        ],
+      },
+      {
+        type: "p",
+        text: "This simple diagnosis can save you from changing ten settings unnecessarily.",
+      },
+      { type: "h2", text: "1. Check Your Internet Connection First" },
+      {
+        type: "p",
+        text: "A fast internet package does not automatically guarantee smooth IPTV playback. Stability, Wi-Fi signal strength, latency, and network congestion can also affect streaming.",
+      },
+      {
+        type: "p",
+        text: "Run a speed test on the same device where TiviMate is buffering.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If possible, connect your FireStick, Android TV box, or NVIDIA Shield through Ethernet instead of Wi-Fi. A wired connection removes many problems caused by weak signals or wireless interference. Setting up on Fire TV? See ",
+          {
+            label: "how to download or install TiviMate on FireStick",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "If Ethernet is not available, move your router closer to the streaming device and reduce heavy downloads or other high-bandwidth activity on your network.",
+      },
+      { type: "h2", text: "2. Adjust the TiviMate Buffer Size" },
+      {
+        type: "p",
+        text: "The TiviMate buffer determines how much stream data is prepared before playback. A larger buffer can help absorb short network interruptions, but it is not a guaranteed solution.",
+      },
+      {
+        type: "p",
+        text: "Go to:",
+      },
+      {
+        type: "note",
+        text: "Settings → Playback → Buffer Size",
+      },
+      {
+        type: "p",
+        text: "Try a different buffer level and test the same channel for several minutes.",
+      },
+      {
+        type: "p",
+        text: 'Do not assume that "Very Large" is automatically better. Community testing shows that users have reported improvements with different settings, including None, Small, Medium, and larger values. The best setting depends on the device, network, and stream.',
+      },
+      {
+        type: "p",
+        text: "A larger buffer can also increase channel-start time, so make one change at a time and test the result.",
+      },
+      { type: "h2", text: "3. Switch the Video Decoder" },
+      {
+        type: "p",
+        text: "If TiviMate keeps buffering, freezing, stuttering, or showing playback problems, try changing the decoder.",
+      },
+      {
+        type: "p",
+        text: "Go to:",
+      },
+      {
+        type: "note",
+        text: "Settings → Playback → Video Decoder",
+      },
+      {
+        type: "p",
+        text: "Depending on your device and TiviMate version, you may see options such as Hardware, Hardware+, or Software.",
+      },
+      {
+        type: "p",
+        text: "If Hardware decoding is causing problems, test Software decoding. If Software performs worse, switch back.",
+      },
+      {
+        type: "p",
+        text: "This is particularly useful when buffering happens on one device but not another. Recent FireStick users have also reported playback problems where switching to Software decoding helped, although device and Fire OS differences mean this is not a universal fix.",
+      },
+      { type: "h2", text: "4. Try HLS Instead of MPEG-TS" },
+      {
+        type: "p",
+        parts: [
+          "If you use an Xtream Codes playlist, changing the stream output format can sometimes improve playback. Need help with the playlist first? Follow ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "Go to:",
+      },
+      {
+        type: "note",
+        text: "Settings → Playlists → Your Playlist → Xtream Codes Parameters → Output Format",
+      },
+      {
+        type: "p",
+        text: "If the current format is MPEG-TS, test HLS. If you are already using HLS, test MPEG-TS.",
+      },
+      {
+        type: "p",
+        text: "There is no single format that is best for every IPTV service. Recent TiviMate users have reported that changing from MPEG-TS to HLS solved buffering after a provider-side service change, while other users have found the opposite.",
+      },
+      {
+        type: "p",
+        text: "Always test the same channel after changing the format so you can compare the results.",
+      },
+      {
+        type: "h2",
+        text: "5. Test the Same Channel in Another Player",
+      },
+      {
+        type: "p",
+        text: "This is one of the most useful tests for TiviMate buffering issues.",
+      },
+      {
+        type: "p",
+        text: "Play the exact same IPTV channel using another compatible player on the same device.",
+      },
+      {
+        type: "p",
+        text: "If the channel buffers in both players, the problem is more likely to be your network, device, or IPTV stream.",
+      },
+      {
+        type: "p",
+        text: "If it works smoothly in another player but constantly buffers in TiviMate, investigate TiviMate's playback settings, decoder, stream format, or device compatibility.",
+      },
+      {
+        type: "p",
+        text: "Several TiviMate community discussions describe exactly this situation, where users had good internet and the same service worked in another player.",
+      },
+      {
+        type: "h2",
+        text: "6. Check Whether Your IPTV Provider Is the Problem",
+      },
+      {
+        type: "p",
+        text: "TiviMate is a player. It does not control the IPTV provider's servers.",
+      },
+      {
+        type: "p",
+        text: "If only certain channels buffer while the rest work normally, the individual stream or provider server deserves attention.",
+      },
+      {
+        type: "p",
+        text: "You may also notice buffering:",
+      },
+      {
+        type: "ul",
+        items: [
+          "During popular live sports",
+          "During evening peak hours",
+          "On specific channels",
+          "On 4K streams but not HD",
+          "Across multiple devices using the same service",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "Try another channel from the same group. If other channels play normally, contact your IPTV provider and report the affected channel. Need a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+      { type: "h2", text: "7. Test With and Without a VPN" },
+      {
+        type: "p",
+        text: "A VPN can sometimes improve IPTV playback if your ISP's routing is causing problems, but it can also make streaming worse by adding latency or reducing available bandwidth.",
+      },
+      {
+        type: "p",
+        text: "If you normally use a VPN, temporarily test TiviMate without it.",
+      },
+      {
+        type: "p",
+        text: "If you do not use one, testing a reputable VPN can help determine whether your ISP or routing path is contributing to the problem.",
+      },
+      {
+        type: "p",
+        text: "Do not assume that a VPN is automatically a buffering fix. The test is what matters.",
+      },
+      { type: "h2", text: "8. Restart TiviMate and Your Device" },
+      {
+        type: "p",
+        text: "Simple, but worth doing.",
+      },
+      {
+        type: "p",
+        text: "Completely close TiviMate and reopen it. If the problem continues, restart your FireStick, Android TV device, or streaming box.",
+      },
+      {
+        type: "p",
+        text: "You can also clear the TiviMate cache through your device's application settings. Avoid clearing app data unless necessary because doing so may remove saved playlists and settings.",
+      },
+      {
+        type: "h2",
+        text: "9. What If TiviMate Buffers Every Few Seconds?",
+      },
+      {
+        type: "p",
+        text: "If TiviMate buffers repeatedly every few seconds, work through these checks in order:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Test another channel.",
+          "Test the same channel in another player.",
+          "Check your internet connection.",
+          "Change the TiviMate buffer size.",
+          "Switch the video decoder.",
+          "Test HLS and MPEG-TS if using Xtream Codes.",
+          "Test with and without your VPN.",
+          "Check the IPTV provider.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Do not change everything at once. Change one setting, test the same channel, and then move to the next step.",
+      },
+      { type: "h2", text: "Final TiviMate Buffering Checklist" },
+      {
+        type: "p",
+        text: "If you want the quickest troubleshooting process, use this order:",
+      },
+      {
+        type: "note",
+        text: "Internet → Wi-Fi/Ethernet → Buffer Size → Decoder → HLS/MPEG-TS → VPN → Another Player → IPTV Provider",
+      },
+      {
+        type: "p",
+        text: "This approach helps you determine whether the issue is local or provider-related instead of repeatedly reinstalling TiviMate.",
+      },
+      {
+        type: "p",
+        parts: [
+          'Most importantly, there is no universal "best TiviMate setting." Recent community discussions show different results depending on the device, stream format, IPTV service, and network. Related reading: ',
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          " and ",
+          {
+            label: "TiviMate Stalker Portal & multiple screen errors",
+            href: blogPostPath(blogSlugs.stalkerErrors),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Why does TiviMate keep buffering?",
+            answer:
+              "TiviMate can buffer because of an unstable connection, Wi-Fi interference, device limitations, incorrect playback settings, an unsuitable stream format, VPN routing, or an overloaded IPTV server. Test the same channel in another player to help identify the cause.",
+          },
+          {
+            question: "How do I fix TiviMate buffering?",
+            answer:
+              "Start by checking your connection, then adjust Settings → Playback → Buffer Size. If that does not help, switch the video decoder and test HLS or MPEG-TS for Xtream Codes playlists. If the same channel buffers in another player, investigate your network or IPTV provider.",
+          },
+          {
+            question: "What is the best TiviMate buffer size?",
+            answer:
+              "There is no single setting that works for every device and connection. A larger buffer can absorb short network interruptions but may increase channel loading time. Test different levels and keep the setting that gives you the best balance between stability and channel switching.",
+          },
+          {
+            question: "Why is TiviMate buffering with good internet?",
+            answer:
+              "Internet speed is only one part of streaming performance. Your Wi-Fi quality, routing, device, decoder, stream format, IPTV server, or ISP can still cause buffering even when a speed test shows high download speeds. Users have reported this exact situation with wired high-speed connections.",
+          },
+          {
+            question:
+              "Why does TiviMate buffer but IPTV Smarters does not?",
+            answer:
+              "If the same channel works in another player on the same device and network, the problem may be related to TiviMate's playback configuration, decoder, or compatibility with that stream. Test the buffer, decoder, and stream format before changing your IPTV service.",
+          },
+          {
+            question:
+              "Should I use HLS or MPEG-TS to stop TiviMate buffering?",
+            answer:
+              "Test both if your IPTV provider supports them. Some users report smoother playback after switching from MPEG-TS to HLS, while others get better results with MPEG-TS. The correct choice depends on your IPTV server and connection.",
+          },
+          {
+            question: "Why does TiviMate buffer only during live sports?",
+            answer:
+              "Live sports can place heavy demand on IPTV servers because many users watch the same streams simultaneously. If buffering appears mainly during major events while normal channels work, the provider's server capacity or network routing may be involved.",
+          },
+          {
+            question: "Does TiviMate Premium prevent buffering?",
+            answer:
+              "No. TiviMate Premium provides additional player features, but it does not guarantee that an IPTV stream will never buffer. Your internet connection, device, stream source, and IPTV provider still affect playback.",
+          },
+          {
+            question: "Can a VPN fix TiviMate buffering?",
+            answer:
+              "Sometimes, but not always. A VPN may help if routing or ISP traffic management is contributing to the problem. However, a VPN can also add latency or reduce performance. Test TiviMate with the VPN both enabled and disabled to compare.",
+          },
+          {
+            question:
+              "Why does TiviMate buffer on FireStick but work on another device?",
+            answer:
+              "The FireStick may have different hardware, available memory, decoder support, Wi-Fi performance, or operating-system behavior. Try changing the video decoder and buffer size first, then compare the same channel on both devices.",
+          },
+          {
+            question: "Why does TiviMate buffer every few seconds?",
+            answer:
+              "Repeated buffering can indicate an unstable connection, unsuitable decoder, stream-format issue, provider congestion, or device problem. Test another channel and then play the same channel in another player to isolate the cause.",
+          },
+          {
+            question: "Should I reinstall TiviMate if it keeps buffering?",
+            answer:
+              "Reinstalling should not be your first step. Start with the network, buffer size, decoder, stream format, and provider checks. If TiviMate itself is behaving abnormally after those tests, clearing its cache or reinstalling can be considered.",
+          },
+        ],
+      },
+    ],
+  },
   {
     slug: "tivimate-errors-stalker-portal-and-multiple-screen-issues",
     title: "TiviMate Errors: Stalker Portal & Multiple Screen Issues Fix",

@@ -30,9 +30,10 @@ export async function generateMetadata({
 
   const pageUrl = canonicalUrl(`${routes.blog}/${post.slug}`);
   const imageUrl = absoluteAssetUrl(post.image);
+  const metaTitle = post.seoTitle ?? post.title;
 
   return {
-    title: post.title,
+    title: metaTitle,
     description: post.description,
     keywords: post.keywords,
     alternates: {
@@ -41,7 +42,7 @@ export async function generateMetadata({
     openGraph: {
       type: "article",
       url: pageUrl,
-      title: post.title,
+      title: metaTitle,
       description: post.description,
       siteName: siteConfig.name,
       locale: "en_GB",
@@ -58,7 +59,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: metaTitle,
       description: post.description,
       images: [imageUrl],
     },
