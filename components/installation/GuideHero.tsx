@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { BookOpen, Headphones, ShieldCheck } from "lucide-react";
+import { BookOpen, MessageCircle, ShieldCheck } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { routes } from "@/lib/site";
+import { WhatsAppCta } from "@/components/ui/WhatsAppCta";
+import { supportConfig } from "@/lib/site";
 
 export function GuideHero() {
   return (
@@ -48,10 +49,14 @@ export function GuideHero() {
                   <span>Start Setup Steps</span>
                 </Link>
 
-                <Link href={routes.contact} className="telvis-cta-secondary">
-                  <Headphones size={16} strokeWidth={2} aria-hidden="true" />
-                  <span>Contact Support</span>
-                </Link>
+                <WhatsAppCta
+                  href={supportConfig.whatsappUrl}
+                  className="telvis-cta-secondary"
+                  aria-label="Contact support on WhatsApp"
+                >
+                  <MessageCircle size={16} strokeWidth={2} aria-hidden="true" />
+                  <span>Chat on WhatsApp</span>
+                </WhatsAppCta>
               </div>
             </ScrollReveal>
           </div>

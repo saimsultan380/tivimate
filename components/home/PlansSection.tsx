@@ -8,10 +8,11 @@ import {
   CardRevealPart,
 } from "@/components/ui/CardReveal";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { WhatsAppCta } from "@/components/ui/WhatsAppCta";
 import { staggerDelay } from "@/lib/motion";
 import { planCardFeatures, planRows } from "@/lib/plans-data";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
-import { routes } from "@/lib/site";
+import { routes, supportConfig } from "@/lib/site";
 
 export function PlansSection() {
   return (
@@ -62,16 +63,17 @@ export function PlansSection() {
                 ))}
               </CardRevealList>
               <CardRevealPart variant="content">
-                <Link
+                <WhatsAppCta
                   href={plan.href}
                   className={
                     plan.featured
                       ? "telvis-cta-primary telvis-plan-cta"
                       : "telvis-cta-glass telvis-plan-cta"
                   }
+                  aria-label={`${plan.cta} on WhatsApp`}
                 >
                   {plan.cta}
-                </Link>
+                </WhatsAppCta>
               </CardRevealPart>
             </CardReveal>
           ))}
@@ -82,9 +84,13 @@ export function PlansSection() {
             <Link href={routes.installation} className="telvis-cta-outline">
               How to Set Up TiviMate
             </Link>
-            <Link href={routes.contact} className="telvis-cta-primary">
+            <WhatsAppCta
+              href={supportConfig.plansUrl}
+              className="telvis-cta-primary"
+              aria-label="Ask about plans on WhatsApp"
+            >
               Ask About Plans
-            </Link>
+            </WhatsAppCta>
           </div>
         </ScrollReveal>
       </div>

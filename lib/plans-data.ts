@@ -1,3 +1,5 @@
+import { buildWhatsAppUrl } from "@/lib/site";
+
 export const plansPageSeo = {
   title: "TiviMate IPTV Subscription – Plans & Pricing",
   description:
@@ -36,7 +38,9 @@ export const planRows = [
     summary:
       "Choose this option if you prefer flexibility and a shorter subscription period.",
     cta: "Choose 1 Month",
-    href: "/checkout?plan=1-month",
+    href: buildWhatsAppUrl(
+      "Hi, I'm interested in the 1 Month TiviMate IPTV plan ($12.99). Please help me order.",
+    ),
     featured: false,
   },
   {
@@ -48,7 +52,9 @@ export const planRows = [
     summary:
       "A practical option for regular viewers who want longer access.",
     cta: "Choose 3 Months",
-    href: "/checkout?plan=3-month",
+    href: buildWhatsAppUrl(
+      "Hi, I'm interested in the 3 Months TiviMate IPTV plan ($29.99). Please help me order.",
+    ),
     featured: false,
   },
   {
@@ -60,7 +66,9 @@ export const planRows = [
     summary:
       "Suitable for customers who prefer a longer subscription and fewer renewals.",
     cta: "Choose 6 Months",
-    href: "/checkout?plan=6-month",
+    href: buildWhatsAppUrl(
+      "Hi, I'm interested in the 6 Months TiviMate IPTV plan ($49.99). Please help me order.",
+    ),
     featured: true,
   },
   {
@@ -72,7 +80,9 @@ export const planRows = [
     summary:
       "Designed for customers who want the longest available subscription period.",
     cta: "Choose 12 Months",
-    href: "/checkout?plan=12-month",
+    href: buildWhatsAppUrl(
+      "Hi, I'm interested in the 12 Months TiviMate IPTV plan ($69.99). Please help me order.",
+    ),
     featured: false,
   },
 ] as const;

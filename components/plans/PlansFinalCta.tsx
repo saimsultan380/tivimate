@@ -1,8 +1,9 @@
-import { ArrowRight, MonitorPlay } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
-import { routes } from "@/lib/site";
+import { WhatsAppCta } from "@/components/ui/WhatsAppCta";
+import { routes, supportConfig } from "@/lib/site";
 
 export function PlansFinalCta() {
   return (
@@ -22,7 +23,7 @@ export function PlansFinalCta() {
                   Ready to Choose Your <TitleAccent>IPTV</TitleAccent> Plan?
                 </>
               }
-              lead="Choose the subscription that fits your needs and follow our installation guide once your access details are ready."
+              lead="Message us on WhatsApp to order your plan, then follow our installation guide once your access details are ready."
               align="center"
               animate={false}
             />
@@ -30,10 +31,14 @@ export function PlansFinalCta() {
 
           <CardRevealPart>
             <div className="telvis-actions telvis-final-actions">
-              <Link href="#plans" className="telvis-cta-primary">
-                <MonitorPlay size={16} strokeWidth={2} aria-hidden="true" />
-                <span>Choose Your IPTV Plan</span>
-              </Link>
+              <WhatsAppCta
+                href={supportConfig.orderUrl}
+                className="telvis-cta-primary"
+                aria-label="Order IPTV plan on WhatsApp"
+              >
+                <MessageCircle size={16} strokeWidth={2} aria-hidden="true" />
+                <span>Order on WhatsApp</span>
+              </WhatsAppCta>
               <Link href={routes.installation} className="telvis-cta-secondary">
                 Open Installation Guide
                 <ArrowRight size={16} aria-hidden="true" />

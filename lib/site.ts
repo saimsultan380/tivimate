@@ -49,14 +49,22 @@ export const routes = {
 /** Digits only, country code included (example: 447700900123). */
 const whatsappNumber = "17164943064";
 
-const whatsappMessage = encodeURIComponent(
-  "Hi, I need help with my TiviMate IPTV subscription.",
-);
+export function buildWhatsAppUrl(message: string): string {
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+}
 
 export const supportConfig = {
   email: "support@tivimateplayer.us",
   whatsapp: "+1 716 494 3064",
-  whatsappUrl: `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`,
+  whatsappUrl: buildWhatsAppUrl(
+    "Hi, I need help with my TiviMate IPTV subscription.",
+  ),
+  orderUrl: buildWhatsAppUrl(
+    "Hi, I'd like to order a TiviMate IPTV subscription.",
+  ),
+  plansUrl: buildWhatsAppUrl(
+    "Hi, I'd like to ask about your TiviMate IPTV plans.",
+  ),
   downloaderCode: "",
 } as const;
 

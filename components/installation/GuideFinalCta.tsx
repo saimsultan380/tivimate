@@ -1,8 +1,9 @@
-import { ArrowRight, Headphones } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
-import { routes } from "@/lib/site";
+import { WhatsAppCta } from "@/components/ui/WhatsAppCta";
+import { routes, supportConfig } from "@/lib/site";
 
 export function GuideFinalCta() {
   return (
@@ -22,7 +23,7 @@ export function GuideFinalCta() {
                   Still Stuck With <TitleAccent>TiviMate</TitleAccent> Setup?
                 </>
               }
-              lead="If you’ve checked your credentials and followed the setup steps but still cannot connect, contact our support team."
+              lead="If you’ve checked your credentials and followed the setup steps but still cannot connect, message us on WhatsApp."
               align="center"
               animate={false}
             />
@@ -30,10 +31,14 @@ export function GuideFinalCta() {
 
           <CardRevealPart>
             <div className="telvis-actions telvis-final-actions">
-              <Link href={routes.contact} className="telvis-cta-primary">
-                <Headphones size={16} strokeWidth={2} aria-hidden="true" />
-                <span>Contact Support</span>
-              </Link>
+              <WhatsAppCta
+                href={supportConfig.whatsappUrl}
+                className="telvis-cta-primary"
+                aria-label="Contact support on WhatsApp"
+              >
+                <MessageCircle size={16} strokeWidth={2} aria-hidden="true" />
+                <span>Chat on WhatsApp</span>
+              </WhatsAppCta>
               <Link href={routes.plans} className="telvis-cta-secondary">
                 View IPTV Plans
                 <ArrowRight size={16} aria-hidden="true" />

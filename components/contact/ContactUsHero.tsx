@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Headphones, ListChecks, ShieldCheck } from "lucide-react";
+import { ListChecks, MessageCircle, ShieldCheck } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { routes } from "@/lib/site";
+import { WhatsAppCta } from "@/components/ui/WhatsAppCta";
+import { routes, supportConfig } from "@/lib/site";
 
 export function ContactUsHero() {
   return (
@@ -41,10 +42,14 @@ export function ContactUsHero() {
 
             <ScrollReveal delay={0.26} variant="cta">
               <div className="telvis-actions">
-                <Link href="#contact-form" className="telvis-cta-primary">
-                  <Headphones size={16} strokeWidth={2} aria-hidden="true" />
-                  <span>Contact Support</span>
-                </Link>
+                <WhatsAppCta
+                  href={supportConfig.whatsappUrl}
+                  className="telvis-cta-primary"
+                  aria-label="Contact support on WhatsApp"
+                >
+                  <MessageCircle size={16} strokeWidth={2} aria-hidden="true" />
+                  <span>Chat on WhatsApp</span>
+                </WhatsAppCta>
 
                 <Link href={routes.installation} className="telvis-cta-secondary">
                   <ListChecks size={16} strokeWidth={2} aria-hidden="true" />

@@ -1,5 +1,4 @@
 import { CalendarDays, Check } from "lucide-react";
-import Link from "next/link";
 import {
   CardReveal,
   CardRevealList,
@@ -9,6 +8,7 @@ import {
 import { GlassIcon } from "@/components/ui/GlassIcon";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
+import { WhatsAppCta } from "@/components/ui/WhatsAppCta";
 import { staggerDelay } from "@/lib/motion";
 import { planCardFeatures, planRows } from "@/lib/plans-data";
 
@@ -62,16 +62,17 @@ export function PlansCompareSection() {
                 ))}
               </CardRevealList>
               <CardRevealPart variant="content">
-                <Link
+                <WhatsAppCta
                   href={plan.href}
                   className={
                     plan.featured
                       ? "telvis-cta-primary telvis-plan-cta"
                       : "telvis-cta-glass telvis-plan-cta"
                   }
+                  aria-label={`${plan.cta} on WhatsApp`}
                 >
                   {plan.cta}
-                </Link>
+                </WhatsAppCta>
               </CardRevealPart>
             </CardReveal>
           ))}
@@ -79,7 +80,7 @@ export function PlansCompareSection() {
 
         <ScrollReveal delay={0.08} variant="text">
           <p className="telvis-section-note is-center">
-            All plan details should be displayed clearly before checkout.
+            Choose a plan to continue on WhatsApp and complete your order.
           </p>
         </ScrollReveal>
       </div>
