@@ -8,6 +8,9 @@ export const blogSlugs = {
   bufferingFix: "how-to-fix-tivimate-buffering",
   rokuInstall: "how-to-install-tivimate-on-roku",
   epgNotUpdating: "tivimate-epg-not-updating",
+  windows11Install: "how-to-install-tivimate-on-windows-11",
+  chromecastGoogleTv:
+    "install-tivimate-on-chromecast-google-tv",
 } as const;
 
 export function blogPostPath(slug: string): string {
@@ -50,6 +53,1735 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "install-tivimate-on-chromecast-google-tv",
+    title: "How to Install TiviMate on Chromecast with Google TV in 5 Minutes",
+    seoTitle: "Install TiviMate on Chromecast with Google TV in 5 Minutes",
+    description:
+      "Learn how to install TiviMate on Chromecast with Google TV, add M3U or Xtream Codes, set up EPG, fix buffering, and solve common installation issues.",
+    excerpt:
+      "Install TiviMate on Chromecast with Google TV from the Play Store, add your playlist, set up EPG, and fix buffering or storage issues.",
+    image: "/install-tivimate-on-chromecast-google-tv.png",
+    imageAlt:
+      "How to install TiviMate on Chromecast with Google TV",
+    datePublished: "2026-10-10",
+    dateModified: "2026-10-10",
+    keywords: [
+      "Install TiviMate on Chromecast",
+      "TiviMate Chromecast with Google TV",
+      "TiviMate Google TV",
+      "TiviMate Play Store",
+      "TiviMate Chromecast 4K",
+      "TiviMate Chromecast HD",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "If you want to install TiviMate on Chromecast with Google TV, the process is much easier than many older guides suggest.",
+      },
+      {
+        type: "p",
+        text: "You normally do not need Downloader, an APK file, or complicated sideloading steps. Chromecast with Google TV runs Google TV and provides access to the Google Play Store, so you can search for TiviMate IPTV Player and install the app directly.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is designed for Android TV and remote control navigation, making Chromecast with Google TV a suitable device for the app. It supports M3U, Xtream Codes, and Stalker Portal playlists, along with features such as EPG, favourites, recording, and multiview. TiviMate itself does not provide TV channels or an IPTV subscription. You need to add your own playlist from a lawful IPTV source.",
+      },
+      {
+        type: "h2",
+        text: "Can You Install TiviMate on Chromecast with Google TV?",
+      },
+      {
+        type: "p",
+        text: "Yes. TiviMate works on Chromecast with Google TV.",
+      },
+      {
+        type: "p",
+        text: "There is an important distinction, though.",
+      },
+      {
+        type: "p",
+        text: "The original Chromecast devices were mainly casting receivers. They do not provide the same app environment as Chromecast with Google TV.",
+      },
+      {
+        type: "p",
+        text: "Chromecast with Google TV HD and 4K are different. They have:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Google TV",
+          "A remote control",
+          "Google Play Store",
+          "Android TV-based software",
+          "Support for installing compatible TV applications",
+        ],
+      },
+      {
+        type: "p",
+        text: "That means you can install TiviMate directly rather than casting TiviMate from your phone.",
+      },
+      {
+        type: "p",
+        text: "If you have an older Chromecast without Google TV, you cannot simply install TiviMate on it because it does not work like an Android TV streaming device.",
+      },
+      {
+        type: "h2",
+        text: "How to Install TiviMate on Chromecast with Google TV",
+      },
+      {
+        type: "p",
+        text: "The easiest method is the official Google Play Store installation.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Turn On Your Chromecast with Google TV",
+      },
+      {
+        type: "p",
+        text: "Connect the Chromecast with Google TV to your television using HDMI and make sure it has internet access.",
+      },
+      {
+        type: "p",
+        text: "Complete the initial Google TV setup if you have not already done so.",
+      },
+      {
+        type: "p",
+        text: "You should have:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your Chromecast connected to HDMI",
+          "The Chromecast remote paired",
+          "A Wi-Fi connection",
+          "A Google account signed in",
+        ],
+      },
+      { type: "h3", text: "Step 2: Open the Apps Section" },
+      {
+        type: "p",
+        text: "From the Google TV home screen, move to the Apps section.",
+      },
+      {
+        type: "p",
+        text: "You can also use the Google Assistant or search button on the remote.",
+      },
+      {
+        type: "p",
+        text: "Google's current Google TV instructions allow users to search for an app by name and install it directly when it is available.",
+      },
+      { type: "h3", text: "Step 3: Search for TiviMate" },
+      {
+        type: "p",
+        text: "Search for:",
+      },
+      {
+        type: "note",
+        text: "TiviMate IPTV Player",
+      },
+      {
+        type: "p",
+        text: "Make sure you select the correct application.",
+      },
+      {
+        type: "p",
+        text: "Check that the developer is Armobsoft FZE.",
+      },
+      {
+        type: "p",
+        text: "Do not confuse TiviMate with unrelated IPTV applications that may appear in the search results.",
+      },
+      { type: "h3", text: "Step 4: Select Install" },
+      {
+        type: "p",
+        text: "Open the TiviMate listing and select Install.",
+      },
+      {
+        type: "p",
+        text: "Wait for the download and installation to finish.",
+      },
+      {
+        type: "p",
+        text: "When it is ready, select Open.",
+      },
+      {
+        type: "p",
+        text: "That's it.",
+      },
+      {
+        type: "p",
+        text: "You have now installed the TiviMate IPTV Player on Chromecast with Google TV.",
+      },
+      {
+        type: "p",
+        text: "You do not normally need to download a TiviMate APK or use a Downloader code for this device.",
+      },
+      {
+        type: "h2",
+        text: "What If TiviMate Does Not Appear in the Play Store?",
+      },
+      {
+        type: "p",
+        text: "This is one of the most common points of confusion.",
+      },
+      {
+        type: "p",
+        text: "First, check that you actually have Chromecast with Google TV, rather than an older Chromecast model.",
+      },
+      {
+        type: "p",
+        text: "Then try:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Restarting Chromecast.",
+          "Checking your internet connection.",
+          "Opening Google Play again.",
+          "Searching for the full name, TiviMate IPTV Player.",
+          "Checking that your Google TV software is updated.",
+          "Checking whether the app is available for your device or region.",
+        ],
+      },
+      {
+        type: "p",
+        text: "There have been recent user reports of TiviMate not appearing in Google Play in particular circumstances, including regional availability questions. In those cases, users have discussed sideloading as an alternative. However, if the app is available in your Play Store, the direct installation is the cleaner option.",
+      },
+      {
+        type: "p",
+        text: "Do not jump to sideloading before checking the normal Play Store route.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Is Installed, But There Are No Channels",
+      },
+      {
+        type: "p",
+        text: "This is normal.",
+      },
+      {
+        type: "p",
+        text: "Installing TiviMate does not automatically provide live TV channels.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is an IPTV player. It needs a playlist or compatible source before it can display your channels.",
+      },
+      {
+        type: "p",
+        text: "The official TiviMate listing supports common playlist methods, including:",
+      },
+      {
+        type: "ul",
+        items: ["M3U", "Xtream Codes", "Stalker Portal"],
+      },
+      {
+        type: "p",
+        text: "You need the appropriate details from your IPTV provider or another lawful IPTV source.",
+      },
+      { type: "h3", text: "M3U Playlist" },
+      {
+        type: "p",
+        text: "If you received an M3U URL, choose the M3U playlist option and enter the URL exactly as provided.",
+      },
+      { type: "h3", text: "Xtream Codes" },
+      {
+        type: "p",
+        text: "If your provider gave you Xtream Codes details, you will normally need:",
+      },
+      {
+        type: "ul",
+        items: ["Server URL", "Username", "Password"],
+      },
+      {
+        type: "p",
+        text: "Enter each field carefully.",
+      },
+      {
+        type: "p",
+        text: "A very common mistake is accidentally adding a space to the server URL when typing it with the remote.",
+      },
+      {
+        type: "p",
+        text: "If you get an error after entering Xtream Codes, check the URL character by character before changing other settings.",
+      },
+      { type: "h3", text: "Stalker Portal" },
+      {
+        type: "p",
+        text: "If your provider uses a Stalker Portal, select that playlist method and enter the portal information supplied by the provider.",
+      },
+      {
+        type: "p",
+        text: "Some Stalker Portal services also require a MAC address.",
+      },
+      {
+        type: "p",
+        text: "If that happens, do not assume they need the physical MAC address of your Chromecast.",
+      },
+      {
+        type: "p",
+        parts: [
+          "TiviMate can generate a MAC address for its Stalker Portal playlist. Recent TiviMate users have specifically discussed this distinction because providers sometimes ask for a MAC address beginning with a particular prefix. For related troubleshooting, see our ",
+          {
+            label: "Stalker Portal and Multiple Screen Issues guide",
+            href: blogPostPath(blogSlugs.stalkerErrors),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Add an IPTV Playlist to TiviMate",
+      },
+      {
+        type: "p",
+        text: "After opening TiviMate:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Select Add Playlist.",
+          "Choose your playlist method.",
+          "Enter your provider's information.",
+          "Give TiviMate time to load the playlist.",
+          "Wait for the channel groups to appear.",
+          "Open a few channels to test playback.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you are using an M3U or Xtream Codes playlist, make sure your login information is current.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For a complete walkthrough, use our ",
+          {
+            label: "How to Add Playlist to TiviMate guide",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Set Up the EPG on Chromecast with Google TV",
+      },
+      {
+        type: "p",
+        text: "EPG means Electronic Program Guide.",
+      },
+      {
+        type: "p",
+        text: "It provides the programme information you see in TiviMate's TV guide.",
+      },
+      {
+        type: "p",
+        text: "Your IPTV source may provide EPG automatically, or it may give you a separate EPG URL.",
+      },
+      {
+        type: "p",
+        text: "If the guide is empty:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Check your IPTV provider's EPG information.",
+          "Make sure the correct EPG source is assigned.",
+          "Update the EPG.",
+          "Check channel matching.",
+          "Restart TiviMate if necessary.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If channels work but the guide says No Information, do not immediately remove your playlist.",
+      },
+      {
+        type: "p",
+        text: "The problem may be with the EPG source rather than TiviMate.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For detailed troubleshooting, see our ",
+          {
+            label: "TiviMate EPG Not Updating Fixes guide",
+            href: blogPostPath(blogSlugs.epgNotUpdating),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "TiviMate Buffering on Chromecast with Google TV",
+      },
+      {
+        type: "p",
+        text: "Chromecast with Google TV can run TiviMate well, but buffering is not always caused by the device.",
+      },
+      {
+        type: "p",
+        text: "Possible causes include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Weak Wi-Fi",
+          "Network congestion",
+          "IPTV stream problems",
+          "Provider server issues",
+          "Large or overloaded playlists",
+          "Device storage problems",
+          "Playback or decoder compatibility",
+          "Other applications consuming system resources",
+        ],
+      },
+      {
+        type: "p",
+        text: "Start by testing several channels.",
+      },
+      {
+        type: "p",
+        text: "If one channel buffers while others play normally, the individual stream may be the problem.",
+      },
+      {
+        type: "p",
+        text: "If every channel buffers, check your network and device first.",
+      },
+      { type: "h3", text: "Try These Quick Fixes" },
+      {
+        type: "ul",
+        items: [
+          "Restart Chromecast with Google TV.",
+          "Restart your router.",
+          "Test another channel.",
+          "Move the device closer to your router.",
+          "Use a suitable Ethernet adapter if possible.",
+          "Clear TiviMate's cache.",
+          "Close unnecessary background applications.",
+          "Check whether the same playlist works on another compatible device.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Recent Reddit users generally report that TiviMate works well on Chromecast with Google TV, although some users prefer newer Google TV hardware because of responsiveness and storage. Other users report that older Chromecast 4K devices still run TiviMate smoothly when the device is kept relatively light.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For more troubleshooting steps, see our ",
+          {
+            label: "TiviMate Buffering Fix guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Chromecast with Google TV Storage Problem",
+      },
+      {
+        type: "p",
+        text: "Storage is worth checking because Chromecast with Google TV has limited internal storage.",
+      },
+      {
+        type: "p",
+        text: "If TiviMate refuses to install, update, or behave normally, check your available storage.",
+      },
+      {
+        type: "p",
+        text: "Go to the device's storage settings and remove applications you no longer use.",
+      },
+      {
+        type: "p",
+        text: "You can also clear the cache of large applications.",
+      },
+      {
+        type: "p",
+        text: "Be careful not to confuse:",
+      },
+      {
+        type: "note",
+        text: "Clear Cache with Clear Data.",
+      },
+      {
+        type: "p",
+        text: "Clearing data can reset an application's stored information.",
+      },
+      {
+        type: "p",
+        text: "If you have a large number of applications installed, freeing storage can also make the overall Google TV experience more responsive.",
+      },
+      {
+        type: "h2",
+        text: "How to Make TiviMate Run Better on Chromecast with Google TV",
+      },
+      {
+        type: "p",
+        text: "You do not need to change dozens of settings to get a good experience.",
+      },
+      {
+        type: "p",
+        text: "Start with the basics.",
+      },
+      { type: "h3", text: "Keep the Device Updated" },
+      {
+        type: "p",
+        text: "Install available Google TV system updates and keep TiviMate updated through Google Play when updates are available.",
+      },
+      { type: "h3", text: "Remove Unused Apps" },
+      {
+        type: "p",
+        text: "A crowded device can leave less storage and resources available for the applications you actually use.",
+      },
+      { type: "h3", text: "Use a Stable Network" },
+      {
+        type: "p",
+        text: "For live IPTV, connection stability matters more than simply having a high advertised internet speed.",
+      },
+      {
+        type: "p",
+        text: "If possible, use a strong Wi-Fi connection or a compatible Ethernet setup.",
+      },
+      { type: "h3", text: "Keep Your Playlist Manageable" },
+      {
+        type: "p",
+        text: "Very large playlists can take longer to load and process.",
+      },
+      {
+        type: "p",
+        text: "If your provider gives you hundreds or thousands of channels that you never watch, organising or hiding unnecessary groups can make navigation easier.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Premium on Chromecast with Google TV",
+      },
+      {
+        type: "p",
+        text: "You can use TiviMate Premium features on Chromecast with Google TV.",
+      },
+      {
+        type: "p",
+        text: "However, there are two separate things to understand:",
+      },
+      {
+        type: "ul",
+        items: [
+          "TiviMate Premium and your IPTV subscription are not the same.",
+          "TiviMate Premium unlocks features within the player. It does not provide live TV channels.",
+          "Your IPTV playlist or subscription comes from your IPTV provider or another lawful source.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The official TiviMate listing makes this distinction clear.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you want to understand what Premium actually adds, see our ",
+          {
+            label: "TiviMate Premium vs Free guide",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Do You Need TiviMate Companion?" },
+      {
+        type: "p",
+        text: "TiviMate Companion is used for certain Premium-related functions and device management, particularly where Google Play is not available.",
+      },
+      {
+        type: "p",
+        text: "If you are using Chromecast with Google TV and can access Google Play normally, the installation process is simpler because the device already has the Play Store.",
+      },
+      {
+        type: "p",
+        text: "Do not install random “TiviMate Companion” APKs from unofficial websites.",
+      },
+      {
+        type: "p",
+        text: "Use the official application source whenever possible.",
+      },
+      {
+        type: "h2",
+        text: "Chromecast with Google TV HD vs 4K for TiviMate",
+      },
+      {
+        type: "p",
+        text: "Both versions can be used with TiviMate.",
+      },
+      {
+        type: "p",
+        text: "The main difference is the hardware and video output capability.",
+      },
+      {
+        type: "table",
+        headers: [
+          "Features",
+          "Chromecast with Google TV HD",
+          "Chromecast with Google TV 4K",
+        ],
+        rows: [
+          ["TiviMate", "Yes", "Yes"],
+          ["Google TV", "Yes", "Yes"],
+          ["Google Play", "Yes", "Yes"],
+          ["HD output", "Yes", "Yes"],
+          ["4K output", "No", "Yes"],
+          ["TiviMate EPG", "Yes", "Yes"],
+          ["M3U playlists", "Yes", "Yes"],
+          ["Xtream Codes", "Yes", "Yes"],
+          ["Stalker Portal", "Yes", "Yes"],
+        ],
+      },
+      {
+        type: "p",
+        text: "If you only have a 1080p television, the HD version can be sufficient.",
+      },
+      {
+        type: "p",
+        text: "If you have a 4K television and want 4K playback, the 4K model is the more appropriate choice.",
+      },
+      {
+        type: "h2",
+        text: "Chromecast with Google TV vs Google TV Streamer for TiviMate",
+      },
+      {
+        type: "p",
+        text: "If you are choosing between older Chromecast with Google TV hardware and the newer Google TV Streamer, the newer device can be worth considering if you want more storage and a more responsive experience.",
+      },
+      {
+        type: "p",
+        text: "Recent Reddit discussions include users who moved from Chromecast to Google TV Streamer and reported better responsiveness and more available storage. This is user experience rather than a guarantee for every setup.",
+      },
+      {
+        type: "p",
+        text: "If your current Chromecast runs TiviMate smoothly, there is no need to replace it simply because newer hardware exists.",
+      },
+      {
+        type: "h2",
+        text: "Can You Cast TiviMate From Your Phone to Chromecast?",
+      },
+      {
+        type: "p",
+        text: "This is different from installing TiviMate on Chromecast with Google TV.",
+      },
+      {
+        type: "p",
+        text: "If you have an old casting-only Chromecast, you cannot install TiviMate directly on the device.",
+      },
+      {
+        type: "p",
+        text: "You may be able to mirror a phone screen, but that is not the same experience as running TiviMate directly on Google TV.",
+      },
+      {
+        type: "p",
+        text: "If you want the full TiviMate interface, remote navigation, EPG, playlists and player features, installing TiviMate directly on Chromecast with Google TV is the better approach.",
+      },
+      {
+        type: "h2",
+        text: "Common TiviMate Problems on Chromecast with Google TV",
+      },
+      {
+        type: "h3",
+        text: "TiviMate says “No Information”",
+      },
+      {
+        type: "p",
+        text: "Check your EPG source and update the guide.",
+      },
+      { type: "h3", text: "Playlist will not load" },
+      {
+        type: "p",
+        text: "Check your M3U URL or Xtream Codes credentials. Pay particular attention to accidental spaces in the server URL.",
+      },
+      { type: "h3", text: "TiviMate keeps buffering" },
+      {
+        type: "p",
+        text: "Test multiple channels, restart the network, and check whether the problem affects all streams or only specific channels.",
+      },
+      { type: "h3", text: "TiviMate is slow" },
+      {
+        type: "p",
+        text: "Free storage, restart the device, remove unused applications, and reduce unnecessary playlist clutter.",
+      },
+      { type: "h3", text: "TiviMate is missing from Google Play" },
+      {
+        type: "p",
+        text: "Confirm that you are using Chromecast with Google TV and check Play Store availability for your region and device.",
+      },
+      { type: "h3", text: "Installation fails" },
+      {
+        type: "p",
+        text: "Check available storage first. A nearly full Chromecast can cause app installation and update problems.",
+      },
+      {
+        type: "h3",
+        text: "Stalker Portal asks for a MAC address",
+      },
+      {
+        type: "p",
+        text: "Check the MAC address generated within TiviMate for the Stalker Portal playlist rather than automatically giving the physical MAC address of the Chromecast.",
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question:
+              "Can I install TiviMate on Chromecast with Google TV?",
+            answer:
+              "Yes. Chromecast with Google TV supports TiviMate, and the simplest method is to install TiviMate IPTV Player from the Google Play Store.",
+          },
+          {
+            question:
+              "Do I need Downloader to install TiviMate on Chromecast with Google TV?",
+            answer:
+              "Usually, no. If TiviMate is available in your device's Google Play Store, install it directly. Downloader is mainly relevant when you need to sideload an app.",
+          },
+          {
+            question: "Does TiviMate work on Chromecast with Google TV 4K?",
+            answer:
+              "Yes. TiviMate works on Chromecast with Google TV 4K. The device provides Google TV and access to compatible Android TV applications.",
+          },
+          {
+            question: "Does TiviMate work on Chromecast with Google TV HD?",
+            answer:
+              "Yes. The HD model can run TiviMate. The main hardware difference is that the HD model does not provide 4K output.",
+          },
+          {
+            question: "Can I install TiviMate on an old Chromecast?",
+            answer:
+              "No, not in the same way. Older casting-only Chromecast devices do not provide the Google TV environment and Play Store needed to install TiviMate directly.",
+          },
+          {
+            question: "Does TiviMate come with IPTV channels?",
+            answer:
+              "No. TiviMate is an IPTV media player. You must add your own compatible playlist from an IPTV provider or another lawful source.",
+          },
+          {
+            question: "Can I use Xtream Codes with TiviMate on Chromecast?",
+            answer:
+              "Yes. TiviMate supports Xtream Codes. Enter the server URL, username and password supplied by your provider.",
+          },
+          {
+            question: "Why is my TiviMate EPG not working on Chromecast?",
+            answer:
+              "The issue may be your EPG source, channel mapping, outdated guide data or provider. First update the EPG and check whether your provider's guide source is working.",
+          },
+          {
+            question:
+              "Why is TiviMate buffering on Chromecast with Google TV?",
+            answer:
+              "Buffering can result from Wi-Fi, network congestion, the IPTV stream, provider servers, device performance, or playback compatibility. Test several channels to determine whether the issue is universal or stream-specific.",
+          },
+          {
+            question:
+              "Is TiviMate Premium worth it on Chromecast with Google TV?",
+            answer:
+              "If you use TiviMate regularly, Premium can be useful because it unlocks additional player features. However, Premium does not include IPTV channels or a separate IPTV subscription.",
+          },
+          {
+            question: "Can I use TiviMate on multiple Chromecast devices?",
+            answer:
+              "TiviMate Premium supports device management according to its licensing system. Your IPTV provider's simultaneous connection limits are separate from TiviMate's application licensing.",
+          },
+          {
+            question: "Why does TiviMate ask for a MAC address?",
+            answer:
+              "This normally happens when you are setting up a Stalker Portal playlist. The required MAC address can be different from the physical MAC address of your Chromecast device.",
+          },
+          {
+            question: "Is Chromecast with Google TV good for TiviMate?",
+            answer:
+              "Yes. It is a practical TiviMate device because it uses Google TV, supports the Play Store and has a remote designed for TV applications.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Setup Checklist" },
+      {
+        type: "p",
+        text: "Before you start watching TiviMate on Chromecast with Google TV, make sure:",
+      },
+      {
+        type: "ul",
+        items: [
+          "You have Chromecast with Google TV, not an older casting-only Chromecast.",
+          "Your device is connected to the internet.",
+          "Your Google account is set up.",
+          "TiviMate IPTV Player is installed from Google Play when available.",
+          "Your IPTV playlist details are correct.",
+          "M3U, Xtream Codes or Stalker Portal information has been entered correctly.",
+          "Your EPG source is configured.",
+          "Your channels load successfully.",
+          "Your TV guide displays programme information.",
+          "Your network is stable.",
+          "Your Chromecast has enough free storage.",
+        ],
+      },
+      { type: "h2", text: "Final Verdict" },
+      {
+        type: "p",
+        text: "If you have Chromecast with Google TV, installing TiviMate is straightforward.",
+      },
+      {
+        type: "p",
+        text: "You normally do not need to sideload an APK or use a Downloader code.",
+      },
+      {
+        type: "note",
+        text: "Just open Google Play Store → Search for TiviMate IPTV Player → Select the official app → Install → Open → Add your IPTV playlist.",
+      },
+      {
+        type: "p",
+        text: "After that, configure your EPG and test a few channels.",
+      },
+      {
+        type: "p",
+        text: "If TiviMate is already available through Google Play, this is the safest and simplest installation method. If something goes wrong, check the specific issue rather than reinstalling everything. Most problems can be traced to the playlist, EPG, network, storage, or incorrect login details.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For related help, continue with our guides on ",
+          {
+            label: "How to Add Playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ", ",
+          {
+            label: "TiviMate EPG Not Updating Fixes",
+            href: blogPostPath(blogSlugs.epgNotUpdating),
+          },
+          ", ",
+          {
+            label: "TiviMate Buffering Fix",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          ", and ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          ".",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-install-tivimate-on-windows-11",
+    title: "How to Install TiviMate IPTV Player on Windows 11 - Easy Ways",
+    seoTitle: "How to Install TiviMate IPTV Player on Windows 11: Easy Ways",
+    description:
+      "Learn how to install TiviMate IPTV Player on Windows 11 using an Android emulator. Add M3U or Xtream Codes, set up EPG, and fix common issues.",
+    excerpt:
+      "Run TiviMate on Windows 11 with an Android emulator. Install the app, add your playlist, set up EPG, and fix buffering or black-screen issues.",
+    image: "/how-to-install-tivimate-on-windows-11.png",
+    imageAlt:
+      "How to install TiviMate IPTV Player on Windows 11 using an Android emulator",
+    datePublished: "2026-10-10",
+    dateModified: "2026-10-10",
+    keywords: [
+      "Install TiviMate on Windows 11",
+      "TiviMate Windows 11",
+      "TiviMate PC",
+      "TiviMate BlueStacks",
+      "TiviMate Android emulator",
+      "TiviMate on Windows",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "If you want to use TiviMate IPTV Player on Windows 11, there is one important thing to know before you start: TiviMate does not have a native Windows application.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is designed for Android TV and remote-control navigation. There is no official Windows .exe or Microsoft Store version of the TiviMate IPTV Player.",
+      },
+      {
+        type: "p",
+        text: "However, you can still use TiviMate on a Windows 11 PC by running the Android version through an Android emulator such as BlueStacks or another compatible emulator.",
+      },
+      {
+        type: "p",
+        parts: [
+          "This guide explains how to install TiviMate IPTV Player on Windows 11, add your IPTV playlist, configure the EPG, improve performance, and fix common problems. For the standard TV setup path, see our ",
+          { label: "TiviMate Installation Guide", href: routes.installation },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Can You Install TiviMate Directly on Windows 11?",
+      },
+      {
+        type: "p",
+        text: "No. You cannot install the official TiviMate IPTV Player directly on Windows 11 like a normal Windows application.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is an Android TV application. Its official Google Play listing specifically states that it is designed for Android TV and remote-control navigation. It supports IPTV playlist formats such as M3U, Xtream Codes, and Stalker Portal, but it does not provide IPTV channels itself.",
+      },
+      {
+        type: "p",
+        text: "So, if you find a website offering a TiviMate Windows .exe or .msi file, be careful. That is not the normal official Windows installation method.",
+      },
+      {
+        type: "p",
+        text: "The practical solution is:",
+      },
+      {
+        type: "note",
+        text: "Windows 11 → Android Emulator → TiviMate IPTV Player → Your IPTV Playlist",
+      },
+      {
+        type: "p",
+        text: "This lets your PC run the Android version of TiviMate inside a virtual Android environment.",
+      },
+      {
+        type: "h2",
+        text: "What You Need to Run TiviMate on Windows 11",
+      },
+      {
+        type: "p",
+        text: "Before installing anything, make sure your PC is ready.",
+      },
+      {
+        type: "p",
+        text: "You will need:",
+      },
+      {
+        type: "ul",
+        items: [
+          "A Windows 11 PC or laptop",
+          "A stable internet connection",
+          "An Android emulator",
+          "Enough RAM and storage",
+          "Virtualization enabled if required by your emulator",
+          "A TiviMate-compatible IPTV playlist",
+          "Your M3U URL, Xtream Codes details, or Stalker Portal information",
+          "Optional EPG information from your IPTV provider",
+        ],
+      },
+      {
+        type: "p",
+        text: "BlueStacks 5, for example, lists Windows 10 and above as supported, with at least 4 GB RAM and 5 GB free storage for its minimum requirements. Its recommended setup includes 8 GB or more RAM, an SSD, updated graphics drivers, and virtualization enabled.",
+      },
+      {
+        type: "p",
+        text: "For a smoother IPTV experience, a PC with 8 GB RAM or more and an SSD is preferable.",
+      },
+      {
+        type: "h2",
+        text: "Best Way to Install TiviMate on Windows 11",
+      },
+      {
+        type: "p",
+        text: "The simplest approach is to use an Android emulator.",
+      },
+      {
+        type: "p",
+        text: "BlueStacks is one commonly used option because it provides an Android environment inside Windows and supports Windows 11. Other Android emulators may work as well, but the exact menus can differ between products and versions.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Check Virtualization on Windows 11",
+      },
+      {
+        type: "p",
+        text: "Android emulators perform better when hardware virtualization is enabled.",
+      },
+      {
+        type: "p",
+        text: "You can check this without entering the BIOS.",
+      },
+      {
+        type: "p",
+        text: "On Windows 11:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Press Ctrl + Shift + Esc.",
+          "Open Task Manager.",
+          "Select Performance.",
+          "Click CPU.",
+          "Look for Virtualization.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If it says Enabled, you are ready.",
+      },
+      {
+        type: "p",
+        text: "If it says Disabled, you may need to enable virtualization through your computer's UEFI/BIOS settings.",
+      },
+      {
+        type: "p",
+        text: "The exact option depends on your processor and motherboard. Intel systems may label it Intel Virtualization Technology, while AMD systems commonly use SVM Mode.",
+      },
+      {
+        type: "p",
+        text: "Do not change unrelated BIOS settings if you are unfamiliar with them.",
+      },
+      { type: "h3", text: "Step 2: Install an Android Emulator" },
+      {
+        type: "p",
+        text: "Download your chosen emulator from its official website rather than an unknown third-party download page.",
+      },
+      {
+        type: "p",
+        text: "For example, BlueStacks provides Windows 11 support and publishes its own system requirements and virtualization instructions.",
+      },
+      {
+        type: "p",
+        text: "After downloading the installer:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open the installer.",
+          "Follow the installation instructions.",
+          "Allow the required permissions.",
+          "Wait for the Android environment to finish installing.",
+          "Launch the emulator.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The first startup can take longer than normal because the emulator needs to create its Android environment.",
+      },
+      { type: "h3", text: "Step 3: Open the Android Environment" },
+      {
+        type: "p",
+        text: "Once the emulator starts, you should see an Android-style home screen.",
+      },
+      {
+        type: "p",
+        text: "Depending on the emulator, you may have access to:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Google Play Store",
+          "Android settings",
+          "App search",
+          "File management",
+          "Virtual device settings",
+        ],
+      },
+      {
+        type: "p",
+        text: "If Google Play is available, sign in with your Google account if required.",
+      },
+      {
+        type: "p",
+        text: "However, there is an important distinction here.",
+      },
+      {
+        type: "p",
+        text: "Do not expect TiviMate to appear as a normal Windows application.",
+      },
+      {
+        type: "p",
+        text: "You are running the Android version inside the emulator.",
+      },
+      { type: "h3", text: "Step 4: Install TiviMate IPTV Player" },
+      {
+        type: "p",
+        text: "The safest option is to obtain TiviMate from the developer's official distribution or Google Play, where available.",
+      },
+      {
+        type: "p",
+        text: "TiviMate's official website provides an APK download, while the app is also listed on Google Play.",
+      },
+      {
+        type: "p",
+        text: "Inside your Android environment:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open the available app store or APK installation method.",
+          "Search for TiviMate IPTV Player.",
+          "Confirm that the application is from Armobsoft FZE.",
+          "Install the app.",
+          "Open TiviMate after installation.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you use an APK, make sure it comes from a trustworthy official source. Avoid modified, cracked, or unofficial versions that claim to include Premium features for free.",
+      },
+      {
+        type: "h3",
+        text: "Step 5: Open TiviMate on Your Windows 11 PC",
+      },
+      {
+        type: "p",
+        text: "After installation, launch TiviMate from the emulator.",
+      },
+      {
+        type: "p",
+        text: "The TiviMate interface is designed primarily for large screens and remote navigation, so using it with a mouse and keyboard may feel different from using it on an Android TV device.",
+      },
+      {
+        type: "p",
+        text: "You may need to:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Click buttons with your mouse",
+          "Use keyboard navigation",
+          "Adjust the emulator window size",
+          "Switch between full-screen and windowed mode",
+        ],
+      },
+      {
+        type: "p",
+        text: "A larger monitor can make the TV guide easier to use.",
+      },
+      { type: "h3", text: "Step 6: Add Your IPTV Playlist" },
+      {
+        type: "p",
+        text: "Installing TiviMate does not give you live TV channels.",
+      },
+      {
+        type: "p",
+        text: "TiviMate is a media player, not an IPTV service. You need to add your own playlist from a legitimate IPTV provider or another lawful source.",
+      },
+      {
+        type: "p",
+        text: "TiviMate supports common playlist methods including:",
+      },
+      {
+        type: "ul",
+        items: ["M3U", "Xtream Codes", "Stalker Portal"],
+      },
+      {
+        type: "p",
+        text: "Your provider should give you the information needed for the method they support.",
+      },
+      { type: "h3", text: "For an M3U playlist" },
+      {
+        type: "p",
+        text: "Select the option for an M3U playlist and enter the playlist URL provided by your service.",
+      },
+      { type: "h3", text: "For Xtream Codes" },
+      {
+        type: "p",
+        text: "You will normally need:",
+      },
+      {
+        type: "ul",
+        items: ["Server URL", "Username", "Password"],
+      },
+      {
+        type: "p",
+        text: "Enter the details exactly as provided.",
+      },
+      {
+        type: "p",
+        text: "Avoid adding extra spaces or changing the server address.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For a detailed walkthrough, see our ",
+          {
+            label: "How to Add Playlist to TiviMate guide",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Step 7: Let TiviMate Load Your Channels",
+      },
+      {
+        type: "p",
+        text: "After entering your playlist information, give TiviMate time to process it.",
+      },
+      {
+        type: "p",
+        text: "Depending on the size of the playlist and your internet connection, loading can take a little while.",
+      },
+      {
+        type: "p",
+        text: "Once completed, you may see categories such as:",
+      },
+      {
+        type: "ul",
+        items: ["Live TV", "Movies", "Series", "Favorites", "TV Guide"],
+      },
+      {
+        type: "p",
+        text: "The exact categories depend on the playlist supplied by your IPTV service.",
+      },
+      {
+        type: "p",
+        text: "If channels do not appear, check your playlist URL or login details before changing emulator settings.",
+      },
+      { type: "h3", text: "Step 8: Set Up the EPG" },
+      {
+        type: "p",
+        text: "EPG means Electronic Program Guide.",
+      },
+      {
+        type: "p",
+        text: "It displays information about current and upcoming programs.",
+      },
+      {
+        type: "p",
+        text: "Some IPTV providers automatically supply EPG information with your playlist. Others provide a separate EPG URL.",
+      },
+      {
+        type: "p",
+        text: "If your provider gives you a separate EPG source, add it through TiviMate's EPG settings.",
+      },
+      {
+        type: "p",
+        text: "After adding the source:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open TiviMate settings.",
+          "Go to EPG.",
+          "Check the available EPG source.",
+          "Run an EPG update.",
+          "Open the TV guide.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you see “No Information”, do not immediately reinstall TiviMate.",
+      },
+      {
+        type: "p",
+        text: "The problem may be related to the EPG source, channel mapping, outdated guide data, or your provider.",
+      },
+      {
+        type: "p",
+        parts: [
+          "You can read our ",
+          {
+            label: "TiviMate EPG Not Updating Fixes guide",
+            href: blogPostPath(blogSlugs.epgNotUpdating),
+          },
+          " for detailed troubleshooting.",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Step 9: Test Live TV Before Changing Settings",
+      },
+      {
+        type: "p",
+        text: "Once the playlist and EPG are loaded, test several channels.",
+      },
+      {
+        type: "p",
+        text: "Try:",
+      },
+      {
+        type: "ul",
+        items: [
+          "An SD channel",
+          "An HD channel",
+          "A different channel group",
+          "A channel with EPG information",
+          "A channel from another category",
+        ],
+      },
+      {
+        type: "p",
+        text: "This helps you identify whether the problem is with TiviMate, the emulator, your internet connection, or the IPTV source.",
+      },
+      {
+        type: "p",
+        text: "If only one or two channels fail, the problem may be specific to those streams.",
+      },
+      {
+        type: "p",
+        text: "If every channel buffers or fails, investigate the network, playlist, provider, or emulator.",
+      },
+      {
+        type: "h2",
+        text: "How to Make TiviMate Run Better on Windows 11",
+      },
+      {
+        type: "p",
+        text: "Running an Android app through an emulator adds another layer between the application and Windows.",
+      },
+      {
+        type: "p",
+        text: "That means performance depends on both your PC and emulator configuration.",
+      },
+      { type: "h3", text: "Give the Emulator Enough Resources" },
+      {
+        type: "p",
+        text: "If your computer has sufficient hardware, you can allocate appropriate CPU cores and RAM to the emulator.",
+      },
+      {
+        type: "p",
+        text: "Do not allocate everything to the emulator.",
+      },
+      {
+        type: "p",
+        text: "Windows still needs resources to run normally.",
+      },
+      {
+        type: "p",
+        text: "A PC with 8 GB RAM should generally leave enough memory available for Windows and other applications rather than assigning nearly all RAM to the emulator.",
+      },
+      { type: "h3", text: "Close Unnecessary Programs" },
+      {
+        type: "p",
+        text: "Before watching IPTV, close resource-heavy applications such as:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Video editors",
+          "Large browser sessions",
+          "Games",
+          "Download managers",
+          "Other virtual machines",
+        ],
+      },
+      {
+        type: "p",
+        text: "This can reduce unnecessary CPU and RAM usage.",
+      },
+      { type: "h3", text: "Use an SSD" },
+      {
+        type: "p",
+        text: "If Windows and the emulator are installed on an SSD, startup and general application loading can be faster than on an older mechanical hard drive.",
+      },
+      { type: "h3", text: "Keep Graphics Drivers Updated" },
+      {
+        type: "p",
+        text: "Outdated graphics drivers can sometimes cause display or performance problems with applications that use hardware acceleration.",
+      },
+      {
+        type: "p",
+        text: "Keep your Windows and graphics drivers reasonably current.",
+      },
+      { type: "h2", text: "TiviMate Buffering on Windows 11" },
+      {
+        type: "p",
+        text: "If TiviMate buffers on your PC, do not automatically assume the emulator is the cause.",
+      },
+      {
+        type: "p",
+        text: "Buffering can come from several places:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Internet connection",
+          "Wi-Fi interference",
+          "IPTV stream server",
+          "IPTV provider",
+          "Emulator performance",
+          "CPU usage",
+          "Graphics settings",
+          "Decoder compatibility",
+        ],
+      },
+      {
+        type: "p",
+        text: "Start by testing another channel.",
+      },
+      {
+        type: "p",
+        text: "If one channel buffers while others play normally, the stream itself may be the problem.",
+      },
+      {
+        type: "p",
+        text: "If everything buffers, test your internet connection and emulator performance.",
+      },
+      {
+        type: "p",
+        parts: [
+          "You can also review our ",
+          {
+            label: "TiviMate Buffering Fix guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          " for more troubleshooting steps.",
+        ],
+      },
+      { type: "h2", text: "TiviMate Not Opening on Windows 11" },
+      {
+        type: "p",
+        text: "If TiviMate crashes or refuses to open inside the emulator, try these steps:",
+      },
+      { type: "h3", text: "1. Restart the emulator" },
+      {
+        type: "p",
+        text: "Completely close the emulator and launch it again.",
+      },
+      { type: "h3", text: "2. Restart Windows" },
+      {
+        type: "p",
+        text: "A full system restart can clear temporary virtualization or resource issues.",
+      },
+      { type: "h3", text: "3. Check virtualization" },
+      {
+        type: "p",
+        text: "Make sure hardware virtualization is enabled if your emulator requires it.",
+      },
+      { type: "h3", text: "4. Update the emulator" },
+      {
+        type: "p",
+        text: "An outdated emulator may have compatibility problems with newer Android applications.",
+      },
+      { type: "h3", text: "5. Update graphics drivers" },
+      {
+        type: "p",
+        text: "Display problems can sometimes be related to outdated drivers.",
+      },
+      { type: "h3", text: "6. Reinstall TiviMate" },
+      {
+        type: "p",
+        text: "If only TiviMate is affected while other Android applications work correctly, reinstalling the app may help.",
+      },
+      {
+        type: "p",
+        text: "Do not immediately reinstall the entire emulator unless other troubleshooting steps fail.",
+      },
+      { type: "h2", text: "TiviMate Black Screen on Windows 11" },
+      {
+        type: "p",
+        text: "A black screen can have several causes.",
+      },
+      {
+        type: "p",
+        text: "First, determine whether:",
+      },
+      {
+        type: "ul",
+        items: [
+          "TiviMate opens, but the video is black",
+          "The entire emulator is black",
+          "Menus work, but streams do not display",
+          "Audio works while video is missing",
+        ],
+      },
+      {
+        type: "p",
+        text: "If the emulator itself is displaying correctly but the video is black, check the emulator's graphics settings and TiviMate's playback/decoder options.",
+      },
+      {
+        type: "p",
+        text: "If changing a decoder fixes one stream but breaks another, return to the previous setting. There is no single decoder configuration that works perfectly for every IPTV stream.",
+      },
+      {
+        type: "h2",
+        text: "Can You Use TiviMate Premium on Windows 11?",
+      },
+      {
+        type: "p",
+        text: "You can use your TiviMate Premium account within a compatible Android environment, but remember that the Windows PC is effectively running the Android application through an emulator.",
+      },
+      {
+        type: "p",
+        text: "TiviMate Premium unlocks application features. It does not provide IPTV channels or an IPTV subscription. The official listing makes this distinction clear.",
+      },
+      {
+        type: "p",
+        text: "If you already use TiviMate Premium on another device, follow the normal TiviMate Premium account and activation process rather than purchasing another subscription unnecessarily.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For a detailed comparison of the available features, see ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Can You Install TiviMate Using Windows Subsystem for Android?",
+      },
+      {
+        type: "p",
+        text: "You may find older guides recommending Windows Subsystem for Android (WSA).",
+      },
+      {
+        type: "p",
+        text: "That information is outdated.",
+      },
+      {
+        type: "p",
+        text: "Microsoft ended support for Windows Subsystem for Android and the Amazon Appstore on March 5, 2025. As a result, WSA should not be presented as the current standard method for installing TiviMate on Windows 11.",
+      },
+      {
+        type: "p",
+        text: "For a current Windows 11 setup, a supported Android emulator is the more practical route.",
+      },
+      { type: "h2", text: "Is TiviMate on Windows 11 Worth Using?" },
+      {
+        type: "p",
+        text: "It depends on why you want it.",
+      },
+      {
+        type: "p",
+        text: "TiviMate on Windows can make sense if:",
+      },
+      {
+        type: "ul",
+        items: [
+          "You already use TiviMate on Android TV.",
+          "You want to test your playlist on a PC.",
+          "You prefer TiviMate's interface.",
+          "You want access to your existing TiviMate setup on a larger computer screen.",
+        ],
+      },
+      {
+        type: "p",
+        text: "A Windows-native IPTV player may be better if:",
+      },
+      {
+        type: "ul",
+        items: [
+          "You only watch IPTV on your PC.",
+          "You want better mouse and keyboard support.",
+          "You do not want to run an Android emulator.",
+          "You want lower resource usage.",
+          "You want an application designed specifically for Windows.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The emulator method works, but it is important to understand that it is a workaround rather than a native TiviMate Windows installation.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Windows 11 vs Native Windows IPTV Player",
+      },
+      {
+        type: "table",
+        headers: [
+          "Features",
+          "TiviMate Through Emulator",
+          "Native Windows IPTV Player",
+        ],
+        rows: [
+          ["Native Windows app", "No", "Yes"],
+          ["Uses Android environment", "Yes", "No"],
+          ["TiviMate interface", "Yes", "No"],
+          ["Mouse and keyboard focused", "Not primarily", "Usually"],
+          ["Emulator required", "Yes", "No"],
+          ["M3U support", "Yes", "Depends on player"],
+          ["Xtream Codes", "Yes", "Depends on player"],
+          ["EPG", "Yes", "Depends on player"],
+          ["Uses additional system resources", "Yes", "Usually less"],
+        ],
+      },
+      {
+        type: "p",
+        text: "If your main goal is specifically to use TiviMate, the emulator route is the practical choice.",
+      },
+      {
+        type: "p",
+        text: "If your main goal is simply to watch IPTV on Windows, a native Windows IPTV player may provide a more natural desktop experience.",
+      },
+      { type: "h2", text: "Common Mistakes to Avoid" },
+      {
+        type: "h3",
+        text: "Downloading a Fake TiviMate Windows Installer",
+      },
+      {
+        type: "p",
+        text: "There is no official TiviMate Windows .exe installer.",
+      },
+      {
+        type: "p",
+        text: "Avoid websites claiming that their modified Windows installer is the official TiviMate PC version.",
+      },
+      { type: "h3", text: "Installing a Cracked APK" },
+      {
+        type: "p",
+        text: "Do not use modified APKs advertised as “TiviMate Premium unlocked.”",
+      },
+      {
+        type: "p",
+        text: "Besides being unauthorized, modified applications can create security and stability risks.",
+      },
+      {
+        type: "h3",
+        text: "Assuming TiviMate Includes Channels",
+      },
+      {
+        type: "p",
+        parts: [
+          "TiviMate does not provide IPTV channels. You need your own compatible playlist or lawful IPTV source. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Changing Too Many Settings at Once",
+      },
+      {
+        type: "p",
+        text: "If TiviMate buffers or crashes, change one setting at a time.",
+      },
+      {
+        type: "p",
+        text: "Otherwise, you will not know which change fixed or caused the problem.",
+      },
+      {
+        type: "h3",
+        text: "Giving the Emulator Too Many Resources",
+      },
+      {
+        type: "p",
+        text: "More CPU and RAM do not automatically mean better performance. Leave enough resources for Windows and your other applications.",
+      },
+      { type: "h2", text: "Quick Setup Checklist" },
+      {
+        type: "p",
+        text: "Before you start watching, check the following:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Windows 11 is updated",
+          "Your PC meets the emulator requirements",
+          "Virtualization is enabled if required",
+          "Android emulator is installed from its official source",
+          "TiviMate is obtained from a trusted official source",
+          "TiviMate opens correctly",
+          "IPTV playlist has been added",
+          "Channels are loading",
+          "EPG is working",
+          "Video and audio are working",
+          "Your internet connection is stable",
+          "Emulator performance is acceptable",
+        ],
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Is TiviMate available for Windows 11?",
+            answer:
+              "No. TiviMate does not have a native Windows 11 application. It is designed for Android TV. You can run it on Windows 11 through a compatible Android emulator.",
+          },
+          {
+            question: "How do I install TiviMate IPTV Player on Windows 11?",
+            answer:
+              "Install a compatible Android emulator on Windows 11, set up the Android environment, install the official TiviMate Android app, and then add your M3U, Xtream Codes, or other supported IPTV playlist.",
+          },
+          {
+            question: "Can I download TiviMate for Windows as an EXE?",
+            answer:
+              "No official TiviMate .exe or .msi installer is available. Be cautious with websites offering unofficial TiviMate Windows installers.",
+          },
+          {
+            question: "Can I use TiviMate on my Windows 11 laptop?",
+            answer:
+              "Yes, but not as a native Windows application. You need to run the Android version through an emulator.",
+          },
+          {
+            question: "Is BlueStacks good for TiviMate on Windows 11?",
+            answer:
+              "BlueStacks can provide an Android environment on Windows 11 and supports the hardware virtualization commonly used by Android emulators. Performance will depend on your PC configuration and emulator settings.",
+          },
+          {
+            question: "Do I need an IPTV subscription to use TiviMate?",
+            answer:
+              "TiviMate itself does not provide IPTV channels. You need a compatible playlist or IPTV service to load content into the player.",
+          },
+          {
+            question: "Can I use Xtream Codes on TiviMate Windows 11?",
+            answer:
+              "Yes. You can use the Android version of TiviMate inside an emulator and add Xtream Codes details if your IPTV provider supports that login method.",
+          },
+          {
+            question: "Can I add an M3U playlist to TiviMate on Windows 11?",
+            answer:
+              "Yes. Once TiviMate is running inside the Android emulator, you can add a supported M3U playlist just as you would on a compatible Android TV device.",
+          },
+          {
+            question: "Why is TiviMate buffering on my Windows 11 PC?",
+            answer:
+              "Buffering can be caused by your internet connection, IPTV stream, provider, emulator performance, or playback settings. Test multiple channels before deciding where the problem is.",
+          },
+          {
+            question: "Why is TiviMate not showing the EPG on Windows 11?",
+            answer:
+              "Check your EPG source, playlist, channel matching, internet connection, and EPG update settings. If the EPG works on another device using the same source, investigate the emulator or local setup.",
+          },
+          {
+            question: "Can I use TiviMate Premium on Windows 11?",
+            answer:
+              "TiviMate Premium features can be used within the Android application, but the app is still running through an Android environment rather than as a native Windows application.",
+          },
+          {
+            question:
+              "Can I install TiviMate through Windows Subsystem for Android?",
+            answer:
+              "WSA is no longer a currently supported solution. Microsoft ended support for Windows Subsystem for Android and the Amazon Appstore on March 5, 2025.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "If you searched for how to install TiviMate IPTV Player on Windows 11, the key point is simple: there is no native Windows version to install.",
+      },
+      {
+        type: "p",
+        text: "The practical method is to run the Android version through a compatible emulator.",
+      },
+      {
+        type: "p",
+        text: "The basic process is:",
+      },
+      {
+        type: "note",
+        text: "Install an Android emulator → enable virtualization if required → install TiviMate → add your IPTV playlist → configure EPG → test your channels.",
+      },
+      {
+        type: "p",
+        text: "For the best experience, use a reasonably powerful Windows 11 PC, keep your graphics drivers updated, and avoid unofficial or modified TiviMate downloads.",
+      },
+      {
+        type: "p",
+        text: "If you mainly use TiviMate on a TV, an Android TV or compatible Google TV device remains the more natural environment because that is the platform TiviMate was designed for.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For related setup help, see our ",
+          { label: "TiviMate Installation Guide", href: routes.installation },
+          " and ",
+          {
+            label: "How to Add Playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+    ],
+  },
   {
     slug: "tivimate-epg-not-updating",
     title:
