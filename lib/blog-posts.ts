@@ -11,6 +11,8 @@ export const blogSlugs = {
   windows11Install: "how-to-install-tivimate-on-windows-11",
   chromecastGoogleTv:
     "install-tivimate-on-chromecast-google-tv",
+  vsIptvSmarters: "tivimate-vs-iptv-smarters-pro",
+  companionApp: "tivimate-companion-app",
 } as const;
 
 export function blogPostPath(slug: string): string {
@@ -53,6 +55,994 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "tivimate-companion-app",
+    title: "TiviMate Companion App: What It Does and How to Use It",
+    seoTitle:
+      "TiviMate Companion App: How It Works + What It Does & Setup",
+    description:
+      "Learn what the TiviMate Companion app does, how to set it up, activate Premium on Firestick, manage devices, and fix common account issues.",
+    excerpt:
+      "Learn how TiviMate Companion unlocks Premium, manages devices, and helps with Firestick activation — plus fixes for common account issues.",
+    image: "/tivimate-companion-app.png",
+    imageAlt: "TiviMate Companion App for Premium activation and device management",
+    datePublished: "2026-10-19",
+    dateModified: "2026-10-19",
+    keywords: [
+      "TiviMate Companion",
+      "TiviMate Companion app",
+      "TiviMate Premium activation",
+      "TiviMate Companion Firestick",
+      "TiviMate Companion not working",
+      "activate TiviMate Premium",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "The TiviMate Companion app helps users unlock TiviMate Premium on compatible devices without Google Play and manage activated devices. If you use TiviMate on an Amazon Firestick or another supported streaming device, Companion may be part of your Premium setup.",
+      },
+      {
+        type: "p",
+        text: "However, it is important to understand one thing: TiviMate Companion is not an IPTV player. It does not stream live TV, load M3U playlists, or provide channels. Those tasks belong to the main TiviMate IPTV Player.",
+      },
+      {
+        type: "p",
+        text: "In this guide, you will learn what TiviMate Companion does, who needs it, how to get started, and how to resolve common activation problems.",
+      },
+      { type: "h2", text: "What Is the TiviMate Companion App?" },
+      {
+        type: "p",
+        text: "TiviMate Companion is a separate app published by Armobsoft FZE, the developer associated with TiviMate. Its stated purposes are to unlock Premium functionality on devices without Google Play and manage activated devices.",
+      },
+      {
+        type: "p",
+        text: "Here is how the two apps differ:",
+      },
+      {
+        type: "table",
+        headers: [
+          "Feature",
+          "TiviMate Companion",
+          "TiviMate IPTV Player",
+        ],
+        rows: [
+          [
+            "Unlock Premium",
+            "Supports the Premium activation process",
+            "Uses the available activation options",
+          ],
+          [
+            "Manage activated devices",
+            "Yes",
+            "Main viewing and playback interface",
+          ],
+          [
+            "Play live TV",
+            "No",
+            "Yes, with a compatible playlist",
+          ],
+          ["Add M3U playlists", "No", "Yes"],
+          [
+            "Display EPG",
+            "No",
+            "Yes, with supported guide data",
+          ],
+          [
+            "Provide IPTV channels",
+            "No",
+            "No, a separate content source is required",
+          ],
+        ],
+      },
+      {
+        type: "note",
+        text: "In simple terms, Companion helps with Premium access and device management, while the main TiviMate app handles your viewing experience.",
+      },
+      { type: "h2", text: "What Does TiviMate Companion Do?" },
+      {
+        type: "p",
+        text: "The app is useful for two main purposes.",
+      },
+      { type: "h3", text: "1. Unlock TiviMate Premium" },
+      {
+        type: "p",
+        text: "If your streaming device does not have Google Play, you may need TiviMate Companion on a compatible Android phone or tablet to complete the Premium purchase and activation process.",
+      },
+      {
+        type: "p",
+        text: "The exact steps depend on your device and the options available in your current TiviMate version.",
+      },
+      { type: "h3", text: "2. Manage activated devices" },
+      {
+        type: "p",
+        text: "TiviMate Companion also supports management of devices activated with Premium. This can help when organising your setup across compatible streaming devices.",
+      },
+      {
+        type: "p",
+        text: "Check the current account and device-management options in the app before making changes to an existing activation.",
+      },
+      { type: "h2", text: "How to Use TiviMate Companion" },
+      {
+        type: "p",
+        text: "Follow these steps if you need Companion to purchase or activate TiviMate Premium.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Install the official Companion app",
+      },
+      {
+        type: "p",
+        text: "On a compatible Android phone or tablet, open the Google Play Store and search for TiviMate Companion.",
+      },
+      {
+        type: "p",
+        text: "Check that the publisher is Armobsoft FZE before installing the app. Avoid unofficial modified APKs or downloads from unknown websites.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Open the app and follow the account prompts",
+      },
+      {
+        type: "p",
+        text: "Launch TiviMate Companion and follow the account or sign-in instructions shown on screen. If you are creating an account, use an email address you can access and a strong, unique password.",
+      },
+      {
+        type: "p",
+        text: "Keep your TiviMate account credentials separate from your IPTV provider login details.",
+      },
+      { type: "h3", text: "Step 3: Choose your Premium option" },
+      {
+        type: "p",
+        text: "If you want Premium, review the purchase options and the price displayed in the app. Confirm the current terms before completing payment.",
+      },
+      {
+        type: "p",
+        text: "Do not assume that a Premium purchase includes an IPTV subscription. It unlocks TiviMate app features, not television channels or streaming content.",
+      },
+      {
+        type: "h3",
+        text: "Step 4: Activate Premium in TiviMate",
+      },
+      {
+        type: "p",
+        text: "Open the main TiviMate app on your TV device. Navigate to the Premium or account section and follow the activation prompts.",
+      },
+      {
+        type: "p",
+        text: "Sign in using the TiviMate account associated with your Premium purchase, if requested. Complete the on-screen instructions to activate the supported device.",
+      },
+      {
+        type: "p",
+        text: "Menu names and activation steps may differ by app version, so follow the options displayed on your device.",
+      },
+      { type: "h3", text: "Step 5: Confirm activation" },
+      {
+        type: "p",
+        text: "Return to TiviMate and check whether the Premium features you purchased are available. If activation fails, verify your account details, internet connection, and device activation status before trying again.",
+      },
+      {
+        type: "h2",
+        text: "Do You Need TiviMate Companion for Firestick?",
+      },
+      {
+        type: "p",
+        text: "You may need TiviMate Companion if your Firestick does not have Google Play and you want to purchase or activate TiviMate Premium through the Companion workflow.",
+      },
+      {
+        type: "p",
+        text: "If you use an Android TV or Google TV device with Google Play, check whether you can complete the Premium process directly within TiviMate. Companion is not automatically required for every device.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Remember that installing TiviMate and activating Premium are separate from adding your IPTV playlist. You must still configure a compatible playlist in the main app to watch content. For Firestick installation help, see our ",
+          {
+            label: "How to Download or Install TiviMate on FireStick guide",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "TiviMate Companion Not Working? Try These Fixes",
+      },
+      {
+        type: "p",
+        text: "If you cannot sign in or activate Premium, try the following checks:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Check your login details: Make sure you are using the correct TiviMate account, not your IPTV provider username and password.",
+          "Check your internet connection: A connection problem may prevent the app from completing account verification.",
+          "Update the app: Install available updates from the official source.",
+          "Review device activations: Check your account's available device-management options if you cannot activate another device.",
+          "Follow the current activation prompts: Older guides may show menu names or steps that no longer match your version.",
+          "Avoid repeated purchases: If a payment has completed but Premium is not active, check your account and purchase status before paying again.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If the problem continues, consult the official app listing or available TiviMate support options.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Companion vs TiviMate Premium: What Is the Difference?",
+      },
+      {
+        type: "p",
+        text: "TiviMate Companion is the supporting app used for Premium activation on certain devices and for managing activated devices. TiviMate Premium is the paid upgrade that unlocks additional functionality in the main player.",
+      },
+      {
+        type: "p",
+        text: "Neither one provides live TV channels or an IPTV subscription.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you are deciding whether the upgrade is worthwhile, read our guide to ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Is the TiviMate Companion app free?",
+            answer:
+              "The Companion app is available to install through Google Play, with in-app purchases. TiviMate Premium is paid, and you should check the current price shown before purchasing.",
+          },
+          {
+            question: "Does TiviMate Companion provide IPTV channels?",
+            answer:
+              "No. It does not play channels or provide an IPTV subscription. You need the main TiviMate player and a compatible playlist from a source you are authorised to use.",
+          },
+          {
+            question: "Can I add an M3U playlist in TiviMate Companion?",
+            answer:
+              "No. Add your M3U playlist or supported connection details in the main TiviMate IPTV Player.",
+          },
+          {
+            question: "Do I need TiviMate Companion on Android TV?",
+            answer:
+              "Not necessarily. If your device has Google Play and offers Premium activation directly in TiviMate, you may not need Companion.",
+          },
+          {
+            question: "Is TiviMate Companion a remote-control app?",
+            answer:
+              "Its official listing describes Premium unlocking and activated-device management, not TV remote-control functionality.",
+          },
+          {
+            question: "What should I do if TiviMate Premium is not activating?",
+            answer:
+              "Check that you are signing in with the correct TiviMate account, confirm your connection, review device activation options, and follow the current prompts in the app.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "The TiviMate Companion app is useful when you need to activate TiviMate Premium on a device without Google Play or manage activated devices. It is not a second IPTV player, and it will not add channels or fix playlist problems by itself.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For the smoothest setup, install the official app, follow the activation instructions for your device, and keep your TiviMate account separate from your IPTV provider credentials. Once Premium is activated, use the main TiviMate app to ",
+          {
+            label: "add your playlist",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ", configure the EPG, and watch your authorised content.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "tivimate-vs-iptv-smarters-pro",
+    title: "TiviMate vs IPTV Smarters Pro: Which Is Better?",
+    seoTitle: "TiviMate vs IPTV Smarters Pro: Which Is Better?",
+    description:
+      "Compare TiviMate vs IPTV Smarters Pro features, EPG, pricing, device support, and performance to choose the best IPTV player for your viewing needs.",
+    excerpt:
+      "Compare TiviMate and IPTV Smarters Pro on interface, EPG, playlist setup, performance, device support, and pricing to pick the better IPTV player.",
+    image: "/tivimate-vs-iptv-smarters-pro.png",
+    imageAlt: "TiviMate vs IPTV Smarters Pro comparison",
+    datePublished: "2026-10-19",
+    dateModified: "2026-10-19",
+    keywords: [
+      "TiviMate vs IPTV Smarters Pro",
+      "TiviMate vs Smarters",
+      "best IPTV player",
+      "TiviMate comparison",
+      "IPTV Smarters Pro alternative",
+      "TiviMate or IPTV Smarters",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "Choosing between TiviMate and IPTV Smarters Pro can be confusing, especially if you want a reliable IPTV player for live TV, an electronic programme guide (EPG), and easy channel navigation. Both applications let you load an IPTV playlist, but their interfaces, features, and device compatibility differ.",
+      },
+      {
+        type: "p",
+        text: "So, which is better: TiviMate or IPTV Smarters Pro?",
+      },
+      {
+        type: "p",
+        text: "TiviMate is generally the stronger choice for watching live TV on compatible Android TV, Google TV, and Fire TV devices. IPTV Smarters Pro may be a better fit if you prefer a dashboard-style interface and want to organise live TV, movies, and series in one application. Your ideal option depends on your device, playlist, and viewing habits.",
+      },
+      {
+        type: "p",
+        text: "This guide compares TiviMate vs IPTV Smarters Pro across features, EPG, playlist setup, performance, compatibility, and cost so you can make an informed decision.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate vs IPTV Smarters Pro: Quick Comparison",
+      },
+      {
+        type: "table",
+        headers: ["Feature", "TiviMate", "IPTV Smarters Pro"],
+        rows: [
+          [
+            "Best suited for",
+            "Live TV on compatible TV devices",
+            "Users who prefer a dashboard-style interface",
+          ],
+          [
+            "Interface",
+            "Traditional TV guide layout",
+            "Dashboard with content categories",
+          ],
+          [
+            "EPG support",
+            "Yes",
+            "Yes, depending on version and playlist",
+          ],
+          [
+            "Playlist options",
+            "M3U, Xtream Codes, Stalker Portal",
+            "M3U and other login or playlist options depending on version",
+          ],
+          [
+            "Multiple playlists",
+            "Supported, with some features requiring Premium",
+            "Supported in compatible versions",
+          ],
+          ["Live TV", "Yes", "Yes"],
+          [
+            "Movies and series",
+            "Depends on the content and version supported; primarily live-TV focused",
+            "Supported in versions offering VOD categories",
+          ],
+          [
+            "Customisation",
+            "Extensive TV-focused settings",
+            "Varies by version",
+          ],
+          [
+            "Device compatibility",
+            "Primarily Android TV and compatible Android-based TV devices",
+            "Varies by app version and platform",
+          ],
+          [
+            "Premium features",
+            "Paid upgrade unlocks additional features",
+            "Pricing and premium features vary by version",
+          ],
+          ["Channels included", "No", "No"],
+        ],
+      },
+      {
+        type: "note",
+        text: "Quick verdict: Choose TiviMate for a TV-first experience with a detailed programme guide and extensive customisation. Consider IPTV Smarters Pro if its interface and supported features better match the way you watch content.",
+      },
+      { type: "h2", text: "What Is TiviMate IPTV Player?" },
+      {
+        type: "p",
+        text: "TiviMate is an IPTV player designed mainly for large screens and remote-control navigation. It lets you add a compatible IPTV playlist and organise channels through a TV-guide interface.",
+      },
+      {
+        type: "p",
+        text: "Instead of supplying television channels or subscriptions, TiviMate plays content from a playlist or service that you configure yourself.",
+      },
+      {
+        type: "p",
+        text: "Its key features include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "An electronic programme guide for supported channels",
+          "M3U playlist and Xtream Codes support",
+          "Stalker Portal support",
+          "Multiple playlist management",
+          "Channel groups and favourites",
+          "Search and programme information",
+          "Additional features such as recording and multiview, subject to device support and Premium access",
+        ],
+      },
+      {
+        type: "p",
+        text: "One of TiviMate's main advantages is its TV-oriented design. You can browse channels, check programme schedules, and navigate using a compatible remote without relying on a touchscreen.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you are new to the application, follow our ",
+          {
+            label: "TiviMate installation guide",
+            href: routes.installation,
+          },
+          " to understand the setup process.",
+        ],
+      },
+      { type: "h2", text: "What Is IPTV Smarters Pro?" },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro is a media player that supports compatible IPTV playlists and organises available content through a dashboard-style interface.",
+      },
+      {
+        type: "p",
+        text: "Depending on the particular version, users may find separate sections for live television, movies, series, favourites, and programme information. The exact features and interface can vary across platforms and app versions.",
+      },
+      {
+        type: "p",
+        text: "Common capabilities may include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "IPTV playlist or account login",
+          "Live TV and EPG support",
+          "Movies and series categories when provided by the configured service",
+          "Favourites and content organisation",
+          "Parental controls in supported versions",
+          "Additional playback or multi-screen features where available",
+        ],
+      },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro may appeal to users who prefer accessing different content categories from one home screen. However, check the specific app listing for your device because features and availability are not identical across every version.",
+      },
+      {
+        type: "p",
+        text: "Like TiviMate, IPTV Smarters Pro does not automatically provide channels or a subscription. You need a compatible playlist or service with permission to access the content.",
+      },
+      {
+        type: "h2",
+        text: "1. User Interface: Which App Is Easier to Use?",
+      },
+      {
+        type: "p",
+        text: "The interface is one of the biggest differences between TiviMate and IPTV Smarters Pro.",
+      },
+      { type: "h3", text: "TiviMate interface" },
+      {
+        type: "p",
+        text: "TiviMate focuses on the traditional television experience. Its programme guide displays channels and scheduling information in a grid, making it convenient to browse live TV with a remote.",
+      },
+      {
+        type: "p",
+        text: "This layout is useful if you regularly switch between channels, check what is currently playing, or browse upcoming programmes.",
+      },
+      {
+        type: "p",
+        text: "TiviMate also offers various customisation options, allowing users to adjust parts of the viewing experience to suit their preferences.",
+      },
+      { type: "h3", text: "IPTV Smarters Pro interface" },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro generally uses a dashboard-style layout that can separate live TV, movies, and series into different categories, depending on the version and service configuration.",
+      },
+      {
+        type: "p",
+        text: "This approach may be easier for people who prefer navigating from a home screen rather than spending most of their time in a traditional channel guide.",
+      },
+      { type: "h3", text: "Which interface wins?" },
+      {
+        type: "p",
+        text: "TiviMate is usually the better choice for remote-controlled live TV navigation. IPTV Smarters Pro may suit users who prefer a more category-based layout and want quick access to different types of content.",
+      },
+      {
+        type: "p",
+        text: "Neither interface is objectively better for everyone. The best option depends on your preferred navigation style and device.",
+      },
+      {
+        type: "h2",
+        text: "2. EPG Support: TiviMate vs IPTV Smarters Pro",
+      },
+      {
+        type: "p",
+        text: "An electronic programme guide, or EPG, displays programme names, descriptions, and scheduled broadcast times. It helps you decide what to watch without opening every channel individually.",
+      },
+      {
+        type: "p",
+        text: "Both applications support EPG functionality, but the experience depends on the app version, playlist configuration, and quality of the supplied guide data.",
+      },
+      { type: "h3", text: "TiviMate EPG" },
+      {
+        type: "p",
+        text: "TiviMate is particularly appealing to users who rely on a detailed, grid-based TV guide. It lets you browse channel schedules and view programme information when the playlist provides suitable EPG data.",
+      },
+      {
+        type: "p",
+        text: "You may need to configure an EPG source or match programme data to channels correctly.",
+      },
+      { type: "h3", text: "IPTV Smarters Pro EPG" },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro also supports programme-guide functionality in compatible versions. The available information depends on whether your IPTV service supplies guide data and whether the app processes that data correctly.",
+      },
+      {
+        type: "p",
+        text: "If programme information is missing, the issue may be related to the EPG source, channel mapping, time settings, or playlist configuration rather than the player alone.",
+      },
+      { type: "h3", text: "Which app has the better EPG?" },
+      {
+        type: "p",
+        parts: [
+          "TiviMate is a strong option if the TV guide is central to your viewing routine. However, neither app can guarantee complete or accurate programme information when the source data is missing, outdated, or incorrect. For TiviMate-specific guide issues, see our ",
+          {
+            label: "TiviMate EPG Not Updating Fixes guide",
+            href: blogPostPath(blogSlugs.epgNotUpdating),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "3. Playlist Support and Setup" },
+      {
+        type: "p",
+        text: "Both applications require a compatible playlist or account from a service that you are authorised to use.",
+      },
+      {
+        type: "p",
+        text: "The setup process varies according to the app version and the login method supported by your provider.",
+      },
+      { type: "h3", text: "Adding a playlist to TiviMate" },
+      {
+        type: "p",
+        text: "TiviMate supports common connection methods, including M3U playlists, Xtream Codes, and Stalker Portal.",
+      },
+      {
+        type: "p",
+        text: "A typical setup involves:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open TiviMate on your compatible device.",
+          "Choose the option to add a playlist.",
+          "Select the supported connection method.",
+          "Enter the details supplied by your IPTV provider.",
+          "Allow the playlist to load.",
+          "Configure EPG data if necessary.",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "For step-by-step instructions, read our guide on ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      { type: "h3", text: "Adding a playlist to IPTV Smarters Pro" },
+      {
+        type: "p",
+        text: "The exact process depends on the version you install. Compatible versions may offer an M3U playlist option or an account-login method such as Xtream Codes.",
+      },
+      {
+        type: "p",
+        text: "Generally, you will need to:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open the application.",
+          "Select the available playlist or login option.",
+          "Enter your provider's authorised connection details.",
+          "Wait for the application to process the available categories.",
+          "Check live TV and EPG information.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Always use the connection method supported by your specific app and provider.",
+      },
+      { type: "h3", text: "Which app is easier to set up?" },
+      {
+        type: "p",
+        text: "Both can be straightforward when your provider gives you valid details and the app supports your chosen login method. TiviMate's setup is especially suitable for people who want a dedicated TV interface, while Smarters may appeal to those who prefer a dashboard-based workflow.",
+      },
+      {
+        type: "h2",
+        text: "4. Performance and Buffering: Which IPTV Player Is Faster?",
+      },
+      {
+        type: "p",
+        text: "Performance matters when you are watching live television, especially if you frequently switch channels or use a large playlist.",
+      },
+      {
+        type: "p",
+        text: "However, it would be misleading to claim that one application is always faster or completely free from buffering. Playback depends on several factors, including:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your internet connection and Wi-Fi signal",
+          "The performance and available memory of your device",
+          "The size and structure of your playlist",
+          "The quality and availability of the stream source",
+          "The selected video player and playback settings",
+          "The app version and its compatibility with your device",
+        ],
+      },
+      {
+        type: "p",
+        text: "TiviMate's TV-focused design and channel-navigation tools may provide a more comfortable experience for users who primarily watch live TV.",
+      },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro may perform well too, depending on the device, version, and playlist. Some versions also offer playback options that may help with particular compatibility issues.",
+      },
+      {
+        type: "h3",
+        text: "How to troubleshoot buffering in either app",
+      },
+      {
+        type: "p",
+        text: "If streams keep pausing or freezing, try these steps before switching applications:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Restart the app and your streaming device.",
+          "Test the same stream on another supported device, if possible.",
+          "Restart your router and check your Wi-Fi signal.",
+          "Try another channel from the same playlist.",
+          "Check whether the problem affects one channel or every channel.",
+          "Update the application using a trusted source.",
+          "Check with your provider if the stream or server is unavailable.",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "If you use TiviMate, our ",
+          {
+            label: "TiviMate buffering fix guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          " covers additional troubleshooting steps.",
+        ],
+      },
+      {
+        type: "note",
+        text: "Important: If the same channel buffers in both apps, investigate the network and stream source before assuming that the player is responsible.",
+      },
+      {
+        type: "h2",
+        text: "5. Device Compatibility: Which App Works on Your Device?",
+      },
+      {
+        type: "p",
+        text: "Compatibility can determine your choice before you compare any other feature.",
+      },
+      { type: "h3", text: "TiviMate compatibility" },
+      {
+        type: "p",
+        text: "TiviMate is designed primarily for Android TV and compatible Android-based television devices. It is commonly considered by users with supported Android TV boxes, Google TV devices, and compatible Fire TV devices.",
+      },
+      {
+        type: "p",
+        text: "It is not a native application for every Smart TV, phone, or desktop operating system. Before installing it, check whether your device and operating system are supported.",
+      },
+      {
+        type: "p",
+        parts: [
+          "You can also read our guide on ",
+          {
+            label: "installing IPTV on Firestick",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          " if you are setting up a compatible Fire TV device.",
+        ],
+      },
+      { type: "h3", text: "IPTV Smarters Pro compatibility" },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro availability depends on the particular version and platform. Different versions or related apps may be available for Android devices, iOS, computers, or selected Smart TVs.",
+      },
+      {
+        type: "p",
+        text: "Do not assume that every version has identical features or that an app listed under a similar name is the same product. Check the official app listing or trusted developer source for your device.",
+      },
+      { type: "h3", text: "Compatibility comparison" },
+      {
+        type: "table",
+        headers: ["Device type", "TiviMate", "IPTV Smarters Pro"],
+        rows: [
+          [
+            "Android TV",
+            "Designed for compatible devices",
+            "Check the version available for your device",
+          ],
+          [
+            "Google TV",
+            "Available on compatible devices",
+            "Check the version available for your device",
+          ],
+          [
+            "Fire TV",
+            "Depends on device and operating-system compatibility",
+            "Depends on the version and installation method",
+          ],
+          [
+            "Android phone or tablet",
+            "Not primarily designed for touchscreen use",
+            "Compatible versions may be available",
+          ],
+          [
+            "iPhone or iPad",
+            "No native TiviMate app",
+            "Compatible versions may be available",
+          ],
+          [
+            "Windows or macOS",
+            "No native desktop version",
+            "Desktop or web options may be available, depending on the product",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        text: "Always confirm current compatibility before downloading an application. Device support and app availability can change.",
+      },
+      {
+        type: "h2",
+        text: "6. Free vs Premium: Which Offers Better Value?",
+      },
+      {
+        type: "p",
+        text: "Cost is another important factor in the TiviMate vs IPTV Smarters Pro comparison.",
+      },
+      {
+        type: "p",
+        text: "TiviMate offers a free version and a Premium upgrade. Some advanced features require Premium access, so check the current feature list before deciding whether to pay.",
+      },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro has different versions and distribution options, and the available features or charges may vary. Do not assume that every app using the Smarters name has the same pricing model.",
+      },
+      {
+        type: "table",
+        headers: ["Consideration", "TiviMate", "IPTV Smarters Pro"],
+        rows: [
+          [
+            "Free access",
+            "Available with limitations",
+            "Depends on the specific version",
+          ],
+          [
+            "Paid features",
+            "Premium unlocks additional capabilities",
+            "Varies by app version and platform",
+          ],
+          [
+            "Best reason to upgrade",
+            "Access to desired advanced TV features",
+            "Access to features offered by the specific version",
+          ],
+          [
+            "What to check first",
+            "Current Premium feature list and terms",
+            "Official listing, feature list, and payment terms",
+          ],
+        ],
+      },
+      { type: "h3", text: "Is TiviMate Premium worth it?" },
+      {
+        type: "p",
+        text: "TiviMate Premium may be worthwhile if you regularly watch live TV and want the additional features it offers. If you only need basic playback, first test whether the free version meets your requirements.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For more details, read our comparison of ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "Before paying for either application, verify the current price, subscription period, supported devices, and cancellation terms through the relevant official source.",
+      },
+      { type: "h2", text: "7. Live TV, Movies, and Series" },
+      {
+        type: "p",
+        text: "Your preferred content type should influence which player you choose.",
+      },
+      { type: "h3", text: "TiviMate for live television" },
+      {
+        type: "p",
+        text: "TiviMate is particularly well suited to users who want a traditional live-TV experience. Its programme guide, channel organisation, favourites, and remote-friendly interface make it useful for browsing a large collection of live channels.",
+      },
+      {
+        type: "p",
+        text: "Some advanced functions depend on Premium access, device compatibility, and the features provided by your source.",
+      },
+      {
+        type: "h3",
+        text: "IPTV Smarters Pro for different content categories",
+      },
+      {
+        type: "p",
+        text: "Compatible versions of IPTV Smarters Pro can organise live TV, movies, and series into separate sections when that content is supplied by your configured service.",
+      },
+      {
+        type: "p",
+        text: "This layout may be convenient if you switch frequently between live channels and on-demand content.",
+      },
+      {
+        type: "p",
+        text: "However, the app itself does not provide a library of movies or television series. Those categories appear only when supported content is supplied through your authorised service and compatible app version.",
+      },
+      { type: "h3", text: "Which is better for your viewing habits?" },
+      {
+        type: "p",
+        text: "Choose TiviMate if your main priority is browsing live channels and programme schedules on a TV. Consider IPTV Smarters Pro if you prefer a dashboard that brings multiple supported content categories together.",
+      },
+      { type: "h2", text: "8. Pros and Cons of TiviMate" },
+      { type: "h3", text: "Advantages" },
+      {
+        type: "ul",
+        items: [
+          "Designed for large screens and remote navigation.",
+          "Clear, grid-based EPG interface.",
+          "Supports common playlist connection methods.",
+          "Offers extensive TV-focused customisation.",
+          "Provides additional features through Premium access.",
+        ],
+      },
+      { type: "h3", text: "Disadvantages" },
+      {
+        type: "ul",
+        items: [
+          "Primarily intended for compatible Android-based TV devices.",
+          "Some features require a paid upgrade.",
+          "Requires a separate playlist or authorised content source.",
+          "Performance and guide accuracy still depend on the device and supplied data.",
+        ],
+      },
+      { type: "h2", text: "9. Pros and Cons of IPTV Smarters Pro" },
+      { type: "h3", text: "Advantages" },
+      {
+        type: "ul",
+        items: [
+          "Dashboard-style navigation can be convenient for different content categories.",
+          "Compatible versions support live TV and EPG.",
+          "Some versions offer movies and series sections.",
+          "Availability across platforms may suit users who watch on different device types.",
+        ],
+      },
+      { type: "h3", text: "Disadvantages" },
+      {
+        type: "ul",
+        items: [
+          "Features and compatibility vary by version.",
+          "The interface may not suit users who prefer a traditional TV guide.",
+          "EPG quality depends on the supplied programme data.",
+          "Requires a compatible playlist or authorised service to play content.",
+        ],
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Is TiviMate better than IPTV Smarters Pro?",
+            answer:
+              "TiviMate is often the stronger option for live-TV viewing on compatible Android-based TV devices because of its TV guide and customisation. IPTV Smarters Pro may suit users who prefer a dashboard interface or a version compatible with more of their devices.",
+          },
+          {
+            question:
+              "What is the main difference between TiviMate and IPTV Smarters Pro?",
+            answer:
+              "The main difference is the user experience. TiviMate focuses on live TV and remote-friendly programme-guide navigation, while compatible IPTV Smarters Pro versions may organise live TV, movies, and series through a dashboard.",
+          },
+          {
+            question: "Is TiviMate free to use?",
+            answer:
+              "TiviMate has a free version and a Premium upgrade. Certain advanced features require Premium access. Check the current app listing for the latest feature details and terms.",
+          },
+          {
+            question: "Is IPTV Smarters Pro free?",
+            answer:
+              "Availability and pricing depend on the particular version and platform. Check the official listing for the app you intend to use before downloading or paying for it.",
+          },
+          {
+            question: "Does TiviMate include IPTV channels?",
+            answer:
+              "No. TiviMate is a media player. You must add a compatible playlist or use a service you are authorised to access.",
+          },
+          {
+            question: "Does IPTV Smarters Pro provide channels?",
+            answer:
+              "No. IPTV Smarters Pro is also a media player. Any live TV, movies, or series available in the app depend on the content source you configure.",
+          },
+          {
+            question: "Which app has the better EPG?",
+            answer:
+              "TiviMate is a strong choice for users who prefer a detailed, grid-based TV guide. Both apps can display programme information when supported EPG data is available and configured correctly.",
+          },
+          {
+            question: "Which app is better for Firestick?",
+            answer:
+              "TiviMate is a strong option on compatible Fire TV devices if you mainly watch live TV. IPTV Smarters Pro is another possibility if a compatible version is available. Confirm your device's operating-system support before installing either app.",
+          },
+          {
+            question: "Which IPTV player buffers less?",
+            answer:
+              "Neither app is guaranteed to buffer less in every situation. Internet stability, device performance, stream quality, playlist size, and provider availability can all affect playback. Test the same stream under similar conditions before deciding.",
+          },
+          {
+            question: "Can I use TiviMate and IPTV Smarters Pro together?",
+            answer:
+              "Yes, if both applications are compatible with your device and support the connection details you have. You can compare their interfaces using the same authorised playlist, although each app may require its own setup.",
+          },
+          {
+            question: "Can I use TiviMate on an iPhone or Windows PC?",
+            answer:
+              "TiviMate is primarily designed for compatible Android-based TV devices and does not offer a native iPhone or Windows desktop app. Check official compatibility information before trying workarounds.",
+          },
+          {
+            question: "Should I switch from IPTV Smarters Pro to TiviMate?",
+            answer:
+              "Consider switching if you primarily watch live TV on a compatible TV device and prefer TiviMate's programme guide and customisation. If your current player works well and supports your devices, switching may not offer enough benefit to justify changing your setup.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        text: "TiviMate vs IPTV Smarters Pro: Final Verdict",
+      },
+      {
+        type: "p",
+        text: "So, which IPTV player should you choose?",
+      },
+      {
+        type: "p",
+        text: "TiviMate is our recommendation for users who primarily watch live TV on a compatible Android TV, Google TV, or Fire TV device. Its TV-first interface, detailed programme guide, and customisation options make it a strong choice for remote-controlled viewing.",
+      },
+      {
+        type: "p",
+        text: "IPTV Smarters Pro may be the better fit if you prefer a dashboard-style interface or need a version that supports your particular combination of devices and content categories. Check the specific version's features and compatibility before installing it.",
+      },
+      {
+        type: "p",
+        text: "Before making your decision, consider your device, the type of content you watch, whether you need Premium features, and how well your playlist works. You can also test both options on a compatible device when their available versions allow it.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Remember that neither application supplies television channels or automatically includes an IPTV subscription. Use a legitimate source and make sure you have permission to access the content you stream. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+    ],
+  },
   {
     slug: "install-tivimate-on-chromecast-google-tv",
     title: "How to Install TiviMate on Chromecast with Google TV in 5 Minutes",
