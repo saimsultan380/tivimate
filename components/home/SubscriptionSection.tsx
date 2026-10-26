@@ -1,81 +1,83 @@
-import {
-  Clapperboard,
-  Film,
-  FolderOpen,
-  ListVideo,
-  MonitorPlay,
-  Radio,
-  Trophy,
-  Tv,
-} from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
+import Link from "next/link";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
 import { GlassIcon } from "@/components/ui/GlassIcon";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { staggerDelay } from "@/lib/motion";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
-
-const inclusions = [
-  { title: "Live TV", icon: Tv },
-  { title: "Sports", icon: Trophy },
-  { title: "Movies", icon: Film },
-  { title: "TV series", icon: Clapperboard },
-  { title: "Programme information", icon: ListVideo },
-  { title: "Catch-up where available", icon: Radio },
-  { title: "Different content categories", icon: FolderOpen },
-  { title: "Available HD, Full HD or 4K streams", icon: MonitorPlay },
-] as const;
+import { routes, supportConfig } from "@/lib/site";
 
 export function SubscriptionSection() {
   return (
     <section
-      id="subscription"
+      id="download"
       className="telvis-section"
-      aria-labelledby="subscription-heading"
+      aria-labelledby="download-heading"
     >
       <div className="telvis-section-inner">
         <SectionHeader
-          id="subscription-heading"
-          eyebrow="IPTV subscription"
+          id="download-heading"
+          eyebrow="Official APK"
           title={
             <>
-              IPTV Subscription for <TitleAccent>TiviMate</TitleAccent>
+              Download the Official <TitleAccent>TiviMate</TitleAccent> IPTV
+              Player APK
             </>
           }
-          lead="Looking for an IPTV subscription because TiviMate is already your preferred player? Our service provides the IPTV access described in each plan and can be used with TiviMate where the required playlist or login method is supported."
+          lead="Install the TiviMate IPTV player on a compatible Fire TV or Android TV device using the official download source. Open the Downloader app and enter the code below or visit the official TiviMate website to check the latest APK."
           align="center"
         />
 
-        <ScrollReveal variant="text">
-          <p className="telvis-section-lead is-center" style={{ marginBottom: 28 }}>
-            Depending on your selected service and plan, your subscription may
-            provide access to:
-          </p>
-        </ScrollReveal>
+        <div className="telvis-split" style={{ marginTop: 8 }}>
+          <CardReveal delay={0.06} className="telvis-glass telvis-panel">
+            <CardRevealPart variant="icon">
+              <div className="telvis-panel-head">
+                <GlassIcon icon={Download} />
+                <h3 className="telvis-panel-title">TiviMate Downloader Code</h3>
+              </div>
+            </CardRevealPart>
+            <CardRevealPart variant="content">
+              <p
+                className="telvis-plan-price"
+                style={{ margin: "12px 0 8px", letterSpacing: "0.04em" }}
+              >
+                {supportConfig.downloaderCode}
+              </p>
+              <p className="telvis-info-body">
+                Enter the code in the Downloader app&apos;s URL field and follow
+                the on-screen instructions to continue.
+              </p>
+            </CardRevealPart>
+          </CardReveal>
 
-        <div className="telvis-subscription-grid">
-          {inclusions.map((item, index) => (
-            <CardReveal
-              key={item.title}
-              as="article"
-              delay={staggerDelay(index)}
-              className="telvis-glass telvis-subscription-card"
-            >
-              <CardRevealPart variant="icon">
-                <GlassIcon icon={item.icon} />
-              </CardRevealPart>
-              <CardRevealPart variant="content" as="h3" className="telvis-info-title">
-                {item.title}
-              </CardRevealPart>
-            </CardReveal>
-          ))}
+          <CardReveal delay={0.12} className="telvis-glass telvis-panel">
+            <CardRevealPart variant="icon">
+              <div className="telvis-panel-head">
+                <GlassIcon icon={ExternalLink} />
+                <h3 className="telvis-panel-title">Direct TiviMate APK Download</h3>
+              </div>
+            </CardRevealPart>
+            <CardRevealPart variant="content">
+              <p className="telvis-info-body" style={{ marginBottom: 16 }}>
+                Prefer downloading on a computer or mobile device?
+              </p>
+              <a
+                href={supportConfig.officialApkUrl}
+                className="telvis-cta-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tivimate Installer APK
+              </a>
+            </CardRevealPart>
+          </CardReveal>
         </div>
 
-        <ScrollReveal delay={0.08} variant="text">
-          <p className="telvis-section-note is-center">
-            Supported IPTV playlist access depends on your plan. Only the exact
-            content, quality, connections and features your service actually
-            provides are included.
-          </p>
+        <ScrollReveal delay={0.1} variant="cta">
+          <div className="telvis-inline-actions is-row">
+            <Link href={routes.installation} className="telvis-cta-outline">
+              Free Installation Guide
+            </Link>
+          </div>
         </ScrollReveal>
       </div>
     </section>

@@ -1,100 +1,98 @@
-import {
-  KeyRound,
-  ListPlus,
-  LoaderCircle,
-  MonitorPlay,
-  MousePointerClick,
-  PlayCircle,
-} from "lucide-react";
-import { GlassIcon } from "@/components/ui/GlassIcon";
-import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
-import { staggerDelay } from "@/lib/motion";
+import Link from "next/link";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
+import { blogPostPath, blogSlugs } from "@/lib/blog-posts";
+import { routes } from "@/lib/site";
 
-const steps = [
-  {
-    number: "1",
-    title: "Select Your Subscription",
-    body: "Choose the plan that suits you.",
-    icon: MousePointerClick,
-  },
-  {
-    number: "2",
-    title: "Receive Your Access",
-    body: "Your subscription details are provided after activation.",
-    icon: KeyRound,
-  },
-  {
-    number: "3",
-    title: "Open TiviMate",
-    body: "Launch the player on your compatible device.",
-    icon: MonitorPlay,
-  },
-  {
-    number: "4",
-    title: "Add Your Playlist",
-    body: "Enter the supported information supplied with your subscription.",
-    icon: ListPlus,
-  },
-  {
-    number: "5",
-    title: "Allow the Playlist to Load",
-    body: "TiviMate will retrieve the available information from the configured source.",
-    icon: LoaderCircle,
-  },
-  {
-    number: "6",
-    title: "Start Watching",
-    body: "Browse your available categories and channels through the TiviMate interface.",
-    icon: PlayCircle,
-  },
+const comparisonRows = [
+  ["IPTV playlist support", "Limited", "Multiple playlists"],
+  ["Live TV playback", "Yes", "Yes"],
+  ["Electronic Programme Guide (EPG)", "Basic support", "Additional EPG options"],
+  ["Channel search", "Yes", "Yes"],
+  ["Favorite channels", "Limited options", "Advanced management"],
+  [
+    "Catch-up TV",
+    "Limited or unavailable",
+    "Supported with compatible services",
+  ],
+  ["Recording", "Limited or unavailable", "Supported"],
+  [
+    "Multiview",
+    "Not available or limited",
+    "Supported on compatible devices",
+  ],
+  ["Playlist management", "Basic", "Advanced"],
+  ["Customization options", "Limited", "More options"],
+  ["Parental controls", "Limited", "Additional controls"],
+  ["IPTV subscription included", "No", "No"],
 ] as const;
 
 export function StepsSection() {
   return (
     <section
-      id="steps"
+      id="free-vs-premium"
       className="telvis-section telvis-section-steps"
-      aria-labelledby="steps-heading"
+      aria-labelledby="free-vs-premium-heading"
     >
       <div className="telvis-section-inner">
         <SectionHeader
-          id="steps-heading"
-          eyebrow="How it works"
+          id="free-vs-premium-heading"
+          eyebrow="Feature comparison"
           title={
             <>
-              How IPTV Works With <TitleAccent>TiviMate</TitleAccent>
+              TiviMate Free vs. Premium: Best{" "}
+              <TitleAccent>Feature</TitleAccent> Comparison
             </>
           }
-          lead="You don’t need to be an IPTV expert."
+          lead="TiviMate offers a free version for basic IPTV playback and a Premium upgrade that unlocks additional features. Compare the options below to decide which version suits your viewing needs. Feature availability may vary by app version."
           align="center"
         />
 
-        <ol className="telvis-steps">
-          {steps.map((step, index) => (
-            <CardReveal
-              key={step.number}
-              as="li"
-              delay={staggerDelay(index)}
-              className="telvis-glass telvis-step-card"
+        <ScrollReveal delay={0.06} variant="media">
+          <div className="telvis-table-wrap">
+            <table className="telvis-table">
+              <thead>
+                <tr>
+                  <th scope="col">Features</th>
+                  <th scope="col">TiviMate Free</th>
+                  <th scope="col">TiviMate Premium</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonRows.map(([feature, free, premium]) => (
+                  <tr key={feature}>
+                    <th scope="row">{feature}</th>
+                    <td>{free}</td>
+                    <td>{premium}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.1} variant="text">
+          <p className="telvis-section-note is-center">
+            <strong>Which should you choose?</strong> The free version is a good
+            starting point for basic IPTV playback. TiviMate Premium is worth
+            considering if you need advanced playlist management, recording,
+            multiview, or additional customization.
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.14} variant="cta">
+          <div className="telvis-inline-actions is-row">
+            <Link href={routes.plans} className="telvis-cta-primary">
+              Explore Tivimate Subscription Plans
+            </Link>
+            <Link
+              href={blogPostPath(blogSlugs.premiumVsFree)}
+              className="telvis-cta-outline"
             >
-              <CardRevealPart variant="icon">
-                <div className="telvis-step-top">
-                  <GlassIcon icon={step.icon} />
-                  <span className="telvis-step-number" aria-hidden="true">
-                    {step.number}
-                  </span>
-                </div>
-              </CardRevealPart>
-              <CardRevealPart variant="content" as="h3" className="telvis-info-title">
-                {step.number}. {step.title}
-              </CardRevealPart>
-              <CardRevealPart variant="content" as="p" className="telvis-info-body">
-                {step.body}
-              </CardRevealPart>
-            </CardReveal>
-          ))}
-        </ol>
+              Read Full Premium vs Free Guide
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -2,9 +2,9 @@ import {
   FolderHeart,
   KeyRound,
   ListPlus,
+  LoaderCircle,
   MonitorPlay,
   MousePointerClick,
-  Sparkles,
 } from "lucide-react";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
 import { GlassIcon } from "@/components/ui/GlassIcon";
@@ -13,33 +13,33 @@ import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
 
 const steps = [
   {
-    title: "Choose a Plan",
-    body: "Select the subscription duration that suits your viewing requirements.",
+    title: "Choose Your IPTV Subscription Plan",
+    body: "Compare available IPTV subscription plans and select a duration that suits your viewing preferences and budget.",
     icon: MousePointerClick,
   },
   {
-    title: "Receive Your Details",
-    body: "Once your order has been processed, you’ll receive the information needed to configure your service.",
+    title: "Receive Your IPTV Login Details",
+    body: "After your order is processed, receive the playlist URL, Xtream Codes API credentials, or other supported connection details.",
     icon: KeyRound,
   },
   {
-    title: "Open TiviMate",
-    body: "Launch TiviMate on your compatible device.",
+    title: "Open the TiviMate IPTV Player",
+    body: "Launch TiviMate on your compatible Android TV or Fire TV device to begin configuring your IPTV playlist.",
     icon: MonitorPlay,
   },
   {
-    title: "Add Your IPTV",
-    body: "Enter the supported playlist or login information provided with your subscription.",
+    title: "Add Your M3U Playlist or Xtream Codes API",
+    body: "Choose a supported connection method and enter the IPTV playlist URL or login credentials supplied by your provider.",
     icon: ListPlus,
   },
   {
-    title: "Load Your Content",
-    body: "Once the connection is successful, your available content will appear inside the player.",
-    icon: Sparkles,
+    title: "Load IPTV Channels and EPG",
+    body: "Allow TiviMate to process your playlist and load available channels, categories, and electronic programme guide information where supported.",
+    icon: LoaderCircle,
   },
   {
-    title: "Customize Your Experience",
-    body: "Set up favorites, organize categories and configure the interface around the way you watch.",
+    title: "Customize Your TiviMate Experience",
+    body: "Organize IPTV channels, create favorites, adjust playback settings, and personalize the TiviMate interface to suit your viewing preferences.",
     icon: FolderHeart,
   },
 ] as const;
@@ -47,21 +47,21 @@ const steps = [
 export function ConnectStepsSection() {
   return (
     <section
-      id="connect"
+      id="setup-steps"
       className="telvis-section"
-      aria-labelledby="connect-heading"
+      aria-labelledby="setup-steps-heading"
     >
       <div className="telvis-section-inner">
         <SectionHeader
-          id="connect-heading"
+          id="setup-steps-heading"
           eyebrow="Simple setup"
           title={
             <>
-              A Simple Way to Connect IPTV With{" "}
+              How to Set Up an IPTV Subscription on{" "}
               <TitleAccent>TiviMate</TitleAccent>
             </>
           }
-          lead="We focus on making the process easy to understand, especially if you’re new to IPTV."
+          lead="Connect your compatible IPTV service to the TiviMate IPTV player in six simple steps."
           align="center"
         />
 

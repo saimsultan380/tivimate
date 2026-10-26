@@ -8,51 +8,53 @@ import {
   Settings2,
   Tv,
 } from "lucide-react";
+import Link from "next/link";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
 import { GlassIcon } from "@/components/ui/GlassIcon";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { staggerDelay } from "@/lib/motion";
 import { SectionHeader, TitleAccent } from "@/components/ui/SectionHeader";
+import { routes } from "@/lib/site";
 
 const features = [
   {
-    title: "TV-Friendly Navigation",
-    body: "Browse your content using an interface designed for television screens and remote controls.",
+    title: "TV-Friendly Interface and Navigation",
+    body: "Navigate IPTV channels using a clean interface designed for television screens and remote controls, making large playlists easier to browse.",
     icon: Tv,
   },
   {
-    title: "Electronic Programme Guide",
-    body: "Where programme information is supplied by your IPTV service, you can use the EPG to view schedules and upcoming programmes.",
+    title: "Electronic Programme Guide (EPG)",
+    body: "View channel schedules and upcoming programmes when your IPTV provider supplies compatible EPG data.",
     icon: ListVideo,
   },
   {
-    title: "Favorites",
-    body: "Keep the channels you watch most frequently within easy reach.",
+    title: "Favorite Channels",
+    body: "Add frequently watched channels to your favorites list for quicker access to your preferred content.",
     icon: Heart,
   },
   {
-    title: "Search",
-    body: "Find channels and other available content without manually scrolling through your entire playlist.",
+    title: "Channel Search and Categories",
+    body: "Find channels more easily using supported search features and organized playlist categories instead of scrolling through long lists.",
     icon: Search,
   },
   {
-    title: "Multiple Playlists",
-    body: "Manage supported playlists within the same application.",
+    title: "Multiple IPTV Playlists",
+    body: "Manage multiple supported IPTV playlists within the application, depending on your TiviMate version and available features.",
     icon: LayoutGrid,
   },
   {
-    title: "Catch-Up",
-    body: "Where supported by the service and playlist, access available programmes after their original broadcast.",
+    title: "Catch-Up TV Support",
+    body: "Access previously broadcast programmes when your IPTV service provides compatible catch-up functionality.",
     icon: Clapperboard,
   },
   {
-    title: "Multiview",
-    body: "Use supported multiview functionality when your device, application and content source allow it.",
+    title: "Multiview Functionality",
+    body: "Use supported multiview features to watch multiple streams simultaneously, subject to your device, application version, and content source.",
     icon: MonitorPlay,
   },
   {
-    title: "Personalization",
-    body: "Adjust supported settings and organize your viewing experience around your preferences.",
+    title: "Personalized Playback Settings",
+    body: "Adjust available playback and interface settings to create an IPTV viewing experience that suits your preferences.",
     icon: Settings2,
   },
 ] as const;
@@ -70,10 +72,11 @@ export function WhyTivimateSection() {
           eyebrow="Why TiviMate"
           title={
             <>
-              Why Use <TitleAccent>TiviMate</TitleAccent> for IPTV?
+              Why Choose <TitleAccent>TiviMate</TitleAccent> IPTV Player for Your
+              IPTV Subscription?
             </>
           }
-          lead="If you already like the TiviMate interface, there is no reason to change your player simply because you’re looking for a new IPTV subscription. TiviMate is built around television viewing and provides features intended to make large IPTV playlists easier to navigate."
+          lead="TiviMate IPTV Player offers a TV-friendly way to organize and watch content through compatible IPTV playlists. If you are looking for an IPTV provider for TiviMate, consider choosing us because of the following reasons:"
           align="center"
         />
 
@@ -100,9 +103,19 @@ export function WhyTivimateSection() {
 
         <ScrollReveal delay={0.08} variant="text">
           <p className="telvis-section-note is-center">
-            TiviMate itself does not provide the TV channels or media content.
-            Users add their own compatible content sources.
+            Important: TiviMate is an IPTV player, not an IPTV content provider.
+            You need a separate compatible IPTV subscription for channels and
+            streams. TiviMate Premium unlocks additional player features but does
+            not include channels or a subscription.
           </p>
+        </ScrollReveal>
+
+        <ScrollReveal delay={0.12} variant="cta">
+          <div className="telvis-inline-actions is-row">
+            <Link href={routes.plans} className="telvis-cta-primary">
+              View IPTV Plans
+            </Link>
+          </div>
         </ScrollReveal>
       </div>
     </section>

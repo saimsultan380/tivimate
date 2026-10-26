@@ -35,13 +35,13 @@ export default function HomePage() {
         <HeroSection />
         <SetupIntroSection />
         <ConnectStepsSection />
-        <WhyTivimateSection />
         <SubscriptionSection />
         <PlansSection />
         <StepsSection />
         <DevicesSection />
-        <AlreadyHaveSection />
+        <WhyTivimateSection />
         <WhyChooseSection />
+        <AlreadyHaveSection />
         <FaqSection />
         <FinalCtaSection />
       </main>

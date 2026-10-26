@@ -19,10 +19,11 @@ export function FinalCtaSection() {
               eyebrow="Get started"
               title={
                 <>
-                  Ready to Use IPTV With <TitleAccent>TiviMate</TitleAccent>?
+                  Buy The Discounted IPTV Subscription for Your{" "}
+                  <TitleAccent>TiviMate</TitleAccent> Player
                 </>
               }
-              lead="Choose your plan, receive your access details and follow our simple setup instructions."
+              lead="Ready to upgrade your streaming setup? Choose an IPTV subscription for TiviMate, compare available plans, and get started with a compatible IPTV service according to your viewing needs."
               align="center"
               animate={false}
             />
@@ -32,11 +33,11 @@ export function FinalCtaSection() {
             <div className="telvis-actions telvis-final-actions">
               <Link href={routes.plans} className="telvis-cta-primary">
                 <MonitorPlay size={16} strokeWidth={2} aria-hidden="true" />
-                <span>View IPTV Plans</span>
+                <span>View IPTV Subscription Plans</span>
               </Link>
               <Link href={routes.installation} className="telvis-cta-secondary">
-                Open Installation Guide
-                <ArrowRight size={16} aria-hidden="true" />
+                Free Installation Guide
+                <ArrowRight size={16} strokeWidth={2} aria-hidden="true" />
               </Link>
             </div>
           </CardRevealPart>

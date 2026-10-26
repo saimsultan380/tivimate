@@ -1,4 +1,4 @@
-import { Box, Cpu, Tv, TvMinimal } from "lucide-react";
+import { Box, Cpu, Smartphone, Tv, TvMinimal } from "lucide-react";
 import Link from "next/link";
 import { GlassIcon } from "@/components/ui/GlassIcon";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
@@ -9,29 +9,44 @@ import { routes } from "@/lib/site";
 
 const devices = [
   {
-    title: "Amazon Fire TV / Firestick",
-    body: "Compatible Fire TV and Firestick devices can be used with TiviMate. Confirm your model and installation method before setup.",
+    title: "Amazon Firestick",
+    body: "Install TiviMate on compatible Fire TV Stick models using an available supported installation method, then add your IPTV playlist.",
     icon: TvMinimal,
   },
   {
-    title: "Android TV",
-    body: "TiviMate is designed for compatible Android TV devices and offers a TV-friendly interface for managing IPTV playlists.",
+    title: "NVIDIA Shield TV",
+    body: "Run TiviMate on this Android TV streaming device for convenient remote navigation and compatible IPTV playlist management.",
+    icon: Cpu,
+  },
+  {
+    title: "Google TV Streamer",
+    body: "Use a compatible Google TV setup to access TiviMate and organize your supported IPTV channels on a television.",
     icon: Tv,
   },
   {
-    title: "Google TV devices",
-    body: "Supported Google TV setups can run TiviMate where the device and OS requirements are met.",
-    icon: Tv,
-  },
-  {
-    title: "Android TV boxes",
-    body: "Many Android TV boxes support TiviMate. Always check your particular device before ordering.",
+    title: "Xiaomi Mi Box S",
+    body: "Check Play Store availability and device compatibility to install TiviMate and load your M3U playlist or supported login details.",
     icon: Box,
   },
   {
-    title: "NVIDIA Shield and similar hardware",
-    body: "Compatible Android TV hardware such as NVIDIA Shield can be used where TiviMate is supported.",
-    icon: Cpu,
+    title: "Sony BRAVIA Android TV",
+    body: "Compatible Sony televisions running Android TV or Google TV can offer direct access to TiviMate without a separate streaming box.",
+    icon: Tv,
+  },
+  {
+    title: "TCL Android TV and Google TV",
+    body: "Enjoy TiviMate on compatible TCL television models with supported operating systems and available app installation options.",
+    icon: Tv,
+  },
+  {
+    title: "onn. Google TV Streaming Box",
+    body: "Check your model's compatibility and install TiviMate through an available supported method to manage IPTV playlists on your TV.",
+    icon: Smartphone,
+  },
+  {
+    title: "MECOOL Android TV Box",
+    body: "Use a compatible MECOOL device to access TiviMate, configure your IPTV subscription, and organize supported channels and programme listings.",
+    icon: Box,
   },
 ] as const;
 
@@ -48,10 +63,10 @@ export function DevicesSection() {
           eyebrow="Compatible devices"
           title={
             <>
-              Compatible Devices for <TitleAccent>TiviMate</TitleAccent>
+              TiviMate IPTV Compatible <TitleAccent>Devices</TitleAccent>
             </>
           }
-          lead="TiviMate is designed for compatible Android TV devices. Its official information also distinguishes TV devices from phones and tablets. Your IPTV service can potentially be used on supported setups such as:"
+          lead="TiviMate IPTV Player is designed primarily for Android TV and compatible Fire TV devices. Choose a supported device to enjoy your IPTV playlists, browse channels, and access the electronic programme guide (EPG) on your television."
         />
 
         <div className="telvis-device-grid">
@@ -66,24 +81,19 @@ export function DevicesSection() {
                 <GlassIcon icon={device.icon} className="is-large" />
               </CardRevealPart>
               <CardRevealPart variant="content">
-                <h3 className="telvis-info-title">{device.title}</h3>
+                <h3 className="telvis-info-title">
+                  {index + 1}. {device.title}
+                </h3>
                 <p className="telvis-info-body">{device.body}</p>
               </CardRevealPart>
             </CardReveal>
           ))}
         </div>
 
-        <ScrollReveal delay={0.08} variant="text">
-          <p className="telvis-section-note">
-            Always confirm your particular device and service compatibility before
-            ordering.
-          </p>
-        </ScrollReveal>
-
         <ScrollReveal delay={0.12} variant="cta">
           <div className="telvis-inline-actions">
             <Link href={routes.installation} className="telvis-cta-primary">
-              Open the TiviMate Setup Guide
+              Check Installation or Set Up Guides
             </Link>
           </div>
         </ScrollReveal>

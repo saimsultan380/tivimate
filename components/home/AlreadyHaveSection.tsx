@@ -8,22 +8,22 @@ import { routes } from "@/lib/site";
 
 const paths = [
   {
-    title: "Looking for IPTV?",
-    body: "View the available subscription plans.",
+    title: "Buy an IPTV Subscription",
+    body: "Explore available plans and choose a compatible IPTV service for your Tv mate IPTV player.",
     href: routes.plans,
     cta: "View IPTV Plans",
     icon: ShoppingCart,
   },
   {
-    title: "Already have your subscription?",
-    body: "Follow the installation guide.",
+    title: "Set Up Your IPTV Playlist",
+    body: "Already subscribed? Follow our step-by-step guide to connect your IPTV service to TiviMate.",
     href: routes.installation,
     cta: "Open Installation Guide",
     icon: BookOpen,
   },
   {
-    title: "Having trouble?",
-    body: "Contact support and tell us what device you’re using and what you’re experiencing.",
+    title: "Need Technical Assistance?",
+    body: "Contact our support team with your device details and a brief description of the issue.",
     href: routes.contact,
     cta: "Contact Support",
     icon: Headphones,
@@ -43,10 +43,10 @@ export function AlreadyHaveSection() {
           eyebrow="Next step"
           title={
             <>
-              Already Have <TitleAccent>TiviMate</TitleAccent>?
+              Already Using <TitleAccent>TiviMate</TitleAccent> IPTV Player?
             </>
           }
-          lead="If TiviMate is already installed, you’re ready to move to the next step."
+          lead="Whether you need an IPTV subscription, help setting up your playlist, or assistance with a connection issue, choose the next step that suits your needs."
           align="center"
         />
 

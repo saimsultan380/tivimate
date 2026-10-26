@@ -27,10 +27,11 @@ export function PlansSection() {
           eyebrow="IPTV plans"
           title={
             <>
-              Choose Your <TitleAccent>IPTV</TitleAccent> Plan
+              TiviMate IPTV Player Subscription Plans: Choose Your{" "}
+              <TitleAccent>IPTV</TitleAccent> Package
             </>
           }
-          lead="Find a subscription that matches the way you watch."
+          lead="Choose a reliable IPTV provider for TiviMate with flexible subscription plans. Explore our IPTV subscription plans for TiviMate, compare packages, and choose the right IPTV service."
           align="center"
         />
 
@@ -82,7 +83,7 @@ export function PlansSection() {
         <ScrollReveal delay={0.08} variant="cta">
           <div className="telvis-inline-actions is-row">
             <Link href={routes.installation} className="telvis-cta-outline">
-              How to Set Up TiviMate
+              Free Installation Guides
             </Link>
             <WhatsAppCta
               href={supportConfig.plansUrl}

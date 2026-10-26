@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MonitorPlay, Settings, ShieldCheck } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { routes } from "@/lib/site";
+import { routes, siteConfig } from "@/lib/site";
 
 export function HeroSection() {
   return (
@@ -21,27 +21,24 @@ export function HeroSection() {
 
             <ScrollReveal delay={0.1} variant="text">
               <h1 id="telvis-hero-heading" className="telvis-h1">
-                <span className="telvis-h1-accent">TiviMate</span> IPTV Player –
-                IPTV for TiviMate
+                <span className="telvis-h1-accent">TiviMate</span> IPTV Player:
+                Best IPTV App for IPTV Streaming | IPTV for TiviMate
               </h1>
             </ScrollReveal>
 
             <ScrollReveal delay={0.18} variant="text">
               <div className="telvis-copy">
                 <p>
-                  Already using TiviMate and looking for an IPTV subscription to
-                  add to your player?
+                  Looking for a reliable TiviMate IPTV player experience?
+                  Discover a compatible IPTV service for your Tivimate IPTV
+                  player. Get a flexible IPTV subscription to use with Tivimate.
+                  Whether you use Tivi IPTV or want to get more from your
+                  TiviMate Premium features, find flexible plans, easy setup
+                  guidance, and support for compatible devices.
                 </p>
                 <p>
-                  Get started with an IPTV service designed for a simple setup on
-                  compatible devices. Choose your preferred plan, receive your
-                  access details and follow our step-by-step guide to connect your
-                  subscription to TiviMate.
-                </p>
-                <p>
-                  Whether you&apos;re using a Fire TV device, Android TV or another
-                  compatible setup, our goal is to make the process
-                  straightforward from subscription to setup.
+                  Choose a suitable subscription and enjoy a more organized
+                  Tivimate IPTV USA viewing experience at home.
                 </p>
               </div>
             </ScrollReveal>
@@ -50,12 +47,12 @@ export function HeroSection() {
               <div className="telvis-actions">
                 <Link href={routes.plans} className="telvis-cta-primary">
                   <MonitorPlay size={16} strokeWidth={2} aria-hidden="true" />
-                  <span>View IPTV Plans</span>
+                  <span>Explore Tivimate Subscription Plans</span>
                 </Link>
 
                 <Link href={routes.installation} className="telvis-cta-secondary">
                   <Settings size={16} strokeWidth={2} aria-hidden="true" />
-                  <span>How to Set Up TiviMate</span>
+                  <span>Free Installation Guides</span>
                 </Link>
               </div>
             </ScrollReveal>
@@ -64,7 +61,7 @@ export function HeroSection() {
           <ScrollReveal delay={0.16} variant="media" className="telvis-hero-image-wrap">
             <Image
               src="/hero-image.jpeg"
-              alt="TiviMate IPTV Player interface with Live TV, EPG Guide, Catch Up and Favourites"
+              alt={siteConfig.h1}
               width={1200}
               height={900}
               className="telvis-hero-image"
@@ -79,8 +76,10 @@ export function HeroSection() {
                 <ShieldCheck size={22} strokeWidth={2.25} />
               </span>
               <div className="telvis-hero-trust-copy">
-                <strong>Trusted IPTV service for TiviMate users worldwide.</strong>
-                <span>Easy setup • Reliable streaming • 24/7 Support</span>
+                <strong>
+                  Compatible IPTV service for TiviMate users worldwide.
+                </strong>
+                <span>Flexible plans • Easy setup • 24/7 Support</span>
               </div>
             </div>
           </ScrollReveal>
