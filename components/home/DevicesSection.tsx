@@ -91,7 +91,7 @@ export function DevicesSection() {
         </div>
 
         <ScrollReveal delay={0.12} variant="cta">
-          <div className="telvis-inline-actions">
+          <div className="telvis-inline-actions is-center">
             <Link href={routes.installation} className="telvis-cta-primary">
               Check Installation or Set Up Guides
             </Link>

@@ -101,7 +101,7 @@ export function WhyChooseSection() {
         </div>
 
         <ScrollReveal delay={0.1} variant="cta">
-          <div className="telvis-inline-actions is-row">
+          <div className="telvis-inline-actions is-center">
             <Link href={routes.plans} className="telvis-cta-primary">
               Get Started With TiviMate
             </Link>

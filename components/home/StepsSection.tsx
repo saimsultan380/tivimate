@@ -81,7 +81,7 @@ export function StepsSection() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.14} variant="cta">
-          <div className="telvis-inline-actions is-row">
+          <div className="telvis-inline-actions is-row is-center">
             <Link href={routes.plans} className="telvis-cta-primary">
               Explore Tivimate Subscription Plans
             </Link>

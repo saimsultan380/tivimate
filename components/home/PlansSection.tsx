@@ -81,7 +81,7 @@ export function PlansSection() {
         </div>
 
         <ScrollReveal delay={0.08} variant="cta">
-          <div className="telvis-inline-actions is-row">
+          <div className="telvis-inline-actions is-row is-center">
             <Link href={routes.installation} className="telvis-cta-outline">
               Free Installation Guides
             </Link>

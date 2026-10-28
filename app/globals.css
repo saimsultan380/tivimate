@@ -2214,7 +2214,16 @@ main > :first-child.telvis-article {
   }
 
   .telvis-inline-actions.is-row {
+    flex-wrap: wrap;
     gap: 8px;
+  }
+
+  .telvis-inline-actions .telvis-cta-primary,
+  .telvis-inline-actions .telvis-cta-outline,
+  .telvis-inline-actions .telvis-cta-secondary,
+  .telvis-inline-actions .telvis-cta-glass {
+    flex: 1 1 100%;
+    width: 100%;
   }
 
   .telvis-inline-actions.is-row .telvis-cta-primary,
@@ -3024,17 +3033,28 @@ main > :first-child.telvis-article {
   margin-top: 32px;
 }
 
+.telvis-inline-actions.is-center {
+  justify-content: center;
+}
+
 .telvis-inline-actions.is-row {
   flex-wrap: nowrap;
   gap: 10px;
 }
 
+.telvis-inline-actions .telvis-cta-primary,
+.telvis-inline-actions .telvis-cta-outline,
+.telvis-inline-actions .telvis-cta-secondary,
+.telvis-inline-actions .telvis-cta-glass {
+  flex: 0 0 auto;
+  width: fit-content;
+  max-width: 100%;
+}
+
 .telvis-inline-actions.is-row .telvis-cta-primary,
 .telvis-inline-actions.is-row .telvis-cta-outline {
-  flex: 1 1 0;
-  min-width: 0;
   min-height: 48px;
-  padding: 10px 12px;
+  padding: 10px 18px;
   font-size: 13px;
   line-height: 1.2;
 }

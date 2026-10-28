@@ -111,7 +111,7 @@ export function WhyTivimateSection() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.12} variant="cta">
-          <div className="telvis-inline-actions is-row">
+          <div className="telvis-inline-actions is-center">
             <Link href={routes.plans} className="telvis-cta-primary">
               View IPTV Plans
             </Link>

@@ -57,185 +57,114 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "tivimate-companion-app",
-    title: "TiviMate Companion App: What It Does and How to Use It",
-    seoTitle:
-      "TiviMate Companion App: How It Works + What It Does & Setup",
+    title: "TiviMate Companion App: Download, Login & Premium Setup",
+    seoTitle: "TiviMate Companion App: Download, Login & Premium Setup",
     description:
-      "Learn what the TiviMate Companion app does, how to set it up, activate Premium on Firestick, manage devices, and fix common account issues.",
+      "Learn what the TiviMate Companion app does, how to install it, activate TiviMate Premium, manage devices & fix common login and setup issues with ease today.",
     excerpt:
-      "Learn how TiviMate Companion unlocks Premium, manages devices, and helps with Firestick activation — plus fixes for common account issues.",
-    image: "/tivimate-companion-app.png",
-    imageAlt: "TiviMate Companion App for Premium activation and device management",
+      "Download TiviMate Companion, activate Premium, manage devices, and fix common login issues — plus how it differs from the main IPTV player.",
+    image: "/tivimate-companion-thumbnail.png",
+    imageAlt:
+      "TiviMate Companion App download, login, and Premium setup guide",
     datePublished: "2026-10-19",
-    dateModified: "2026-10-19",
+    dateModified: "2026-10-28",
     keywords: [
       "TiviMate Companion",
       "TiviMate Companion app",
+      "TiviMate Companion download",
+      "TiviMate Companion login",
       "TiviMate Premium activation",
       "TiviMate Companion Firestick",
-      "TiviMate Companion not working",
-      "activate TiviMate Premium",
+      "TV Mate Companion",
     ],
     content: [
       {
         type: "p",
-        text: "The TiviMate Companion app helps users unlock TiviMate Premium on compatible devices without Google Play and manage activated devices. If you use TiviMate on an Amazon Firestick or another supported streaming device, Companion may be part of your Premium setup.",
+        text: "The TiviMate Companion app helps users unlock TiviMate Premium functionality on supported devices without Google Play and manage activated devices. If you use TiviMate IPTV Player on an Amazon Firestick or another compatible streaming device, understanding how Companion works can make Premium activation easier.",
       },
       {
         type: "p",
-        text: "However, it is important to understand one thing: TiviMate Companion is not an IPTV player. It does not stream live TV, load M3U playlists, or provide channels. Those tasks belong to the main TiviMate IPTV Player.",
-      },
-      {
-        type: "p",
-        text: "In this guide, you will learn what TiviMate Companion does, who needs it, how to get started, and how to resolve common activation problems.",
+        text: "Unlike the main TiviMate IPTV player, the Companion app does not play channels, load M3U playlists, or provide IPTV subscriptions. Its purpose is related to Premium access and device management.",
       },
       { type: "h2", text: "What Is the TiviMate Companion App?" },
       {
         type: "p",
-        text: "TiviMate Companion is a separate app published by Armobsoft FZE, the developer associated with TiviMate. Its stated purposes are to unlock Premium functionality on devices without Google Play and manage activated devices.",
+        text: "TiviMate Companion is a separate application published by Armobsoft FZE, the developer associated with TiviMate. Its official Google Play listing explains that the app is intended to unlock Premium functionality on devices without Google Play and manage activated devices.",
       },
       {
         type: "p",
-        text: "Here is how the two apps differ:",
+        text: "The main TiviMate IPTV player is used to load compatible IPTV playlists, browse channels, and watch available streams. Companion supports the Premium-related process rather than replacing the player.",
       },
       {
-        type: "table",
-        headers: [
-          "Feature",
-          "TiviMate Companion",
-          "TiviMate IPTV Player",
-        ],
-        rows: [
-          [
-            "Unlock Premium",
-            "Supports the Premium activation process",
-            "Uses the available activation options",
-          ],
-          [
-            "Manage activated devices",
-            "Yes",
-            "Main viewing and playback interface",
-          ],
-          [
-            "Play live TV",
-            "No",
-            "Yes, with a compatible playlist",
-          ],
-          ["Add M3U playlists", "No", "Yes"],
-          [
-            "Display EPG",
-            "No",
-            "Yes, with supported guide data",
-          ],
-          [
-            "Provide IPTV channels",
-            "No",
-            "No, a separate content source is required",
-          ],
-        ],
-      },
-      {
-        type: "note",
-        text: "In simple terms, Companion helps with Premium access and device management, while the main TiviMate app handles your viewing experience.",
+        type: "p",
+        text: "If you search for TV Mate Companion, TiviMate Companion app, or TiviMate Companion login, you are generally looking for this separate application and its account or activation functions.",
       },
       { type: "h2", text: "What Does TiviMate Companion Do?" },
       {
         type: "p",
-        text: "The app is useful for two main purposes.",
+        text: "The Companion app has two main purposes:",
       },
-      { type: "h3", text: "1. Unlock TiviMate Premium" },
+      { type: "h3", text: "Unlock TiviMate Premium" },
       {
         type: "p",
-        text: "If your streaming device does not have Google Play, you may need TiviMate Companion on a compatible Android phone or tablet to complete the Premium purchase and activation process.",
+        text: "Companion can help users access TiviMate Premium functionality on supported devices where Google Play is unavailable. The exact purchase and activation steps depend on the current app version and the options presented to your account.",
       },
+      { type: "h3", text: "Manage Activated Devices" },
       {
         type: "p",
-        text: "The exact steps depend on your device and the options available in your current TiviMate version.",
+        text: "The application also provides device-management functionality for activated devices. This can help you review the devices associated with your Premium access.",
       },
-      { type: "h3", text: "2. Manage activated devices" },
+      { type: "h3", text: "What Companion Does Not Do" },
       {
         type: "p",
-        text: "TiviMate Companion also supports management of devices activated with Premium. This can help when organising your setup across compatible streaming devices.",
-      },
-      {
-        type: "p",
-        text: "Check the current account and device-management options in the app before making changes to an existing activation.",
-      },
-      { type: "h2", text: "How to Use TiviMate Companion" },
-      {
-        type: "p",
-        text: "Follow these steps if you need Companion to purchase or activate TiviMate Premium.",
-      },
-      {
-        type: "h3",
-        text: "Step 1: Install the official Companion app",
+        text: "TiviMate Companion is not an IPTV player. It does not provide live TV channels, movies, sports streams, M3U playlists, Xtream Codes API access, or an IPTV subscription.",
       },
       {
         type: "p",
-        text: "On a compatible Android phone or tablet, open the Google Play Store and search for TiviMate Companion.",
-      },
-      {
-        type: "p",
-        text: "Check that the publisher is Armobsoft FZE before installing the app. Avoid unofficial modified APKs or downloads from unknown websites.",
-      },
-      {
-        type: "h3",
-        text: "Step 2: Open the app and follow the account prompts",
-      },
-      {
-        type: "p",
-        text: "Launch TiviMate Companion and follow the account or sign-in instructions shown on screen. If you are creating an account, use an email address you can access and a strong, unique password.",
-      },
-      {
-        type: "p",
-        text: "Keep your TiviMate account credentials separate from your IPTV provider login details.",
-      },
-      { type: "h3", text: "Step 3: Choose your Premium option" },
-      {
-        type: "p",
-        text: "If you want Premium, review the purchase options and the price displayed in the app. Confirm the current terms before completing payment.",
-      },
-      {
-        type: "p",
-        text: "Do not assume that a Premium purchase includes an IPTV subscription. It unlocks TiviMate app features, not television channels or streaming content.",
-      },
-      {
-        type: "h3",
-        text: "Step 4: Activate Premium in TiviMate",
-      },
-      {
-        type: "p",
-        text: "Open the main TiviMate app on your TV device. Navigate to the Premium or account section and follow the activation prompts.",
-      },
-      {
-        type: "p",
-        text: "Sign in using the TiviMate account associated with your Premium purchase, if requested. Complete the on-screen instructions to activate the supported device.",
-      },
-      {
-        type: "p",
-        text: "Menu names and activation steps may differ by app version, so follow the options displayed on your device.",
-      },
-      { type: "h3", text: "Step 5: Confirm activation" },
-      {
-        type: "p",
-        text: "Return to TiviMate and check whether the Premium features you purchased are available. If activation fails, verify your account details, internet connection, and device activation status before trying again.",
+        text: "For playback, you need the main TiviMate app and a compatible content source that you are authorized to use.",
       },
       {
         type: "h2",
-        text: "Do You Need TiviMate Companion for Firestick?",
+        text: "How to Download the TiviMate Companion App",
       },
       {
         type: "p",
-        text: "You may need TiviMate Companion if your Firestick does not have Google Play and you want to purchase or activate TiviMate Premium through the Companion workflow.",
+        text: "The safest starting point is the official Google Play listing. Check the developer name, app details, and current availability before installing.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open Google Play on a compatible Android device.",
+          "Search for TiviMate Companion.",
+          "Verify that the publisher is Armobsoft FZE.",
+          "Review the listing and install the application if it is available for your device.",
+          "Open Companion and follow the purchase or activation instructions displayed in the app.",
+        ],
       },
       {
         type: "p",
-        text: "If you use an Android TV or Google TV device with Google Play, check whether you can complete the Premium process directly within TiviMate. Companion is not automatically required for every device.",
+        text: "You can also visit the official TiviMate website for current product information.",
+      },
+      {
+        type: "p",
+        text: "Avoid unofficial APK downloads that claim to offer free Premium access or modified activation features. These files may be outdated, modified, or unsafe.",
+      },
+      {
+        type: "h2",
+        text: "How to Activate TiviMate Premium With Companion",
+      },
+      {
+        type: "p",
+        text: "The activation process depends on your streaming device and the current purchase options available.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Install TiviMate IPTV Player",
       },
       {
         type: "p",
         parts: [
-          "Remember that installing TiviMate and activating Premium are separate from adding your IPTV playlist. You must still configure a compatible playlist in the main app to watch content. For Firestick installation help, see our ",
+          "Install the main TiviMate IPTV player on your compatible Android TV or Fire TV device using an available supported installation method. For Firestick help, see our ",
           {
             label: "How to Download or Install TiviMate on FireStick guide",
             href: blogPostPath(blogSlugs.firestickInstall),
@@ -243,45 +172,127 @@ export const blogPosts: BlogPost[] = [
           ".",
         ],
       },
+      { type: "h3", text: "Step 2: Install TiviMate Companion" },
       {
-        type: "h2",
-        text: "TiviMate Companion Not Working? Try These Fixes",
+        type: "p",
+        text: "If your device requires Companion for Premium activation, install the official app on a compatible Android device.",
+      },
+      {
+        type: "h3",
+        text: "Step 3: Follow the Premium Purchase Process",
       },
       {
         type: "p",
-        text: "If you cannot sign in or activate Premium, try the following checks:",
+        text: "Open Companion and follow the available instructions to review and purchase Premium, if this option is supported for your setup. Check the displayed price and terms before confirming payment.",
+      },
+      { type: "h3", text: "Step 4: Return to TiviMate" },
+      {
+        type: "p",
+        text: "Open the main TiviMate player on your television or streaming device and follow its current Premium activation instructions.",
+      },
+      { type: "h3", text: "Step 5: Check Your Premium Status" },
+      {
+        type: "p",
+        text: "Confirm that the Premium features you purchased are available. If activation fails, verify your account details and follow the official recovery instructions.",
       },
       {
-        type: "ul",
-        items: [
-          "Check your login details: Make sure you are using the correct TiviMate account, not your IPTV provider username and password.",
-          "Check your internet connection: A connection problem may prevent the app from completing account verification.",
-          "Update the app: Install available updates from the official source.",
-          "Review device activations: Check your account's available device-management options if you cannot activate another device.",
-          "Follow the current activation prompts: Older guides may show menu names or steps that no longer match your version.",
-          "Avoid repeated purchases: If a payment has completed but Premium is not active, check your account and purchase status before paying again.",
+        type: "p",
+        text: "Menu names and activation steps may change between versions, so use the instructions shown in your current app rather than relying on outdated screenshots.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Companion Login: Common Problems and Fixes",
+      },
+      {
+        type: "p",
+        text: "If you cannot sign in or activate Premium, check these common issues.",
+      },
+      { type: "h3", text: "Incorrect Login Details" },
+      {
+        type: "p",
+        text: "Check the account information you entered and make sure you are using the correct account for your purchase.",
+      },
+      { type: "h3", text: "Premium Not Activated" },
+      {
+        type: "p",
+        text: "Confirm that the purchase was completed successfully. Follow the recovery or restore instructions available in the app.",
+      },
+      { type: "h3", text: "Device Management Problems" },
+      {
+        type: "p",
+        text: "If your activated device list does not look correct, open the Companion app and review the available device-management options. Read the prompts carefully before changing any activation.",
+      },
+      { type: "h3", text: "App Not Available" },
+      {
+        type: "p",
+        text: "If Companion does not appear in your app store, check regional availability, device compatibility, and the official product information. Avoid downloading an unverified copy as a workaround.",
+      },
+      { type: "h3", text: "Outdated Instructions" },
+      {
+        type: "p",
+        text: "Older guides may describe menus or account procedures that no longer match your version. Follow the current instructions from the official app or developer.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Companion vs. TiviMate IPTV Player",
+      },
+      {
+        type: "table",
+        headers: [
+          "Features",
+          "TiviMate Companion",
+          "TiviMate IPTV Player",
+        ],
+        rows: [
+          [
+            "Main purpose",
+            "Premium-related activation and device management",
+            "IPTV playlist playback",
+          ],
+          [
+            "Watch live TV",
+            "No",
+            "Yes, with compatible content",
+          ],
+          [
+            "Add an M3U playlist",
+            "No",
+            "Yes, where supported",
+          ],
+          [
+            "Enter Xtream Codes",
+            "No",
+            "Yes, where supported",
+          ],
+          [
+            "Manage Premium access",
+            "Yes, for supported workflows",
+            "Access Premium features",
+          ],
+          ["Provide IPTV channels", "No", "No"],
+          ["Replace an IPTV subscription", "No", "No"],
         ],
       },
       {
-        type: "p",
-        text: "If the problem continues, consult the official app listing or available TiviMate support options.",
+        type: "note",
+        text: "The key difference is straightforward: Companion helps with Premium-related functions, while the main TiviMate IPTV player handles playlist configuration and playback.",
       },
       {
         type: "h2",
-        text: "TiviMate Companion vs TiviMate Premium: What Is the Difference?",
+        text: "TiviMate Premium Cost and Subscription Options",
       },
       {
         type: "p",
-        text: "TiviMate Companion is the supporting app used for Premium activation on certain devices and for managing activated devices. TiviMate Premium is the paid upgrade that unlocks additional functionality in the main player.",
+        text: "TiviMate Premium is separate from an IPTV content subscription. Its available purchase options and prices are shown through the relevant purchase process and may vary by region or change over time.",
       },
       {
         type: "p",
-        text: "Neither one provides live TV channels or an IPTV subscription.",
+        text: "Before purchasing, check the current price, billing period, renewal terms, and supported devices. Do not rely on old price lists or claims about free lifetime Premium access.",
       },
       {
         type: "p",
         parts: [
-          "If you are deciding whether the upgrade is worthwhile, read our guide to ",
+          "Remember that purchasing TiviMate Premium unlocks application features only. It does not supply TV channels or streaming content. For a feature breakdown, see ",
           {
             label: "TiviMate Premium vs Free",
             href: blogPostPath(blogSlugs.premiumVsFree),
@@ -294,51 +305,76 @@ export const blogPosts: BlogPost[] = [
         type: "faq",
         items: [
           {
-            question: "Is the TiviMate Companion app free?",
+            question: "What is the TiviMate Companion app used for?",
             answer:
-              "The Companion app is available to install through Google Play, with in-app purchases. TiviMate Premium is paid, and you should check the current price shown before purchasing.",
+              "It is used to unlock Premium functionality on supported devices without Google Play and manage activated devices. It is not an IPTV player.",
           },
           {
-            question: "Does TiviMate Companion provide IPTV channels?",
+            question: "Is TiviMate Companion free to download?",
             answer:
-              "No. It does not play channels or provide an IPTV subscription. You need the main TiviMate player and a compatible playlist from a source you are authorised to use.",
+              "The app may be available to install without an upfront download charge, but Premium functionality may require payment. Check the current official listing for purchase details.",
           },
           {
-            question: "Can I add an M3U playlist in TiviMate Companion?",
+            question: "Do I need TiviMate Companion for Firestick?",
             answer:
-              "No. Add your M3U playlist or supported connection details in the main TiviMate IPTV Player.",
+              "Companion may be needed for Premium activation when your Fire TV device does not have Google Play. Follow the activation options shown by your current TiviMate installation.",
           },
           {
-            question: "Do I need TiviMate Companion on Android TV?",
+            question: "Can I watch IPTV through TiviMate Companion?",
             answer:
-              "Not necessarily. If your device has Google Play and offers Premium activation directly in TiviMate, you may not need Companion.",
+              "No. You must use the main TiviMate IPTV player with a compatible playlist or authorized content source to watch IPTV.",
           },
           {
-            question: "Is TiviMate Companion a remote-control app?",
+            question: "How do I log in to TiviMate Companion?",
             answer:
-              "Its official listing describes Premium unlocking and activated-device management, not TV remote-control functionality.",
+              "Install the official app, open it, and follow the account or activation instructions displayed. Available options may vary by app version and account status.",
           },
           {
-            question: "What should I do if TiviMate Premium is not activating?",
+            question: "Does TiviMate Companion include an IPTV subscription?",
             answer:
-              "Check that you are signing in with the correct TiviMate account, confirm your connection, review device activation options, and follow the current prompts in the app.",
+              "No. Companion does not provide channels, streams, or an IPTV subscription. Content access comes from a separate compatible provider.",
+          },
+          {
+            question: "Can I use TiviMate Premium on multiple devices?",
+            answer:
+              "Device use depends on the current Premium license terms and activation limits. Check the official purchase details and use Companion's available device-management features.",
+          },
+          {
+            question: "What should I do if TiviMate Premium will not activate?",
+            answer:
+              "Verify your purchase, account details, and device compatibility. Then follow the official activation or recovery instructions shown in TiviMate or Companion.",
+          },
+          {
+            question: "Is TiviMate Companion available for iPhone?",
+            answer:
+              "The official Companion listing is on Google Play for Android. Check current official availability before looking for an iOS version or alternative activation method.",
+          },
+          {
+            question: "Where can I download TiviMate Companion safely?",
+            answer:
+              "Start with the official Google Play listing and verify that the developer is Armobsoft FZE. Avoid unofficial APK files that promise modified or unlocked Premium features.",
           },
         ],
       },
-      { type: "h2", text: "Final Thoughts" },
+      { type: "h2", text: "Get More From Your TiviMate Setup" },
       {
         type: "p",
-        text: "The TiviMate Companion app is useful when you need to activate TiviMate Premium on a device without Google Play or manage activated devices. It is not a second IPTV player, and it will not add channels or fix playlist problems by itself.",
+        text: "TiviMate Companion can simplify Premium-related activation and device management when your setup requires it. Use the official app, verify your purchase details, and keep the Companion app separate from your IPTV player and content subscription.",
       },
       {
         type: "p",
         parts: [
-          "For the smoothest setup, install the official app, follow the activation instructions for your device, and keep your TiviMate account separate from your IPTV provider credentials. Once Premium is activated, use the main TiviMate app to ",
+          "For playlist configuration, device compatibility, and troubleshooting, explore our ",
+          {
+            label: "TiviMate installation guides",
+            href: routes.installation,
+          },
+          " to help you set up your player correctly. You can also ",
           {
             label: "add your playlist",
             href: blogPostPath(blogSlugs.addPlaylist),
           },
-          ", configure the EPG, and watch your authorised content.",
+          " once Premium is activated.",
         ],
       },
     ],

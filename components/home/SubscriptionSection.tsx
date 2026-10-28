@@ -1,4 +1,4 @@
-import { Download, ExternalLink } from "lucide-react";
+import { Download } from "lucide-react";
 import Link from "next/link";
 import { CardReveal, CardRevealPart } from "@/components/ui/CardReveal";
 import { GlassIcon } from "@/components/ui/GlassIcon";
@@ -27,53 +27,33 @@ export function SubscriptionSection() {
           align="center"
         />
 
-        <div className="telvis-split" style={{ marginTop: 8 }}>
-          <CardReveal delay={0.06} className="telvis-glass telvis-panel">
-            <CardRevealPart variant="icon">
-              <div className="telvis-panel-head">
-                <GlassIcon icon={Download} />
-                <h3 className="telvis-panel-title">TiviMate Downloader Code</h3>
-              </div>
-            </CardRevealPart>
-            <CardRevealPart variant="content">
-              <p
-                className="telvis-plan-price"
-                style={{ margin: "12px 0 8px", letterSpacing: "0.04em" }}
-              >
-                {supportConfig.downloaderCode}
-              </p>
-              <p className="telvis-info-body">
-                Enter the code in the Downloader app&apos;s URL field and follow
-                the on-screen instructions to continue.
-              </p>
-            </CardRevealPart>
-          </CardReveal>
-
-          <CardReveal delay={0.12} className="telvis-glass telvis-panel">
-            <CardRevealPart variant="icon">
-              <div className="telvis-panel-head">
-                <GlassIcon icon={ExternalLink} />
-                <h3 className="telvis-panel-title">Direct TiviMate APK Download</h3>
-              </div>
-            </CardRevealPart>
-            <CardRevealPart variant="content">
-              <p className="telvis-info-body" style={{ marginBottom: 16 }}>
-                Prefer downloading on a computer or mobile device?
-              </p>
-              <a
-                href={supportConfig.officialApkUrl}
-                className="telvis-cta-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Tivimate Installer APK
-              </a>
-            </CardRevealPart>
-          </CardReveal>
-        </div>
+        <CardReveal
+          delay={0.06}
+          className="telvis-glass telvis-panel"
+          style={{ maxWidth: 560, marginInline: "auto", marginTop: 8 }}
+        >
+          <CardRevealPart variant="icon">
+            <div className="telvis-panel-head">
+              <GlassIcon icon={Download} />
+              <h3 className="telvis-panel-title">TiviMate Downloader Code</h3>
+            </div>
+          </CardRevealPart>
+          <CardRevealPart variant="content">
+            <p
+              className="telvis-plan-price"
+              style={{ margin: "12px 0 8px", letterSpacing: "0.04em" }}
+            >
+              {supportConfig.downloaderCode}
+            </p>
+            <p className="telvis-info-body">
+              Enter the code in the Downloader app&apos;s URL field and follow
+              the on-screen instructions to continue.
+            </p>
+          </CardRevealPart>
+        </CardReveal>
 
         <ScrollReveal delay={0.1} variant="cta">
-          <div className="telvis-inline-actions is-row">
+          <div className="telvis-inline-actions is-center">
             <Link href={routes.installation} className="telvis-cta-outline">
               Free Installation Guide
             </Link>
