@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { SiteFooter } from "@/components/home/SiteFooter";
 import { SiteHeader } from "@/components/home/SiteHeader";
 import { ButtonClickSound } from "@/components/ui/ButtonClickSound";
@@ -66,6 +67,18 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalyticsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${siteConfig.googleAnalyticsId}');
+          `}
+        </Script>
         <ButtonClickSound />
         <SiteHeader />
         {children}

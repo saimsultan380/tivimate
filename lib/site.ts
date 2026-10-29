@@ -6,6 +6,7 @@ export const siteConfig = {
   description:
     "Discover a compatible IPTV service for your TiviMate IPTV player. Get a flexible IPTV subscription, easy setup guidance, and support for Firestick and Android TV.",
   h1: "TiviMate IPTV Player: Best IPTV App for IPTV Streaming | IPTV for TiviMate",
+  googleAnalyticsId: "G-YXHFEFEPPC",
   keywords: [
     "TiviMate IPTV Player",
     "Tivimate IPTV player",
