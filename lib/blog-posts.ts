@@ -13,6 +13,9 @@ export const blogSlugs = {
     "install-tivimate-on-chromecast-google-tv",
   vsIptvSmarters: "tivimate-vs-iptv-smarters-pro",
   companionApp: "tivimate-companion-app",
+  companionHowItWorks: "tivimate-companion-app-how-it-works",
+  iphoneIpad: "tivimate-on-iphone-ipad",
+  remoteControlNotWorking: "tivimate-remote-control-not-working",
 } as const;
 
 export function blogPostPath(slug: string): string {
@@ -55,6 +58,1252 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "tivimate-remote-control-not-working",
+    title: "TiviMate Remote Control Not Working? 10 Ways to Fix It",
+    seoTitle: "TiviMate Remote Control Not Working? 10 Ways to Fix It",
+    description:
+      "TiviMate remote not working? Fix navigation, buttons, pairing and Firestick remote problems with these practical troubleshooting steps for Android TV devices.",
+    excerpt:
+      "Fix TiviMate remote issues on Firestick, Android TV, and Google TV — including OK button, pairing, cache, and remote-control settings.",
+    image: "/tivimate-remote-not-working-thumbnail.png",
+    imageAlt:
+      "TiviMate remote control not working troubleshooting guide",
+    datePublished: "2026-11-04",
+    dateModified: "2026-11-04",
+    keywords: [
+      "TiviMate remote not working",
+      "TiviMate remote control",
+      "Firestick remote TiviMate",
+      "TiviMate OK button not working",
+      "TiviMate navigation",
+      "Android TV remote TiviMate",
+      "TiviMate remote settings",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "TiviMate remote control not working? You press the OK button, try to change channels, or open the settings menu, but nothing happens. Sometimes the remote works normally on the Firestick or Android TV home screen but stops responding properly inside TiviMate.",
+      },
+      {
+        type: "p",
+        text: "This can happen for several reasons. The remote may have lost its connection, TiviMate's button settings may have changed, or your streaming device may have a temporary input problem.",
+      },
+      {
+        type: "p",
+        text: "The good thing is that you usually do not need to reinstall TiviMate or reset your entire device. A few simple checks can help you find the problem and get your remote working again.",
+      },
+      {
+        type: "p",
+        text: "Here are the most useful fixes for TiviMate remote problems on Firestick, Android TV, and Google TV.",
+      },
+      {
+        type: "h2",
+        text: "Why Is Your TiviMate Remote Not Working?",
+      },
+      {
+        type: "p",
+        text: "Before trying different solutions, check what exactly is happening. Is the entire remote unresponsive, or are only certain buttons causing problems?",
+      },
+      {
+        type: "p",
+        text: "For example, if the directional buttons work but the OK button does not, the issue may be different from a remote that cannot control TiviMate at all.",
+      },
+      {
+        type: "table",
+        headers: ["Remote problem", "Possible reason"],
+        rows: [
+          [
+            "Remote does not respond in TiviMate",
+            "Temporary app or device issue",
+          ],
+          [
+            "OK button not working",
+            "Button mapping or remote input problem",
+          ],
+          [
+            "Back button not working",
+            "Navigation settings or device-level issue",
+          ],
+          [
+            "Up and down buttons not changing channels",
+            "TiviMate remote-control configuration",
+          ],
+          [
+            "Remote works outside TiviMate only",
+            "App-specific input issue",
+          ],
+          [
+            "Bluetooth remote keeps disconnecting",
+            "Pairing, battery, or connection problem",
+          ],
+          [
+            "Some buttons perform the wrong action",
+            "Custom button assignments",
+          ],
+          [
+            "Firestick remote not responding",
+            "Battery, pairing, or Fire TV issue",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        text: "Start with the following fixes. You do not need to try all of them at once.",
+      },
+      {
+        type: "h2",
+        text: "1. Restart TiviMate and Open It Again",
+      },
+      {
+        type: "p",
+        text: "Start with the simplest solution. Sometimes TiviMate stops responding to remote inputs because the app has temporarily frozen or experienced a minor software glitch.",
+      },
+      {
+        type: "p",
+        text: "Close TiviMate completely and open it again.",
+      },
+      { type: "h3", text: "On Firestick:" },
+      {
+        type: "ol",
+        items: [
+          "Press the Home button on your remote.",
+          "Return to the Fire TV home screen.",
+          "Open TiviMate again from your apps.",
+          "Test the directional, OK, and Back buttons.",
+        ],
+      },
+      {
+        type: "p",
+        text: "On Android TV or Google TV, return to the home screen and reopen the application.",
+      },
+      {
+        type: "p",
+        text: "If the remote starts working normally, it was likely a temporary app issue. If not, move to the next fix.",
+      },
+      {
+        type: "h2",
+        text: "2. Check Whether Your Remote Works Outside TiviMate",
+      },
+      {
+        type: "p",
+        text: "This is one of the most important checks because it helps you identify whether the problem is with TiviMate or the physical remote.",
+      },
+      {
+        type: "p",
+        text: "Exit TiviMate and try using the same remote in another application, such as YouTube or the device's settings menu.",
+      },
+      {
+        type: "p",
+        text: "Check these buttons:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Up and Down",
+          "Left and Right",
+          "OK or Select",
+          "Back",
+          "Home",
+          "Menu",
+        ],
+      },
+      {
+        type: "p",
+        text: "If all buttons work normally in other applications but fail inside TiviMate, the problem is more likely related to TiviMate's settings or app behaviour.",
+      },
+      {
+        type: "p",
+        text: "However, if the remote also fails outside TiviMate, check its batteries, connection, and device compatibility before changing the IPTV player.",
+      },
+      { type: "h2", text: "3. Replace the Remote Batteries" },
+      {
+        type: "p",
+        text: "This may sound obvious, but weak batteries can cause inconsistent remote behaviour.",
+      },
+      {
+        type: "p",
+        text: "A remote may still respond to the Home button but fail to register other commands properly. This is particularly common when the batteries are nearly empty.",
+      },
+      {
+        type: "p",
+        text: "Try the following:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Remove the existing batteries.",
+          "Check the battery contacts for dirt or corrosion.",
+          "Insert a fresh pair of compatible batteries.",
+          "Make sure the positive and negative ends are positioned correctly.",
+          "Test the remote again.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you use a rechargeable Bluetooth remote, charge it fully before testing.",
+      },
+      {
+        type: "h2",
+        text: "4. Reconnect or Pair Your Bluetooth Remote",
+      },
+      {
+        type: "p",
+        text: "If you use a Bluetooth remote with an Android TV box, Google TV device, or another compatible streaming device, it may have lost its connection.",
+      },
+      {
+        type: "p",
+        text: "You can try removing the remote from the device's paired accessories and connecting it again.",
+      },
+      {
+        type: "p",
+        text: "On many Android TV and Google TV devices:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open the device's Settings.",
+          "Go to Remotes and Accessories or Bluetooth settings.",
+          "Find your remote in the connected-device list.",
+          "If available, select Forget or Unpair.",
+          "Put the remote into pairing mode using the manufacturer's instructions.",
+          "Select it again when it appears on the screen.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The exact menu names and pairing buttons depend on your device and remote model.",
+      },
+      {
+        type: "p",
+        text: "For a Fire TV remote, follow Amazon's pairing instructions for your particular Fire TV model. Do not assume every Firestick remote uses the same button combination.",
+      },
+      {
+        type: "p",
+        text: "After reconnecting, open TiviMate and check whether navigation works.",
+      },
+      {
+        type: "h2",
+        text: "5. Check TiviMate Remote Control Settings",
+      },
+      {
+        type: "p",
+        text: "Sometimes the remote is working, but its buttons are not performing the actions you expect.",
+      },
+      {
+        type: "p",
+        text: "TiviMate includes remote-control settings that allow you to customise certain button actions. For example, you may have changed what the directional buttons do while watching a channel.",
+      },
+      {
+        type: "p",
+        text: "To check them:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open TiviMate.",
+          "Navigate to Settings.",
+          "Select Remote Control.",
+          "Review the available button and action settings.",
+          "Check whether any important buttons have been assigned unexpected actions.",
+          "Restore the default behaviour if your version provides that option.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Pay particular attention to the actions assigned to Up, Down, Left, Right, OK, and long presses.",
+      },
+      {
+        type: "p",
+        text: "If the remote works but the buttons behave differently than before, this is one of the first places to look.",
+      },
+      {
+        type: "h2",
+        text: "6. Fix the OK or Select Button Not Working",
+      },
+      {
+        type: "p",
+        text: "The OK button is one of the most frequently used controls in TiviMate. It helps you select channels, open menus, confirm settings, and access different options.",
+      },
+      {
+        type: "p",
+        text: "If the OK button is not working, first test it outside TiviMate.",
+      },
+      {
+        type: "p",
+        text: "If it works in other applications, check whether the problem occurs everywhere in TiviMate or only on a particular screen.",
+      },
+      {
+        type: "p",
+        text: "Try these steps:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Restart TiviMate.",
+          "Check the Remote Control settings.",
+          "Test the OK button in the channel list and settings menu.",
+          "Check whether a long press works differently from a normal press.",
+          "Reconnect your Bluetooth remote if applicable.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Also remember that a normal press and a long press can perform different actions in TiviMate. If you are trying to open a channel's additional options, you may need to use the long-press action rather than a regular click.",
+      },
+      { type: "h2", text: "7. Clear TiviMate App Cache" },
+      {
+        type: "p",
+        text: "Temporary app files can sometimes contribute to freezing or unusual behaviour. Clearing the cache is a useful next step if restarting the application has not helped.",
+      },
+      { type: "h3", text: "On Firestick:" },
+      {
+        type: "ol",
+        items: [
+          "Open Settings.",
+          "Select Applications.",
+          "Choose Manage Installed Applications.",
+          "Find and open TiviMate.",
+          "Select Clear Cache.",
+          "Return to the home screen and launch TiviMate again.",
+        ],
+      },
+      {
+        type: "p",
+        text: "On Android TV or Google TV, the general route is:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open Settings.",
+          "Go to Apps.",
+          "Select TiviMate.",
+          "Open Storage or Storage and Cache.",
+          "Choose Clear Cache.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Menu names may differ depending on the device manufacturer and software version.",
+      },
+      {
+        type: "note",
+        text: "Important: Choose Clear Cache, not Clear Data. Clearing app data can remove your saved settings and require you to configure your playlists again.",
+      },
+      {
+        type: "h2",
+        text: "8. Restart Your Firestick or Android TV Device",
+      },
+      {
+        type: "p",
+        text: "If the remote works in some applications but not others, or the device itself feels slow, restart the streaming device.",
+      },
+      {
+        type: "p",
+        text: "A simple restart can resolve temporary system problems affecting remote input and application behaviour.",
+      },
+      {
+        type: "p",
+        text: "On Firestick, go to:",
+      },
+      {
+        type: "note",
+        text: "Settings → My Fire TV → Restart",
+      },
+      {
+        type: "p",
+        text: "On Android TV or Google TV, open the device's power or system settings and select Restart, where available.",
+      },
+      {
+        type: "p",
+        text: "You can also disconnect the streaming device from its power source, wait around 30 seconds, and reconnect it.",
+      },
+      {
+        type: "p",
+        text: "Once the device starts again, open TiviMate and test the remote.",
+      },
+      {
+        type: "h2",
+        text: "9. Check HDMI-CEC and Device Remote Settings",
+      },
+      {
+        type: "p",
+        text: "HDMI-CEC allows compatible devices connected through HDMI to communicate with each other. For example, your television remote may be able to control a connected streaming device.",
+      },
+      {
+        type: "p",
+        text: "However, problems with HDMI-CEC or device-level remote settings can sometimes cause unexpected button behaviour.",
+      },
+      {
+        type: "p",
+        text: "If you are using a television remote to control your Firestick or Android TV box, check the HDMI-CEC settings on both devices.",
+      },
+      {
+        type: "p",
+        text: "You can temporarily disable HDMI-CEC to see whether the behaviour changes. The setting may have a different name depending on the TV manufacturer, such as Anynet+, Simplink, BRAVIA Sync, or HDMI Control.",
+      },
+      {
+        type: "p",
+        text: "If disabling it makes no difference, restore your preferred setting.",
+      },
+      {
+        type: "p",
+        text: "This fix is particularly worth testing when the remote works inconsistently or certain buttons seem to control the television rather than the streaming device.",
+      },
+      {
+        type: "h2",
+        text: "10. Update TiviMate and Your Streaming Device",
+      },
+      {
+        type: "p",
+        text: "An outdated application or device operating system can sometimes cause compatibility problems.",
+      },
+      {
+        type: "p",
+        text: "Check whether an update is available for TiviMate through the official installation source you use. Also check for system updates on your Firestick, Android TV, or Google TV device.",
+      },
+      {
+        type: "p",
+        text: "After updating:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Restart your streaming device.",
+          "Open TiviMate.",
+          "Test all the main remote buttons.",
+          "Check whether the original problem has disappeared.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Always use the official TiviMate website or a trusted app store as appropriate for your device. Avoid installing modified versions from unknown websites.",
+      },
+      {
+        type: "h2",
+        text: "Firestick Remote Not Working with TiviMate",
+      },
+      {
+        type: "p",
+        parts: [
+          "Firestick users sometimes experience remote problems that do not appear in other applications. This can happen because the standard Fire TV remote is designed mainly for general streaming navigation, while TiviMate offers a more traditional live-TV experience. For Firestick installation help, see our ",
+          {
+            label: "How to Download or Install TiviMate on FireStick guide",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "Here are a few things worth checking specifically on Firestick:",
+      },
+      {
+        type: "table",
+        headers: ["Problem", "What to try"],
+        rows: [
+          [
+            "Firestick remote not navigating TiviMate",
+            "Restart Firestick and reopen TiviMate",
+          ],
+          [
+            "OK button not selecting channels",
+            "Test the button in other apps and check TiviMate settings",
+          ],
+          [
+            "Back button behaving unexpectedly",
+            "Check navigation and remote-control settings",
+          ],
+          [
+            "Remote disconnecting",
+            "Replace batteries and follow Amazon's pairing instructions",
+          ],
+          [
+            "Channel switching buttons unavailable",
+            "Check whether your remote has dedicated channel buttons or configurable actions",
+          ],
+          [
+            "Remote working slowly",
+            "Check device performance and restart Firestick",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        text: "Can You Change Channels with the Firestick Remote?",
+      },
+      {
+        type: "p",
+        text: "Yes. You can navigate TiviMate using the directional buttons on a compatible Firestick remote.",
+      },
+      {
+        type: "p",
+        text: "The standard Fire TV remote does not necessarily have dedicated channel-up and channel-down buttons. You can use the available navigation controls and check TiviMate's Remote Control settings to customise supported actions.",
+      },
+      {
+        type: "p",
+        text: "If you have a remote with additional programmable buttons, you may have more options depending on its compatibility.",
+      },
+      {
+        type: "h2",
+        text: "How to Make TiviMate Remote Navigation Easier",
+      },
+      {
+        type: "p",
+        text: "If your remote is working but navigating through a large playlist feels slow, a few small changes can improve the experience.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Organise your favourites: Keep your most-watched channels in a separate favourites list.",
+          "Use channel groups: Organise channels by category so you do not have to scroll through the entire playlist.",
+          "Check button assignments: Choose actions that make sense for your normal viewing habits.",
+          "Use search: Find a channel directly instead of browsing a long list.",
+          "Learn long-press actions: Some additional channel and programme options are available through long presses.",
+        ],
+      },
+      {
+        type: "p",
+        text: "These adjustments can make TiviMate easier to use, especially when you have a large number of channels.",
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Why is my TiviMate remote control not working?",
+            answer:
+              "It may be caused by a temporary app issue, incorrect button assignments, weak batteries, a disconnected remote, or a device-level problem. Test the remote in another application to identify the source.",
+          },
+          {
+            question:
+              "Why does my Firestick remote work everywhere except TiviMate?",
+            answer:
+              "The issue may be related to TiviMate's remote-control settings or a temporary app problem. Restart TiviMate, check the button assignments, and clear the app cache if necessary.",
+          },
+          {
+            question: "Why is the OK button not working in TiviMate?",
+            answer:
+              "Check whether the OK button works outside TiviMate. If it does, restart the app and review the remote-control settings. Also check whether you are using a normal press or a long press for the action you want.",
+          },
+          {
+            question: "How do I reset TiviMate remote settings?",
+            answer:
+              "Open TiviMate Settings and select Remote Control. Review the available actions and use a reset or default option if your version provides one.",
+          },
+          {
+            question: "Can I use a Bluetooth remote with TiviMate?",
+            answer:
+              "Yes, you can use a compatible Bluetooth remote with a supported Android TV or streaming device. Pair the remote through your device's Bluetooth settings first.",
+          },
+          {
+            question: "Does TiviMate support universal remotes?",
+            answer:
+              "A universal remote may work if it is compatible with your streaming device and sends supported navigation commands. Compatibility depends on the remote and the device, not just TiviMate.",
+          },
+          {
+            question: "Why does my TiviMate remote work slowly?",
+            answer:
+              "Slow responses may be related to device performance, temporary app problems, or a weak wireless connection. Restart the device, check the remote batteries, and close unnecessary background applications.",
+          },
+          {
+            question: "Will reinstalling TiviMate fix remote problems?",
+            answer:
+              "It might help if the app installation is corrupted, but reinstalling should be a last resort. Try restarting the app, checking remote settings, clearing the cache, and restarting the device first. Back up your setup before removing the application.",
+          },
+        ],
+      },
+      { type: "h2", text: "Conclusion" },
+      {
+        type: "p",
+        text: "When your TiviMate remote control stops working, the problem is not always with the remote itself. It could be a temporary app issue, incorrect button settings, a Bluetooth connection problem, or something related to your Firestick or Android TV device.",
+      },
+      {
+        type: "p",
+        text: "Start by testing the remote outside TiviMate. Then check its connection, restart the application, review the remote-control settings, and clear the cache if needed.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Most importantly, avoid resetting or reinstalling everything before identifying the actual problem. A few simple checks are often enough to get your TiviMate remote working normally again. For related buffering issues, see our ",
+          {
+            label: "TiviMate Buffering Fix guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          ".",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "tivimate-on-iphone-ipad",
+    title: "How to Install or Set Up TiviMate on iPhone or iPad?",
+    seoTitle: "TiviMate on iPhone or iPad: Setup & Best Alternatives",
+    description:
+      "Learn why TiviMate is not available for iPhone or iPad and how to set up a compatible IPTV player using an M3U playlist or Xtream Codes login.",
+    excerpt:
+      "TiviMate is not on the App Store. Learn how to watch IPTV on iPhone or iPad with a compatible player using M3U or Xtream Codes.",
+    image: "/tivimate-iphone-ipad-thumbnail.png",
+    imageAlt: "TiviMate on iPhone or iPad setup and alternatives guide",
+    datePublished: "2026-11-04",
+    dateModified: "2026-11-04",
+    keywords: [
+      "TiviMate on iPhone",
+      "TiviMate on iPad",
+      "TiviMate iOS",
+      "IPTV on iPhone",
+      "IPTV player iPad",
+      "TiviMate App Store",
+      "TiviMate alternative iPhone",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "If you are trying to install TiviMate on your iPhone or iPad, you will not find the official app in the Apple App Store. TiviMate is designed mainly for Android TV devices and remote-control navigation. It is not available as a native iOS application.",
+      },
+      {
+        type: "p",
+        text: "But you can still watch your IPTV subscription on an iPhone or iPad. You just need another IPTV player that supports Apple devices and accepts your provider's playlist details, such as an M3U URL or Xtream Codes login.",
+      },
+      {
+        type: "p",
+        text: "The setup is quite simple. You install a compatible player from the App Store, enter your IPTV details, and wait for your channels to load. Here is how to do it.",
+      },
+      {
+        type: "h2",
+        text: "Can You Install TiviMate on iPhone or iPad?",
+      },
+      {
+        type: "p",
+        text: "No, you cannot officially install TiviMate on an iPhone or iPad. The application is designed for Android TV, and its official Google Play listing states that it is not optimised for touch devices such as phones and tablets.",
+      },
+      {
+        type: "p",
+        text: "There is also no official TiviMate iOS version that you can download from the Apple App Store.",
+      },
+      {
+        type: "table",
+        headers: ["Device", "TiviMate availability"],
+        rows: [
+          ["Android TV", "Yes"],
+          ["Google TV", "Yes"],
+          ["Compatible Fire TV devices", "Yes"],
+          [
+            "Android phones and tablets",
+            "Not optimised for these devices",
+          ],
+          ["iPhone", "No official app"],
+          ["iPad", "No official app"],
+          ["Apple TV", "No official app"],
+          ["Windows or Mac", "No native desktop app"],
+        ],
+      },
+      {
+        type: "p",
+        text: "So, if you see a website offering a TiviMate iPhone APK or an unofficial iOS installation file, avoid it. iPhones do not install Android APK files, and unofficial downloads can put your device and personal information at risk.",
+      },
+      {
+        type: "h2",
+        text: "How to Watch IPTV on iPhone or iPad Instead?",
+      },
+      {
+        type: "p",
+        text: "The easiest option is to use an IPTV player available through the Apple App Store.",
+      },
+      {
+        type: "p",
+        text: "There are different IPTV players for iOS. Some support M3U playlists, while others also accept Xtream Codes login details. Before downloading one, check that it supports the connection method provided by your IPTV service.",
+      },
+      {
+        type: "p",
+        text: "For example, iPTV Player + is an App Store listing for iPhone and iPad that supports M3U and Xtream Codes playlists. Other compatible players may offer different features and pricing.",
+      },
+      {
+        type: "p",
+        text: "Remember, these are alternatives to TiviMate, not official versions of TiviMate.",
+      },
+      {
+        type: "h2",
+        text: "How to Set Up an IPTV Player on iPhone or iPad",
+      },
+      {
+        type: "p",
+        text: "Once you have selected a compatible player, follow these steps.",
+      },
+      { type: "h3", text: "1. Open the Apple App Store" },
+      {
+        type: "p",
+        text: "Open the App Store on your iPhone or iPad and search for an IPTV player.",
+      },
+      {
+        type: "p",
+        text: "Check its compatibility, developer information, supported playlist formats, and current reviews before installing it. Some apps are free to download but charge for additional features.",
+      },
+      { type: "h3", text: "2. Install the IPTV Player" },
+      {
+        type: "p",
+        text: "Choose the application that supports your IPTV provider's login method and tap Get or Install.",
+      },
+      {
+        type: "p",
+        text: "Once the installation finishes, open the app. You may see options to add a playlist, connect an account, or enter your IPTV details.",
+      },
+      { type: "h3", text: "3. Add Your M3U Playlist" },
+      {
+        type: "p",
+        text: "If your IPTV provider has given you an M3U URL, select the M3U or playlist option in the application.",
+      },
+      {
+        type: "p",
+        text: "You will generally need to:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Open the playlist or account section.",
+          "Select the option to add an M3U playlist.",
+          "Enter the M3U URL supplied by your provider.",
+          "Add a playlist name if the app requests one.",
+          "Save the details and wait for the channels to load.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Make sure you copy the complete URL. Even a small typing mistake can stop the playlist from loading.",
+      },
+      {
+        type: "h3",
+        text: "4. Use Xtream Codes Login if Supported",
+      },
+      {
+        type: "p",
+        text: "Some IPTV players also support Xtream Codes API login. If your provider has supplied these details, you can use them instead of an M3U link.",
+      },
+      {
+        type: "p",
+        text: "You will generally need three pieces of information:",
+      },
+      {
+        type: "table",
+        headers: ["Login detail", "What it means"],
+        rows: [
+          ["Server URL", "The address of your IPTV service"],
+          ["Username", "Your assigned account username"],
+          ["Password", "Your assigned account password"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Open the Xtream Codes or API login option, enter the information exactly as provided, and save it.",
+      },
+      {
+        type: "p",
+        text: "Not every iPhone IPTV player supports this login method, so check the app's features first.",
+      },
+      { type: "h3", text: "5. Load Your Channels and EPG" },
+      {
+        type: "p",
+        text: "After adding your playlist, give the application some time to process the available content.",
+      },
+      {
+        type: "p",
+        text: "Your live TV channels should appear if the playlist is valid and supported. If your provider supplies EPG data, you may also be able to view programme names, timings, and descriptions.",
+      },
+      {
+        type: "p",
+        text: "Some applications load EPG information automatically, while others require you to enter a separate EPG URL or refresh the guide.",
+      },
+      {
+        type: "h3",
+        text: "6. Start Watching on Your iPhone or iPad",
+      },
+      {
+        type: "p",
+        text: "Once everything is loaded, open a channel and check whether the stream plays correctly.",
+      },
+      {
+        type: "p",
+        text: "You can also explore available options such as favourites, channel categories, subtitles, playback settings, and AirPlay, depending on the player you installed.",
+      },
+      {
+        type: "p",
+        text: "That is all you need to start watching your authorised IPTV content on an Apple device.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate vs IPTV Players for iPhone and iPad",
+      },
+      {
+        type: "p",
+        text: "Since TiviMate is not available on iOS, you need to choose an alternative that works with your device.",
+      },
+      {
+        type: "table",
+        headers: [
+          "Feature",
+          "TiviMate",
+          "Compatible iOS IPTV Player",
+        ],
+        rows: [
+          ["iPhone support", "No", "Depends on the app"],
+          ["iPad support", "No", "Depends on the app"],
+          ["M3U playlist", "Yes", "Available in many players"],
+          ["Xtream Codes", "Yes", "Depends on the app"],
+          ["EPG", "Yes", "Depends on the app"],
+          [
+            "Touchscreen navigation",
+            "Not its intended design",
+            "Usually designed for touch",
+          ],
+          [
+            "Apple App Store installation",
+            "No",
+            "Yes, for listed apps",
+          ],
+          ["Premium features", "TiviMate Premium", "Varies by application"],
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "If you mainly watch IPTV on an Android TV or Firestick, TiviMate remains a suitable option on compatible devices. If you want to watch on an iPhone or iPad, choose an iOS player with the playlist and playback features you need. For Firestick setup, see our ",
+          {
+            label: "How to Download or Install TiviMate on FireStick guide",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Can You Use TiviMate Companion on iPhone?",
+      },
+      {
+        type: "p",
+        text: "No. TiviMate Companion is not an iPhone IPTV player or an alternative version of TiviMate.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Its purpose is to help unlock TiviMate Premium on devices without Google Play and manage activated devices. It does not play channels, load M3U playlists, or provide an iOS viewing interface. Learn more in our ",
+          {
+            label: "TiviMate Companion App guide",
+            href: blogPostPath(blogSlugs.companionApp),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you want to watch IPTV on your iPhone, you need a separate application made for iOS.",
+      },
+      {
+        type: "h2",
+        text: "Common Problems When Setting Up IPTV on iPhone or iPad",
+      },
+      {
+        type: "p",
+        text: "Sometimes your playlist may not load correctly on the first attempt. Before changing applications, check these common issues.",
+      },
+      {
+        type: "table",
+        headers: ["Problem", "What to check"],
+        rows: [
+          [
+            "Playlist not loading",
+            "Check the M3U URL for typing errors",
+          ],
+          [
+            "Login failed",
+            "Verify your username, password, and server address",
+          ],
+          [
+            "Channels missing",
+            "Ask your provider whether the playlist is active",
+          ],
+          [
+            "EPG not showing",
+            "Check whether EPG data is supplied and configured",
+          ],
+          [
+            "Buffering",
+            "Test your internet connection and try another stream",
+          ],
+          [
+            "App not opening a channel",
+            "Check the supported stream format and player settings",
+          ],
+          [
+            "Playlist expired",
+            "Confirm your account status with your provider",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        text: "If the same stream fails in more than one player, the issue may be with the source or internet connection rather than the application.",
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Is TiviMate available for iPhone?",
+            answer:
+              "No. There is no official TiviMate application for iPhone. You can use a compatible IPTV player from the Apple App Store instead.",
+          },
+          {
+            question: "Can I install TiviMate on an iPad?",
+            answer:
+              "No. TiviMate is designed mainly for Android TV devices and does not have an official iPad version.",
+          },
+          {
+            question: "What is the best TiviMate alternative for iPhone?",
+            answer:
+              "The best option depends on your requirements. Look for an iOS IPTV player that supports your playlist format, EPG data, and preferred playback features.",
+          },
+          {
+            question: "Can I use an M3U playlist on an iPhone?",
+            answer:
+              "Yes. Many IPTV players available for iPhone support M3U playlists. You can add your playlist URL through the app's playlist or account settings.",
+          },
+          {
+            question: "Can I use Xtream Codes on an iPad?",
+            answer:
+              "Yes, provided the IPTV player you choose supports Xtream Codes login. You will generally need your server URL, username, and password.",
+          },
+          {
+            question: "Does TiviMate Companion work on iPhone?",
+            answer:
+              "No. TiviMate Companion is a separate Android app used for Premium activation and device management. It is not an iPhone IPTV player.",
+          },
+          {
+            question: "Can I watch IPTV on iPhone without installing TiviMate?",
+            answer:
+              "Yes. Install a compatible IPTV player from the App Store and add your authorised M3U playlist or supported login details.",
+          },
+          {
+            question: "Can I watch IPTV on my iPad using AirPlay?",
+            answer:
+              "Some iOS IPTV players support AirPlay, allowing you to send compatible video playback to an Apple TV or another supported device. This depends on the application and the stream.",
+          },
+        ],
+      },
+      { type: "h2", text: "Conclusion" },
+      {
+        type: "p",
+        text: "You cannot install the official TiviMate app on an iPhone or iPad because it is designed for Android-based TV devices. However, you do not need to miss out on IPTV just because you use an Apple device.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Install a compatible IPTV player from the App Store, add your M3U playlist or Xtream Codes details, and configure the EPG if your service provides it. For playlist help on TiviMate-compatible devices, see ",
+          {
+            label: "How to Add Playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "If you already use TiviMate on a Firestick or Android TV, you can continue using it there and choose a separate iOS player for your iPhone or iPad. This is the simplest way to enjoy your authorised IPTV content across different devices. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "tivimate-companion-app-how-it-works",
+    title: "TiviMate Companion App: What It Does and How to Use It",
+    seoTitle: "TiviMate Companion App: How It Works + What It Does & Setup",
+    description:
+      "Learn what the TiviMate Companion app does, how to set it up, activate Premium on Firestick, manage devices, and fix common account issues.",
+    excerpt:
+      "Learn how TiviMate Companion unlocks Premium, manages devices, and helps with Firestick activation — plus fixes for common account issues.",
+    image: "/tivimate-companion-app-thumbnail.png",
+    imageAlt:
+      "TiviMate Companion App: what it does and how to set it up",
+    datePublished: "2026-11-04",
+    dateModified: "2026-11-04",
+    keywords: [
+      "TiviMate Companion",
+      "TiviMate Companion app",
+      "TiviMate Premium activation",
+      "TiviMate Companion Firestick",
+      "TiviMate Companion not working",
+      "activate TiviMate Premium",
+      "what is TiviMate Companion",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "The TiviMate Companion app helps users unlock TiviMate Premium on compatible devices without Google Play and manage activated devices. If you use TiviMate on an Amazon Firestick or another supported streaming device, Companion may be part of your Premium setup.",
+      },
+      {
+        type: "p",
+        text: "However, it is important to understand one thing: TiviMate Companion is not an IPTV player. It does not stream live TV, load M3U playlists, or provide channels. Those tasks belong to the main TiviMate IPTV Player.",
+      },
+      {
+        type: "p",
+        text: "In this guide, you will learn what TiviMate Companion does, who needs it, how to get started, and how to resolve common activation problems.",
+      },
+      { type: "h2", text: "What Is the TiviMate Companion App?" },
+      {
+        type: "p",
+        text: "TiviMate Companion is a separate app published by Armobsoft FZE, the developer associated with TiviMate. Its stated purposes are to unlock Premium functionality on devices without Google Play and manage activated devices.",
+      },
+      {
+        type: "p",
+        text: "Here is how the two apps differ:",
+      },
+      {
+        type: "table",
+        headers: [
+          "Feature",
+          "TiviMate Companion",
+          "TiviMate IPTV Player",
+        ],
+        rows: [
+          [
+            "Unlock Premium",
+            "Supports the Premium activation process",
+            "Uses the available activation options",
+          ],
+          [
+            "Manage activated devices",
+            "Yes",
+            "Main viewing and playback interface",
+          ],
+          [
+            "Play live TV",
+            "No",
+            "Yes, with a compatible playlist",
+          ],
+          ["Add M3U playlists", "No", "Yes"],
+          [
+            "Display EPG",
+            "No",
+            "Yes, with supported guide data",
+          ],
+          [
+            "Provide IPTV channels",
+            "No",
+            "No, a separate content source is required",
+          ],
+        ],
+      },
+      {
+        type: "note",
+        text: "In simple terms, Companion helps with Premium access and device management, while the main TiviMate app handles your viewing experience.",
+      },
+      { type: "h2", text: "What Does TiviMate Companion Do?" },
+      {
+        type: "p",
+        text: "The app is useful for two main purposes.",
+      },
+      { type: "h3", text: "1. Unlock TiviMate Premium" },
+      {
+        type: "p",
+        text: "If your streaming device does not have Google Play, you may need TiviMate Companion on a compatible Android phone or tablet to complete the Premium purchase and activation process.",
+      },
+      {
+        type: "p",
+        text: "The exact steps depend on your device and the options available in your current TiviMate version.",
+      },
+      { type: "h3", text: "2. Manage activated devices" },
+      {
+        type: "p",
+        text: "TiviMate Companion also supports management of devices activated with Premium. This can help when organising your setup across compatible streaming devices.",
+      },
+      {
+        type: "p",
+        text: "Check the current account and device-management options in the app before making changes to an existing activation.",
+      },
+      { type: "h2", text: "How to Use TiviMate Companion" },
+      {
+        type: "p",
+        text: "Follow these steps if you need Companion to purchase or activate TiviMate Premium.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Install the official Companion app",
+      },
+      {
+        type: "p",
+        text: "On a compatible Android phone or tablet, open the Google Play Store and search for TiviMate Companion.",
+      },
+      {
+        type: "p",
+        text: "Check that the publisher is Armobsoft FZE before installing the app. Avoid unofficial modified APKs or downloads from unknown websites.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Open the app and follow the account prompts",
+      },
+      {
+        type: "p",
+        text: "Launch TiviMate Companion and follow the account or sign-in instructions shown on screen. If you are creating an account, use an email address you can access and a strong, unique password.",
+      },
+      {
+        type: "p",
+        text: "Keep your TiviMate account credentials separate from your IPTV provider login details.",
+      },
+      { type: "h3", text: "Step 3: Choose your Premium option" },
+      {
+        type: "p",
+        text: "If you want Premium, review the purchase options and the price displayed in the app. Confirm the current terms before completing payment.",
+      },
+      {
+        type: "p",
+        text: "Do not assume that a Premium purchase includes an IPTV subscription. It unlocks TiviMate app features, not television channels or streaming content.",
+      },
+      {
+        type: "h3",
+        text: "Step 4: Activate Premium in TiviMate",
+      },
+      {
+        type: "p",
+        text: "Open the main TiviMate app on your TV device. Navigate to the Premium or account section and follow the activation prompts.",
+      },
+      {
+        type: "p",
+        text: "Sign in using the TiviMate account associated with your Premium purchase, if requested. Complete the on-screen instructions to activate the supported device.",
+      },
+      {
+        type: "p",
+        text: "Menu names and activation steps may differ by app version, so follow the options displayed on your device.",
+      },
+      { type: "h3", text: "Step 5: Confirm activation" },
+      {
+        type: "p",
+        text: "Return to TiviMate and check whether the Premium features you purchased are available. If activation fails, verify your account details, internet connection, and device activation status before trying again.",
+      },
+      {
+        type: "h2",
+        text: "Do You Need TiviMate Companion for Firestick?",
+      },
+      {
+        type: "p",
+        text: "You may need TiviMate Companion if your Firestick does not have Google Play and you want to purchase or activate TiviMate Premium through the Companion workflow.",
+      },
+      {
+        type: "p",
+        text: "If you use an Android TV or Google TV device with Google Play, check whether you can complete the Premium process directly within TiviMate. Companion is not automatically required for every device.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Remember that installing TiviMate and activating Premium are separate from adding your IPTV playlist. You must still configure a compatible playlist in the main app to watch content. For Firestick installation help, see our ",
+          {
+            label: "How to Download or Install TiviMate on FireStick guide",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "TiviMate Companion Not Working? Try These Fixes",
+      },
+      {
+        type: "p",
+        text: "If you cannot sign in or activate Premium, try the following checks:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Check your login details: Make sure you are using the correct TiviMate account, not your IPTV provider username and password.",
+          "Check your internet connection: A connection problem may prevent the app from completing account verification.",
+          "Update the app: Install available updates from the official source.",
+          "Review device activations: Check your account's available device-management options if you cannot activate another device.",
+          "Follow the current activation prompts: Older guides may show menu names or steps that no longer match your version.",
+          "Avoid repeated purchases: If a payment has completed but Premium is not active, check your account and purchase status before paying again.",
+        ],
+      },
+      {
+        type: "p",
+        text: "If the problem continues, consult the official app listing or available TiviMate support options.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Companion vs TiviMate Premium: What Is the Difference?",
+      },
+      {
+        type: "p",
+        text: "TiviMate Companion is the supporting app used for Premium activation on certain devices and for managing activated devices. TiviMate Premium is the paid upgrade that unlocks additional functionality in the main player.",
+      },
+      {
+        type: "p",
+        text: "Neither one provides live TV channels or an IPTV subscription.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you are deciding whether the upgrade is worthwhile, read our guide to ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Is the TiviMate Companion app free?",
+            answer:
+              "The Companion app is available to install through Google Play, with in-app purchases. TiviMate Premium is paid, and you should check the current price shown before purchasing.",
+          },
+          {
+            question: "Does TiviMate Companion provide IPTV channels?",
+            answer:
+              "No. It does not play channels or provide an IPTV subscription. You need the main TiviMate player and a compatible playlist from a source you are authorised to use.",
+          },
+          {
+            question: "Can I add an M3U playlist in TiviMate Companion?",
+            answer:
+              "No. Add your M3U playlist or supported connection details in the main TiviMate IPTV Player.",
+          },
+          {
+            question: "Do I need TiviMate Companion on Android TV?",
+            answer:
+              "Not necessarily. If your device has Google Play and offers Premium activation directly in TiviMate, you may not need Companion.",
+          },
+          {
+            question: "Is TiviMate Companion a remote-control app?",
+            answer:
+              "Its official listing describes Premium unlocking and activated-device management, not TV remote-control functionality.",
+          },
+          {
+            question: "What should I do if TiviMate Premium is not activating?",
+            answer:
+              "Check that you are signing in with the correct TiviMate account, confirm your connection, review device activation options, and follow the current prompts in the app.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "The TiviMate Companion app is useful when you need to activate TiviMate Premium on a device without Google Play or manage activated devices. It is not a second IPTV player, and it will not add channels or fix playlist problems by itself.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For the smoothest setup, install the official app, follow the activation instructions for your device, and keep your TiviMate account separate from your IPTV provider credentials. Once Premium is activated, use the main TiviMate app to ",
+          {
+            label: "add your playlist",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ", configure the EPG, and watch your authorised content.",
+        ],
+      },
+    ],
+  },
   {
     slug: "tivimate-companion-app",
     title: "TiviMate Companion App: Download, Login & Premium Setup",
