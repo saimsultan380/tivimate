@@ -240,7 +240,7 @@ export function BlogArticle({ post }: BlogArticleProps) {
                         src={related.image}
                         alt={related.imageAlt}
                         width={640}
-                        height={400}
+                        height={360}
                         className="telvis-article-related-image"
                         sizes="(max-width: 767px) 100vw, 280px"
                       />

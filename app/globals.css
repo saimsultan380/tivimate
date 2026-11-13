@@ -5215,14 +5215,15 @@ main > :first-child.telvis-article {
 .telvis-blog-card-media {
   display: block;
   overflow: hidden;
-  aspect-ratio: 16 / 10;
-  background: rgba(10, 37, 64, 0.08);
+  aspect-ratio: 16 / 9;
+  background: #e8f1f8;
 }
 
 .telvis-blog-card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block;
   transition: transform 280ms ease;
 }
@@ -5534,14 +5535,15 @@ main > :first-child.telvis-article {
   display: block;
   overflow: hidden;
   border-radius: 12px;
-  aspect-ratio: 16 / 10;
-  background: rgba(10, 37, 64, 0.06);
+  aspect-ratio: 16 / 9;
+  background: #e8f1f8;
 }
 
 .telvis-article-related-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block;
 }
 

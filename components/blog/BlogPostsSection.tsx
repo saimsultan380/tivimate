@@ -33,7 +33,7 @@ export function BlogPostsSection() {
                     src={card.image}
                     alt={card.imageAlt}
                     width={800}
-                    height={500}
+                    height={450}
                     className="telvis-blog-card-image"
                     sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 380px"
                   />
