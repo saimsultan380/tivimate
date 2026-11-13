@@ -16,6 +16,9 @@ export const blogSlugs = {
   companionHowItWorks: "tivimate-companion-app-how-it-works",
   iphoneIpad: "tivimate-on-iphone-ipad",
   remoteControlNotWorking: "tivimate-remote-control-not-working",
+  failedToGetData: "tivimate-failed-to-get-data-from-server",
+  httpDataSourceException: "tivimate-http-data-source-exception",
+  premiumCost: "tivimate-premium-cost",
 } as const;
 
 export function blogPostPath(slug: string): string {
@@ -58,6 +61,731 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "tivimate-failed-to-get-data-from-server",
+    title: "TiviMate Failed to Get Data from Server: Causes and Fixes",
+    seoTitle: "TiviMate Failed to Get Data from Server: Causes & 7 Fixes",
+    description:
+      "TiviMate failed to get data from server? Discover common causes and learn how to fix IPTV playlist errors, server connection issues, and loading problems.",
+    excerpt:
+      "Fix the TiviMate failed to get data from server error — check login details, internet, cache, VPN, and playlist updates.",
+    image: "/tivimate-failed-to-get-data-thumbnail.png",
+    imageAlt: "TiviMate failed to get data from server error fixes",
+    datePublished: "2026-11-13",
+    dateModified: "2026-11-13",
+    keywords: [
+      "TiviMate failed to get data from server",
+      "TiviMate server error",
+      "TiviMate playlist not loading",
+      "TiviMate connection error",
+      "TiviMate Xtream Codes error",
+      "fix TiviMate server error",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "Are you seeing the “TiviMate failed to get data from server” error when adding an IPTV playlist or trying to load your channels? This message usually means TiviMate cannot retrieve the required information from your IPTV provider's server. The problem may be related to your internet connection, incorrect login details, an expired subscription, or temporary server downtime.",
+      },
+      {
+        type: "p",
+        text: "Fortunately, you can try several simple solutions before reinstalling the app or changing your device settings.",
+      },
+      {
+        type: "h2",
+        text: "Why Does TiviMate Fail to Get Data from Server?",
+      },
+      {
+        type: "p",
+        text: "There are several reasons why TiviMate may display this error:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Incorrect login details: Your username, password, server URL, or playlist address may be incorrect.",
+          "IPTV server downtime: Your provider's server may be temporarily unavailable.",
+          "Expired subscription: Your IPTV account may have expired or reached its connection limit.",
+          "Internet connection problems: A weak or unstable connection can prevent TiviMate from retrieving playlist data.",
+          "Outdated playlist URL: Your provider may have changed the server address or login information.",
+          "VPN or network restrictions: A VPN, firewall, or ISP-related network issue may interfere with the connection.",
+          "Temporary app problems: Corrupted cache or outdated app versions can sometimes affect playlist loading.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Fix TiviMate Failed to Get Data from Server",
+      },
+      {
+        type: "p",
+        text: "Try these solutions one by one to identify the cause of the problem.",
+      },
+      { type: "h3", text: "1. Check Your Internet Connection" },
+      {
+        type: "p",
+        text: "First, make sure your Android TV, Google TV, or Fire TV device has a working internet connection. Open another streaming app or website to check whether your connection is active.",
+      },
+      {
+        type: "p",
+        text: "If other apps are also having trouble, restart your router and reconnect your device to Wi-Fi. You can also try an Ethernet connection if available.",
+      },
+      { type: "h3", text: "2. Verify Your IPTV Login Details" },
+      {
+        type: "p",
+        text: "Incorrect credentials are a common reason for the TiviMate server error.",
+      },
+      {
+        type: "p",
+        text: "If you are using Xtream Codes, check these details:",
+      },
+      {
+        type: "ul",
+        items: ["Server URL or address", "Username", "Password"],
+      },
+      {
+        type: "p",
+        text: "Make sure there are no extra spaces or typing mistakes. If you use an M3U playlist, confirm that the complete playlist URL is correct and has not expired.",
+      },
+      {
+        type: "p",
+        text: "If necessary, ask your IPTV provider to send you updated login details.",
+      },
+      {
+        type: "h3",
+        text: "3. Check Whether Your IPTV Server Is Working",
+      },
+      {
+        type: "p",
+        text: "Sometimes the problem has nothing to do with TiviMate. Your IPTV provider's server may be temporarily offline or experiencing technical issues.",
+      },
+      {
+        type: "p",
+        text: "Contact your provider and ask whether the server is working. You can also ask them to confirm that your subscription is active and your account has not reached its device or connection limit.",
+      },
+      { type: "h3", text: "4. Clear TiviMate Cache" },
+      {
+        type: "p",
+        text: "Temporary app files can sometimes cause loading problems. Clearing the cache may help resolve the issue without deleting your playlist settings.",
+      },
+      {
+        type: "p",
+        text: "Follow these steps:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open your device's Settings.",
+          "Go to Apps or Applications.",
+          "Select TiviMate.",
+          "Open Storage or Storage & Cache.",
+          "Select Clear Cache.",
+          "Restart TiviMate and try again.",
+        ],
+      },
+      {
+        type: "note",
+        text: "Avoid selecting Clear Data unless necessary because it may remove your app settings and stored playlist information.",
+      },
+      { type: "h3", text: "5. Disable Your VPN Temporarily" },
+      {
+        type: "p",
+        text: "If you are using a VPN, disconnect it temporarily and try loading your playlist again. Some VPN servers or network configurations may interfere with the connection to your IPTV provider.",
+      },
+      {
+        type: "p",
+        text: "If the error disappears, contact your provider or VPN service to check whether a different server or configuration is suitable. Do not assume that disabling a VPN is always the solution, as network restrictions vary.",
+      },
+      { type: "h3", text: "6. Update Your IPTV Playlist" },
+      {
+        type: "p",
+        text: "Your IPTV provider may have changed its server URL, playlist address, or login credentials. An old playlist can therefore fail to retrieve channel information.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Ask your provider for the latest connection details. Then open TiviMate, go to your playlist settings, and update the playlist using the correct information. For detailed instructions, see our guide on ",
+          {
+            label: "how to add an IPTV playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h3",
+        text: "7. Restart Your Device and Update TiviMate",
+      },
+      {
+        type: "p",
+        text: "A simple restart can resolve temporary device or application issues.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Close TiviMate completely.",
+          "Restart your Android TV, Google TV, or Fire TV device.",
+          "Check whether an update is available for TiviMate.",
+          "Open the app and test your playlist again.",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "If the problem continues, check our ",
+          {
+            label: "TiviMate installation guide",
+            href: routes.installation,
+          },
+          " to review the setup process.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What If TiviMate Still Cannot Get Data From the Server?",
+      },
+      {
+        type: "p",
+        text: "If none of these solutions works, contact your IPTV provider with the exact error message. Ask them to verify your account status, server address, connection limit, and playlist availability.",
+      },
+      {
+        type: "p",
+        text: "You can also test your playlist details in another compatible IPTV player. If the same error appears there, the issue is more likely related to your provider, account, or network rather than TiviMate alone.",
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question:
+              "Why does TiviMate say failed to get data from server?",
+            answer:
+              "This error usually appears when TiviMate cannot retrieve playlist information from your IPTV server. Incorrect login details, server downtime, expired subscriptions, and internet problems are common causes.",
+          },
+          {
+            question:
+              "Does this error mean my IPTV subscription has expired?",
+            answer:
+              "Not necessarily. Your subscription may be active, but the server could be temporarily unavailable or your login information may be incorrect. Ask your provider to check your account status.",
+          },
+          {
+            question: "Can clearing the TiviMate cache fix the server error?",
+            answer:
+              "Yes, clearing the app cache may help if temporary files are causing the problem. However, it will not fix an offline IPTV server or incorrect login credentials.",
+          },
+          {
+            question:
+              "Why does my TiviMate playlist work on another device but not on my TV?",
+            answer:
+              "The issue could be related to your TV's internet connection, device settings, app version, or network configuration. Check the connection and credentials on both devices.",
+          },
+          {
+            question: "Should I reinstall TiviMate to fix this problem?",
+            answer:
+              "Reinstalling should be a last option. First, check your internet connection, login details, provider server, and app cache. Remember to keep your playlist information available before reinstalling.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "The TiviMate failed to get data from server error is often caused by incorrect playlist details, internet problems, or temporary IPTV server issues. Start by checking your connection and login information, then contact your provider if the server is unavailable. These steps can help you identify the actual problem without unnecessarily reinstalling TiviMate.",
+      },
+    ],
+  },
+  {
+    slug: "tivimate-http-data-source-exception",
+    title: "TiviMate HTTP Data Source Exception: Causes & 7 Easy Fixes",
+    seoTitle: "TiviMate HTTP Data Source Exception: Causes & 7 Easy Fixes",
+    description:
+      "Getting a TiviMate HTTP data source exception? Learn why this IPTV playback error occurs and how to fix connection, playlist, and streaming problems.",
+    excerpt:
+      "Fix TiviMate HTTP data source exception errors — check your connection, try another channel, clear cache, and update your playlist.",
+    image: "/tivimate-http-data-source-thumbnail.png",
+    imageAlt: "TiviMate HTTP data source exception troubleshooting guide",
+    datePublished: "2026-11-13",
+    dateModified: "2026-11-13",
+    keywords: [
+      "TiviMate HTTP data source exception",
+      "TiviMate HTTP error",
+      "TiviMate playback error",
+      "TiviMate stream not playing",
+      "TiviMate channel error",
+      "fix TiviMate HTTP exception",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "Are you getting a TiviMate HTTP data source exception when trying to play a live TV channel or stream IPTV content? This error usually indicates that TiviMate is having trouble receiving or processing data from the streaming server. It can happen because of an unstable internet connection, server problems, an unavailable channel stream, or incorrect playlist information.",
+      },
+      {
+        type: "p",
+        text: "The good news is that you can try several troubleshooting methods to identify and fix the issue.",
+      },
+      {
+        type: "h2",
+        text: "Why Does TiviMate Show an HTTP Data Source Exception?",
+      },
+      {
+        type: "p",
+        text: "The TiviMate HTTP data source exception usually appears when the app cannot retrieve or play data from an IPTV streaming server. Several issues can trigger this error:",
+      },
+      {
+        type: "ul",
+        items: [
+          "IPTV Server Downtime: Your provider's server may be temporarily offline, overloaded, or experiencing technical problems.",
+          "Unstable Internet Connection: Weak Wi-Fi, network interruptions, or slow internet can prevent TiviMate from receiving streaming data.",
+          "Invalid or Expired Stream URL: A channel link may be outdated, incorrect, or no longer available on the IPTV server.",
+          "VPN or ISP Restrictions: VPN configurations, firewall settings, or network restrictions may interfere with communication between TiviMate and the streaming server.",
+          "Playback Compatibility Issues: Certain video formats or streaming protocols may not work correctly with the selected playback method or device.",
+          "Outdated App or Temporary Cache Problems: An outdated TiviMate version or corrupted temporary files may sometimes cause playback and data-loading errors.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Fix TiviMate HTTP Data Source Exception",
+      },
+      {
+        type: "p",
+        text: "Try the following solutions to resolve the TiviMate HTTP error.",
+      },
+      { type: "h3", text: "1. Check Your Internet Connection" },
+      {
+        type: "p",
+        text: "Start by checking whether your device has a stable internet connection. Open another streaming application and play a video. If it also buffers or fails to load, restart your router and reconnect your Android TV, Google TV, or Fire TV device.",
+      },
+      { type: "h3", text: "2. Try Another IPTV Channel" },
+      {
+        type: "p",
+        text: "Check whether the error appears on every channel or only one specific stream.",
+      },
+      {
+        type: "p",
+        text: "If other channels work normally, the problem may be related to that particular channel's stream or the provider's server. Contact your IPTV provider and report the affected channel.",
+      },
+      { type: "h3", text: "3. Restart TiviMate and Your Device" },
+      {
+        type: "p",
+        text: "Temporary application or device issues can sometimes interrupt playback.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Close TiviMate completely.",
+          "Restart your streaming device.",
+          "Open TiviMate again.",
+          "Try playing the same channel.",
+        ],
+      },
+      {
+        type: "p",
+        text: "This simple step can resolve temporary connection and playback problems.",
+      },
+      { type: "h3", text: "4. Clear TiviMate Cache" },
+      {
+        type: "p",
+        text: "Old temporary files may sometimes affect app performance. To clear the cache:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open your device Settings.",
+          "Select Apps or Applications.",
+          "Find and open TiviMate.",
+          "Select Storage.",
+          "Choose Clear Cache.",
+          "Restart the application.",
+        ],
+      },
+      {
+        type: "note",
+        text: "Avoid selecting Clear Data unless necessary, as it may remove your saved settings and playlists.",
+      },
+      { type: "h3", text: "5. Check Your IPTV Playlist" },
+      {
+        type: "p",
+        text: "An outdated or incorrect playlist can cause individual streams to stop working. Ask your provider to verify your playlist URL and confirm that your subscription is active.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If the provider has updated the connection details, replace the old playlist information with the latest version. You can follow our guide on ",
+          {
+            label: "how to add an IPTV playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      { type: "h3", text: "6. Change Playback Settings" },
+      {
+        type: "p",
+        text: "Some IPTV streams may have compatibility issues with particular playback settings.",
+      },
+      {
+        type: "p",
+        text: "Open TiviMate settings and check the available playback options. If your version offers an option to use an external video player, you can test a compatible player to see whether the issue is specific to TiviMate's internal playback.",
+      },
+      {
+        type: "p",
+        text: "Change one setting at a time and test the same channel again.",
+      },
+      { type: "h3", text: "7. Check VPN and Server Availability" },
+      {
+        type: "p",
+        text: "If you use a VPN, temporarily disconnect it and test the stream. You can also try another VPN server if your provider permits it.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If the error continues, contact your IPTV provider to confirm whether its streaming server is experiencing downtime or connection problems. Related buffering tips are covered in our ",
+          {
+            label: "TiviMate Buffering Fix guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "What does HTTP data source exception mean in TiviMate?",
+            answer:
+              "It generally means TiviMate cannot successfully retrieve or process the data required to play a stream. The cause may be the internet connection, IPTV server, playlist, or stream compatibility.",
+          },
+          {
+            question: "Why does TiviMate show this error on only one channel?",
+            answer:
+              "The particular channel's stream may be offline, unavailable, or using an incompatible format. Contact your IPTV provider to check that channel.",
+          },
+          {
+            question: "Can internet speed cause a TiviMate HTTP error?",
+            answer:
+              "Yes. An unstable or interrupted internet connection can prevent TiviMate from receiving streaming data correctly. Check your connection before changing other settings.",
+          },
+          {
+            question: "Does clearing the cache fix TiviMate playback errors?",
+            answer:
+              "It can help when temporary app files are causing problems. However, clearing the cache will not fix an unavailable IPTV server or an expired playlist.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "The TiviMate HTTP data source exception can result from internet interruptions, unavailable IPTV streams, server problems, or playback compatibility issues. Start by testing your connection and trying another channel. If the error affects multiple streams, check your playlist and contact your IPTV provider to confirm server availability.",
+      },
+    ],
+  },
+  {
+    slug: "tivimate-premium-cost",
+    title:
+      "TiviMate Premium Cost: Yearly vs Lifetime Tivimate Subscription Price",
+    seoTitle: "TiviMate Premium Cost: Yearly vs Lifetime Tivimate IPTV Price",
+    description:
+      "View TiviMate Premium cost, yearly and lifetime Tivimate IPTV Player plans, free vs Premium features, activation steps, device limits & check upgradation.",
+    excerpt:
+      "Compare TiviMate Premium yearly vs lifetime pricing, free vs Premium features, activation steps, and whether the upgrade is worth it.",
+    image: "/tivimate-premium-cost-thumbnail.png",
+    imageAlt: "TiviMate Premium cost yearly vs lifetime comparison",
+    datePublished: "2026-11-13",
+    dateModified: "2026-11-13",
+    keywords: [
+      "TiviMate Premium cost",
+      "TiviMate Premium price",
+      "TiviMate lifetime",
+      "TiviMate yearly subscription",
+      "TiviMate Premium worth it",
+      "Tivimate IPTV price",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "If you are planning to upgrade your IPTV player, you may be wondering about the TiviMate Premium cost and whether you should choose a yearly or lifetime subscription. TiviMate offers a free version for basic use, while Premium unlocks additional features such as multiple playlists, recording, multiview, and advanced customization.",
+      },
+      {
+        type: "p",
+        text: "The good news is that you do not need to purchase Premium just to try the application. You can start with the free version and upgrade when you need its additional features.",
+      },
+      {
+        type: "p",
+        text: "In this guide, we explain TiviMate Premium pricing, subscription options, features, activation, and whether the paid version is worth the money.",
+      },
+      { type: "h2", text: "How Much Does TiviMate Premium Cost?" },
+      {
+        type: "p",
+        text: "TiviMate offers paid Premium access through subscription and lifetime purchase options. The exact price depends on your country, purchase method, and the options currently available at checkout.",
+      },
+      {
+        type: "p",
+        text: "Recent US price listings have reported the following approximate figures:",
+      },
+      {
+        type: "table",
+        headers: ["TiviMate plan", "Approximate US price", "Payment type"],
+        rows: [
+          ["TiviMate Free", "$0", "Free"],
+          ["Premium Yearly", "Around $9.99", "Recurring annual payment"],
+          ["Premium Lifetime", "Around $33.99", "One-time payment"],
+        ],
+      },
+      {
+        type: "note",
+        text: "These are indicative US price references, not guaranteed current prices. Your actual price and available plans may differ. Always check the official purchase screen before paying.",
+      },
+      {
+        type: "p",
+        text: "TiviMate does not maintain a fixed public price list for every country. Its official terms explain that available plans, billing periods, and prices are displayed during the purchase process.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Yearly vs Lifetime Subscription: Which Is Better?",
+      },
+      {
+        type: "p",
+        text: "When comparing the TiviMate Premium cost, the two main things to consider are how long you plan to use the application and whether you prefer recurring or one-time payments.",
+      },
+      { type: "h3", text: "TiviMate Yearly Subscription" },
+      {
+        type: "p",
+        text: "The yearly subscription is suitable for users who want Premium features without making a larger one-time payment.",
+      },
+      {
+        type: "p",
+        text: "It may be a good choice if:",
+      },
+      {
+        type: "ul",
+        items: [
+          "You want to try Premium for a limited period.",
+          "You prefer paying annually.",
+          "You are unsure whether you will continue using TiviMate.",
+          "You want to avoid a larger upfront expense.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Remember that an auto-renewing subscription continues until you cancel it through the relevant purchase account.",
+      },
+      { type: "h3", text: "TiviMate Lifetime Subscription" },
+      {
+        type: "p",
+        text: "The lifetime option requires one payment rather than annual renewals. It can be more economical if you plan to use TiviMate for several years.",
+      },
+      {
+        type: "p",
+        text: "Consider the lifetime plan if:",
+      },
+      {
+        type: "ul",
+        items: [
+          "You regularly use TiviMate on your TV.",
+          "You want to avoid recurring annual payments.",
+          "You already know that you need Premium features.",
+          "You prefer paying once instead of renewing every year.",
+        ],
+      },
+      {
+        type: "p",
+        text: "However, lifetime access refers to the application's lifetime and the applicable licence terms. It should not be confused with a lifetime IPTV subscription.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate Free vs Premium: What Is the Difference?",
+      },
+      {
+        type: "p",
+        text: "You may not need a paid subscription if you only want basic IPTV playback. The free version supports basic viewing, while Premium provides additional tools for managing and watching playlists.",
+      },
+      {
+        type: "table",
+        headers: ["Features", "Free Version", "Premium Version"],
+        rows: [
+          ["Basic IPTV playback", "Yes", "Yes"],
+          ["Single playlist", "Yes", "Yes"],
+          ["Multiple playlists", "No", "Yes"],
+          ["Recording", "No", "Yes"],
+          ["Multiview", "No", "Yes"],
+          ["Advanced customization", "Limited", "More options"],
+          ["Additional playlist management", "Limited", "Yes"],
+          ["Premium features", "No", "Yes"],
+        ],
+      },
+      {
+        type: "p",
+        text: "The availability of catch-up and other playback functions can also depend on your IPTV source and device.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For a more detailed comparison, read our guide to ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "What Do You Get with TiviMate Premium?" },
+      {
+        type: "p",
+        text: "Here are some of the main reasons users choose the paid version.",
+      },
+      { type: "h3", text: "1. Multiple IPTV Playlists" },
+      {
+        type: "p",
+        text: "Premium allows you to manage multiple playlists in one application. This is useful if you have more than one compatible IPTV source and want to switch between them without repeatedly replacing your playlist.",
+      },
+      { type: "h3", text: "2. Recording Live TV" },
+      {
+        type: "p",
+        text: "You can use the recording feature to save supported live streams for later viewing. Recording availability depends on your device, storage, and the source stream.",
+      },
+      { type: "h3", text: "3. Multiview" },
+      {
+        type: "p",
+        text: "Multiview allows you to watch multiple supported channels on the same screen. It can be useful when you want to follow different live programmes simultaneously.",
+      },
+      { type: "h3", text: "4. Advanced Customization" },
+      {
+        type: "p",
+        text: "Premium provides additional options for organizing your channels, managing playlists, and adjusting the interface to your preferences.",
+      },
+      { type: "h3", text: "5. Better Playlist Management" },
+      {
+        type: "p",
+        text: "If you regularly switch between different playlists, Premium makes managing multiple sources more convenient.",
+      },
+      { type: "h2", text: "How to Buy and Activate TiviMate Premium" },
+      {
+        type: "p",
+        text: "You can purchase Premium through the official TiviMate purchase options. Depending on your device and available purchase route, this may involve the official website, Google Play, or the TiviMate Companion app.",
+      },
+      {
+        type: "p",
+        text: "Follow these general steps:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Visit the official TiviMate website or open the available official purchase option.",
+          "Create or sign in to your TiviMate account.",
+          "Review the available Premium plans and their prices.",
+          "Select your preferred subscription or lifetime option.",
+          "Complete the payment through the official checkout.",
+          "Open TiviMate on your compatible TV device.",
+          "Go to the Premium or account section and sign in with your TiviMate account.",
+          "Once your purchase is verified, the Premium features should become available.",
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "For more help, visit our ",
+          {
+            label: "TiviMate Companion app guide",
+            href: blogPostPath(blogSlugs.companionApp),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Does TiviMate Premium Include IPTV Channels?",
+      },
+      {
+        type: "p",
+        text: "No. This is one of the most important things to understand before purchasing.",
+      },
+      {
+        type: "p",
+        text: "TiviMate Premium is an application upgrade, not an IPTV channel subscription. It unlocks additional player features, but it does not provide live TV channels, movies, series, or an IPTV server.",
+      },
+      {
+        type: "p",
+        parts: [
+          "You need a separate, compatible playlist from a provider that has the necessary rights to distribute its content. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "The Premium payment and your IPTV provider's subscription are two separate costs.",
+      },
+      { type: "h2", text: "Is TiviMate Premium Worth the Cost?" },
+      {
+        type: "p",
+        text: "For regular TiviMate users, Premium can be worth the cost, especially if they need multiple playlists, recording, multiview, and additional customization.",
+      },
+      {
+        type: "p",
+        text: "However, the free version may be enough if you:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Use only one IPTV playlist.",
+          "Prefer basic live TV playback.",
+          "Do not need recording or multiview.",
+          "Do not require advanced playlist management.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Our recommendation is to try the free version first. If you find yourself needing the additional features, compare the yearly and lifetime prices and choose the option that suits your budget.",
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "How much does TiviMate Premium cost?",
+            answer:
+              "Recent US listings have reported approximately $9.99 for a yearly subscription and $33.99 for lifetime access. Prices can change and vary by country, so check the official checkout for the current amount.",
+          },
+          {
+            question: "Is TiviMate Premium a one-time payment?",
+            answer:
+              "A lifetime licence is a one-time payment. TiviMate also offers auto-renewing subscription options where available. Check the billing terms before purchasing.",
+          },
+          {
+            question: "Is TiviMate free to use?",
+            answer:
+              "Yes. TiviMate has a free version that supports basic IPTV playback. Premium is optional and unlocks additional features.",
+          },
+          {
+            question: "Does TiviMate Premium include channels?",
+            answer:
+              "No. It only unlocks application features. You must add your own compatible playlist from a content provider.",
+          },
+          {
+            question: "Can I use TiviMate Premium on multiple devices?",
+            answer:
+              "Premium supports multiple device activations subject to the account's device limit and licence terms. Check the current limit in your account before activating additional devices.",
+          },
+          {
+            question: "Can I cancel my TiviMate yearly subscription?",
+            answer:
+              "Yes. You can cancel an auto-renewing subscription through the account or platform where you purchased it. Your access generally continues until the end of the paid billing period.",
+          },
+          {
+            question: "Is TiviMate lifetime better than yearly?",
+            answer:
+              "Lifetime can offer better long-term value if you plan to use the application for several years. The yearly option is more suitable if you want to avoid a larger upfront payment.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Verdict" },
+      {
+        type: "p",
+        text: "The TiviMate Premium cost depends on the plan, purchase route, and your region. The yearly subscription is suitable for users who prefer recurring payments, while lifetime access may offer better long-term value for regular users.",
+      },
+      {
+        type: "p",
+        text: "If you only need basic IPTV playback, start with the free version. Upgrade when you actually need the additional Premium features, and always purchase through an official TiviMate channel.",
+      },
+    ],
+  },
   {
     slug: "tivimate-remote-control-not-working",
     title: "TiviMate Remote Control Not Working? 10 Ways to Fix It",
