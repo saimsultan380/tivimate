@@ -19,6 +19,8 @@ export const blogSlugs = {
   failedToGetData: "tivimate-failed-to-get-data-from-server",
   httpDataSourceException: "tivimate-http-data-source-exception",
   premiumCost: "tivimate-premium-cost",
+  androidPlayer: "tivimate-iptv-player-for-android",
+  samsungTv: "how-to-download-tivimate-on-samsung-tv",
 } as const;
 
 export function blogPostPath(slug: string): string {
@@ -61,6 +63,825 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "tivimate-iptv-player-for-android",
+    title: "TiviMate IPTV Player for Android: Features, Setup and Guide",
+    seoTitle: "TiviMate IPTV Player for Android: Features, Setup & Guide",
+    description:
+      "Use TiviMate IPTV Player for Android to manage M3U, Xtream Codes and Stalker playlists, view EPG, save favorites, and enjoy flexible playback features now!",
+    excerpt:
+      "Learn TiviMate IPTV Player features for Android TV, how to install it, add M3U or Xtream Codes, and choose Free vs Premium.",
+    image: "/tivimate-android-player-thumbnail.png",
+    imageAlt: "TiviMate IPTV Player for Android features and setup guide",
+    datePublished: "2026-11-16",
+    dateModified: "2026-11-16",
+    keywords: [
+      "TiviMate IPTV Player for Android",
+      "TiviMate Android TV",
+      "TiviMate features",
+      "TiviMate setup Android",
+      "TiviMate M3U",
+      "TiviMate Xtream Codes",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "If you want an easy way to organize and watch your IPTV playlists on a television, TiviMate IPTV Player for Android is one option worth considering. It offers a clean interface, remote-friendly navigation, an electronic programme guide (EPG), playlist management, and several useful playback features.",
+      },
+      {
+        type: "p",
+        text: "Whether you are setting up an M3U playlist or connecting through Xtream Codes, TiviMate provides tools to manage your IPTV content in one place. However, it is important to understand that TiviMate is a media player, not an IPTV service. You need a separate playlist from a provider to watch channels.",
+      },
+      {
+        type: "p",
+        text: "In this guide, we explain its features, Android compatibility, installation, playlist setup, and Premium options.",
+      },
+      {
+        type: "h2",
+        text: "What Is TiviMate IPTV Player for Android?",
+      },
+      {
+        type: "p",
+        text: "TiviMate is an IPTV media player developed primarily for Android TV devices. It allows users to load compatible IPTV playlists and organize live TV channels through a television-friendly interface.",
+      },
+      {
+        type: "p",
+        text: "Unlike many mobile video players, TiviMate is designed around remote control navigation. Its layout makes it easier to browse channel categories, search for programmes, manage favourites, and view TV schedules on a larger screen.",
+      },
+      {
+        type: "p",
+        text: "The application supports common playlist formats, including:",
+      },
+      {
+        type: "ul",
+        items: [
+          "M3U and M3U8 playlists",
+          "Xtream Codes login",
+          "Stalker Portal",
+        ],
+      },
+      {
+        type: "p",
+        text: "You can download the official application through Google Play or visit the official TiviMate website.",
+      },
+      {
+        type: "note",
+        text: "Important: TiviMate is designed for Android TV and is not optimized for Android phones or tablets.",
+      },
+      { type: "h2", text: "Main Features of TiviMate IPTV Player" },
+      {
+        type: "p",
+        text: "TiviMate offers several features that help users organize their IPTV playlists and control playback.",
+      },
+      { type: "h3", text: "1. Multiple IPTV Playlists" },
+      {
+        type: "p",
+        text: "You can add and manage multiple IPTV playlists in the application. This is useful if you have different playlists and want to switch between them without removing your existing setup. Multiple playlist support is a Premium feature.",
+      },
+      { type: "h3", text: "2. Electronic Programme Guide (EPG)" },
+      {
+        type: "p",
+        text: "The EPG displays programme schedules in a television guide layout. You can check available programmes, browse upcoming shows, and find information about what is currently playing.",
+      },
+      {
+        type: "p",
+        text: "The accuracy of the guide depends on the EPG information supplied by your IPTV provider.",
+      },
+      { type: "h3", text: "3. Favourite Channels" },
+      {
+        type: "p",
+        text: "TiviMate allows you to mark frequently watched channels as favourites. This makes it easier to access your preferred channels without browsing through long playlist categories.",
+      },
+      { type: "h3", text: "4. Catch-Up TV" },
+      {
+        type: "p",
+        text: "If your IPTV provider supports catch-up, you can access selected programmes that were broadcast earlier. Availability depends on the provider, channel, and supported stream.",
+      },
+      { type: "h3", text: "5. Recording and Multiview" },
+      {
+        type: "p",
+        text: "TiviMate Premium includes recording and multiview features. Recording lets you save supported live streams, while multiview allows you to display multiple channels on one screen.",
+      },
+      {
+        type: "p",
+        text: "Both features depend on compatible streams, device performance, and available storage.",
+      },
+      { type: "h3", text: "6. Search and Parental Controls" },
+      {
+        type: "p",
+        text: "The search feature helps you find channels and programmes more quickly. Parental controls also allow you to restrict access to selected content or channel groups.",
+      },
+      { type: "h2", text: "How to Install TiviMate on Android TV" },
+      {
+        type: "p",
+        text: "Installing TiviMate is straightforward if your device supports Android TV or Google TV.",
+      },
+      {
+        type: "p",
+        text: "Follow these steps:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Turn on your Android TV or Google TV device.",
+          "Open the Google Play Store.",
+          "Search for TiviMate IPTV Player.",
+          "Check that the developer is Armobsoft FZE.",
+          "Select Install and wait for the download to finish.",
+          "Open TiviMate from your applications menu.",
+        ],
+      },
+      {
+        type: "p",
+        text: "You can also use the official download option on the TiviMate website if you need to install its APK manually on a compatible device.",
+      },
+      {
+        type: "p",
+        text: "Always download the application from an official source. Avoid modified APK files that claim to provide unlocked Premium features.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For more detailed instructions, read our ",
+          {
+            label: "TiviMate installation guide",
+            href: routes.installation,
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Set Up an IPTV Playlist in TiviMate",
+      },
+      {
+        type: "p",
+        text: "After installing the application, you need to add a compatible playlist. Your IPTV provider should supply the required connection details.",
+      },
+      { type: "h3", text: "Method 1: Add an M3U Playlist" },
+      {
+        type: "ol",
+        items: [
+          "Open TiviMate.",
+          "Select Add Playlist.",
+          "Choose the M3U playlist option.",
+          "Enter the M3U URL supplied by your provider.",
+          "Select Next and allow the playlist to load.",
+          "Finish the setup and check your channel list.",
+        ],
+      },
+      { type: "h3", text: "Method 2: Use Xtream Codes Login" },
+      {
+        type: "p",
+        text: "If your provider supplies Xtream Codes details, follow these steps:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open TiviMate and select Add Playlist.",
+          "Choose Xtream Codes login.",
+          "Enter the server address.",
+          "Add your username and password.",
+          "Enter a playlist name if requested.",
+          "Continue and wait for the channels and EPG information to load.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Make sure your login details are correct. An incorrect server URL, username, or password can prevent the playlist from loading.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For a complete walkthrough, visit our guide on ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "TiviMate Free vs Premium: Which Version Should You Choose?",
+      },
+      {
+        type: "p",
+        text: "TiviMate offers a free version for basic IPTV playback and a paid Premium upgrade for additional features.",
+      },
+      {
+        type: "table",
+        headers: ["Feature", "Free", "Premium"],
+        rows: [
+          ["Basic IPTV playback", "Yes", "Yes"],
+          ["One playlist", "Yes", "Yes"],
+          ["Multiple playlists", "No", "Yes"],
+          ["Recording", "No", "Yes"],
+          ["Multiview", "No", "Yes"],
+          ["Advanced customization", "Limited", "More options"],
+          ["Additional playlist management", "Limited", "Yes"],
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "If you only use one playlist and need basic playback, the free version may be enough. However, Premium is more suitable for users who want multiple playlists, recording, multiview, and additional customization. Read our detailed comparison of ",
+          {
+            label: "TiviMate Premium vs Free",
+            href: blogPostPath(blogSlugs.premiumVsFree),
+          },
+          " before upgrading.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Common TiviMate Problems on Android and Their Solutions",
+      },
+      {
+        type: "p",
+        text: "Although TiviMate is designed for television devices, users may occasionally experience setup or playback problems.",
+      },
+      {
+        type: "table",
+        headers: ["Problem", "Possible solution"],
+        rows: [
+          [
+            "Playlist not loading",
+            "Check your M3U URL or Xtream Codes details",
+          ],
+          [
+            "Channels buffering",
+            "Test your internet connection and contact your provider",
+          ],
+          [
+            "EPG not updating",
+            "Refresh the guide and verify the EPG source",
+          ],
+          [
+            "Server connection error",
+            "Check server availability and subscription status",
+          ],
+          [
+            "App not opening",
+            "Restart your device and check for updates",
+          ],
+          [
+            "Remote control not working",
+            "Test your remote and review TiviMate navigation settings",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "If your channels keep buffering, follow our ",
+          {
+            label: "TiviMate buffering fix guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Is TiviMate the Right IPTV Player for Android?",
+      },
+      {
+        type: "p",
+        text: "TiviMate is a strong option for users who want to manage IPTV playlists on Android TV or Google TV. Its remote-friendly interface, EPG, favourites, search, and Premium features make it useful for regular television viewing.",
+      },
+      {
+        type: "p",
+        text: "However, it may not be the right choice for everyone. It is not optimized for Android phones and tablets, and it does not provide channels or an IPTV subscription.",
+      },
+      {
+        type: "p",
+        text: "If you want a player for a television device and already have a compatible playlist, TiviMate is worth trying. Start with the free version and consider Premium if you need its additional features.",
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Is TiviMate IPTV Player available for Android?",
+            answer:
+              "Yes. TiviMate is available for compatible Android TV devices through Google Play and the official TiviMate website. It is designed primarily for large screens rather than Android phones.",
+          },
+          {
+            question: "Is TiviMate free to download?",
+            answer:
+              "Yes. You can download and use the free version. However, some advanced features require a separate TiviMate Premium upgrade.",
+          },
+          {
+            question: "Does TiviMate provide IPTV channels?",
+            answer:
+              "No. TiviMate is only a media player. You must add your own compatible M3U playlist, Xtream Codes login, or Stalker Portal details from a provider.",
+          },
+          {
+            question: "Does TiviMate support M3U and Xtream Codes?",
+            answer:
+              "Yes. TiviMate supports common IPTV playlist formats, including M3U, Xtream Codes, and Stalker Portal.",
+          },
+          {
+            question: "Can I install TiviMate on an Android phone?",
+            answer:
+              "TiviMate is not optimized for Android phones or tablets. Its interface is designed for Android TV devices and remote control navigation.",
+          },
+          {
+            question: "Is TiviMate Premium necessary?",
+            answer:
+              "No. The free version supports basic playback. Premium is optional and unlocks additional features such as multiple playlists, recording, and multiview.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "TiviMate IPTV Player for Android is designed to make IPTV playlist management easier on Android TV and Google TV devices. It supports popular playlist formats and provides useful features such as EPG, favourites, search, recording, and multiview.",
+      },
+      {
+        type: "p",
+        parts: [
+          "If you already have a compatible IPTV playlist, you can start with the free version and explore its features. Upgrade to Premium when you need more advanced playlist management and playback options. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-download-tivimate-on-samsung-tv",
+    title: "How to Get TiviMate on Samsung TV: Installation and Setup Guide",
+    seoTitle: "How to Get or Download TiviMate on Samsung TV: Setup Guide",
+    description:
+      "Learn how to get TiviMate on Samsung TV, install it with a compatible streaming device, setup IPTV playlists, and explore Samsung TV player alternatives TV.",
+    excerpt:
+      "TiviMate is not native on Samsung Tizen TVs. Learn how to run it via HDMI streaming devices and which Samsung IPTV alternatives exist.",
+    image: "/tivimate-samsung-tv-thumbnail.png",
+    imageAlt: "How to get TiviMate on Samsung TV setup guide",
+    datePublished: "2026-11-16",
+    dateModified: "2026-11-16",
+    keywords: [
+      "TiviMate on Samsung TV",
+      "download TiviMate Samsung",
+      "TiviMate Tizen",
+      "Samsung IPTV player",
+      "TiviMate Firestick Samsung",
+      "Samsung Smart TV IPTV",
+    ],
+    content: [
+      {
+        type: "p",
+        text: "If you own a Samsung Smart TV and want to use TiviMate for watching IPTV, you may have already searched for the app in the Samsung Apps Store. However, there is one important thing to understand: TiviMate is not officially available for direct installation on Samsung Smart TVs.",
+      },
+      {
+        type: "p",
+        text: "Samsung televisions generally run on Tizen OS, while TiviMate is designed for Android TV devices. This means you cannot download the regular TiviMate APK and install it directly on your Samsung television.",
+      },
+      {
+        type: "p",
+        text: "But there is a simple solution. You can connect a compatible Android TV box, Google TV device, or Fire TV device to your Samsung TV through HDMI and run TiviMate on that external device.",
+      },
+      {
+        type: "p",
+        text: "This guide explains how to get TiviMate on Samsung TV, how to install and set it up, and which alternatives you can consider if you do not want to purchase another streaming device.",
+      },
+      {
+        type: "h2",
+        text: "Can You Install TiviMate on Samsung Smart TV?",
+      },
+      {
+        type: "p",
+        text: "No, you cannot directly install the official TiviMate IPTV Player on a standard Samsung Smart TV.",
+      },
+      {
+        type: "p",
+        text: "The main reason is the difference between their operating systems:",
+      },
+      {
+        type: "table",
+        headers: ["Feature", "Samsung Smart TV", "TiviMate"],
+        rows: [
+          [
+            "Operating system",
+            "Tizen OS",
+            "Android-based platforms",
+          ],
+          [
+            "Native TiviMate support",
+            "No",
+            "Yes, on compatible devices",
+          ],
+          [
+            "Android APK installation",
+            "Not supported",
+            "Supported on compatible Android devices",
+          ],
+          [
+            "App store",
+            "Samsung Apps",
+            "Google Play on supported devices",
+          ],
+          [
+            "External streaming device",
+            "Supported through HDMI",
+            "Can run on a compatible device",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        text: "Samsung's Tizen operating system does not support Android APK applications. Therefore, searching for TiviMate in Samsung's app store will not provide the official Android TV application.",
+      },
+      {
+        type: "p",
+        text: "You should also avoid websites offering modified TiviMate APK files specifically for Samsung TVs. They cannot make an Android application compatible with Tizen.",
+      },
+      { type: "h2", text: "How to Get TiviMate on Samsung TV" },
+      {
+        type: "p",
+        text: "The easiest way to use TiviMate on your Samsung television is to connect an external streaming device.",
+      },
+      {
+        type: "p",
+        text: "You can choose from:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Android TV box",
+          "Google TV streaming device",
+          "Compatible Amazon Fire TV device",
+        ],
+      },
+      {
+        type: "p",
+        text: "These devices connect to your Samsung television through an HDMI port and provide a compatible environment for running TiviMate.",
+      },
+      {
+        type: "h3",
+        text: "Step 1: Connect a Streaming Device to Your Samsung TV",
+      },
+      {
+        type: "p",
+        text: "First, choose a compatible streaming device that supports TiviMate.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Connect your Android TV box, Google TV device, or compatible Fire TV device to an available HDMI port.",
+          "Connect the device to its power supply.",
+          "Turn on your Samsung TV.",
+          "Press the Source or Input button on your remote.",
+          "Select the HDMI input where you connected the streaming device.",
+          "Complete the device's initial setup and connect it to the internet.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Your Samsung TV now works as the display, while the external device runs the TiviMate application.",
+      },
+      {
+        type: "h3",
+        text: "Step 2: Download and Install TiviMate",
+      },
+      {
+        type: "p",
+        text: "Once your streaming device is ready, you can install TiviMate.",
+      },
+      { type: "h3", text: "For Android TV or Google TV:" },
+      {
+        type: "ol",
+        items: [
+          "Open the Google Play Store.",
+          "Search for TiviMate IPTV Player.",
+          "Check the developer information to ensure you select the official application.",
+          "Select Install.",
+          "Wait for the installation to finish.",
+          "Open TiviMate from your applications menu.",
+        ],
+      },
+      { type: "h3", text: "For compatible Fire TV devices:" },
+      {
+        type: "p",
+        parts: [
+          "Use the official TiviMate download instructions for your device. Installation methods can differ depending on the Fire TV model and operating system. See our ",
+          {
+            label: "How to Download or Install TiviMate on FireStick guide",
+            href: blogPostPath(blogSlugs.firestickInstall),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "p",
+        text: "Check compatibility before purchasing a streaming device. Not every Fire TV model supports Android APK applications, particularly newer models running Vega OS.",
+      },
+      {
+        type: "h3",
+        text: "Step 3: Open TiviMate and Add Your IPTV Playlist",
+      },
+      {
+        type: "p",
+        text: "After installation, open TiviMate on your streaming device.",
+      },
+      {
+        type: "p",
+        text: "You will need an IPTV playlist from a provider that supports a compatible format.",
+      },
+      {
+        type: "p",
+        text: "TiviMate supports several playlist connection methods, including M3U, Xtream Codes, and Stalker Portal.",
+      },
+      { type: "h3", text: "To add an M3U playlist:" },
+      {
+        type: "ol",
+        items: [
+          "Open TiviMate.",
+          "Select Add Playlist.",
+          "Choose the M3U playlist option.",
+          "Enter the M3U URL supplied by your provider.",
+          "Select Next and allow the playlist to load.",
+          "Complete the setup.",
+        ],
+      },
+      { type: "h3", text: "To use Xtream Codes:" },
+      {
+        type: "ol",
+        items: [
+          "Select Add Playlist.",
+          "Choose Xtream Codes login.",
+          "Enter your server URL.",
+          "Add your username and password.",
+          "Continue and wait for the channel information to load.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Make sure you enter the correct information. An incorrect URL or password can prevent the playlist from connecting.",
+      },
+      {
+        type: "p",
+        parts: [
+          "For more detailed instructions, read our guide on ",
+          {
+            label: "how to add a playlist to TiviMate",
+            href: blogPostPath(blogSlugs.addPlaylist),
+          },
+          ".",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Step 4: Configure Your TiviMate Settings",
+      },
+      {
+        type: "p",
+        text: "Once your playlist has loaded, you can customize TiviMate according to your preferences.",
+      },
+      {
+        type: "p",
+        text: "Here are some useful settings to explore:",
+      },
+      {
+        type: "ul",
+        items: [
+          "EPG: Load and refresh your electronic programme guide.",
+          "Favourites: Add frequently watched channels to your favourites list.",
+          "Channel Groups: Organize channels into categories.",
+          "Playback: Adjust available playback settings.",
+          "Appearance: Customize the interface and guide layout.",
+          "Parental Controls: Restrict access to selected channels or content.",
+        ],
+      },
+      {
+        type: "p",
+        text: "You can now use TiviMate through your Samsung TV's screen with the remote control connected to your external streaming device.",
+      },
+      {
+        type: "h2",
+        text: "Best Alternatives to TiviMate for Samsung TV",
+      },
+      {
+        type: "p",
+        text: "If you do not want to purchase an Android TV box or streaming stick, you can look for IPTV players developed specifically for Samsung's Tizen platform.",
+      },
+      {
+        type: "p",
+        text: "Some options worth checking include:",
+      },
+      {
+        type: "table",
+        headers: ["IPTV Player", "What to Know"],
+        rows: [
+          [
+            "IBO Player",
+            "IPTV media player with playlist management through its supported activation process",
+          ],
+          [
+            "Smart IPTV",
+            "Playlist-based player with its own activation system",
+          ],
+          [
+            "SmartOne IPTV",
+            "IPTV player designed for supported Smart TV platforms",
+          ],
+          [
+            "IPTV Smarters",
+            "Check whether a compatible Samsung version is available for your TV",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        text: "These applications have different installation and activation requirements. Their availability depends on your Samsung TV model, region, and the current Samsung Apps Store catalogue.",
+      },
+      {
+        type: "p",
+        text: "To check availability:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Press the Home button on your Samsung remote.",
+          "Open the Apps section.",
+          "Select the Search option.",
+          "Enter the name of your preferred IPTV player.",
+          "Check its compatibility and developer information.",
+          "Install it if it is available for your television.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Remember that these applications are alternatives, not official versions of TiviMate.",
+      },
+      {
+        type: "p",
+        text: "You will also need a compatible IPTV playlist from a provider. Installing an IPTV player does not automatically give you television channels.",
+      },
+      {
+        type: "h2",
+        text: "TiviMate on Samsung TV: External Device vs Native IPTV App",
+      },
+      {
+        type: "p",
+        text: "Which option should you choose? It depends on whether you specifically want TiviMate or simply need an IPTV player for your Samsung television.",
+      },
+      {
+        type: "table",
+        headers: [
+          "Comparison",
+          "External Streaming Device",
+          "Samsung IPTV App",
+        ],
+        rows: [
+          [
+            "TiviMate availability",
+            "Yes, on compatible devices",
+            "No",
+          ],
+          ["Additional hardware", "Required", "Not required"],
+          [
+            "Installation",
+            "On the external device",
+            "Through Samsung Apps",
+          ],
+          [
+            "Remote control",
+            "Streaming device remote",
+            "Samsung TV remote",
+          ],
+          [
+            "Playlist support",
+            "Depends on the player",
+            "Depends on the selected app",
+          ],
+          [
+            "Best for",
+            "Users who want TiviMate",
+            "Users who prefer a direct TV app",
+          ],
+        ],
+      },
+      {
+        type: "note",
+        text: "Our recommendation: If you specifically want the TiviMate interface, EPG, playlist management, and Premium features, choose a compatible Android TV or Google TV device. If you prefer not to connect additional hardware, explore the IPTV players available in your Samsung TV's app store.",
+      },
+      {
+        type: "h2",
+        text: "Common Problems When Setting Up TiviMate on Samsung TV",
+      },
+      {
+        type: "p",
+        text: "Even after connecting a compatible streaming device, you may experience some setup or playback issues.",
+      },
+      {
+        type: "p",
+        text: "Here are a few common problems and their possible solutions:",
+      },
+      {
+        type: "table",
+        headers: ["Problem", "Possible Solution"],
+        rows: [
+          [
+            "TiviMate does not appear in Samsung Apps",
+            "It is not available as a native Tizen app. Use a compatible streaming device.",
+          ],
+          [
+            "No signal on HDMI",
+            "Check the HDMI connection and select the correct input.",
+          ],
+          [
+            "Playlist not loading",
+            "Verify your M3U URL or Xtream Codes details.",
+          ],
+          [
+            "Channels keep buffering",
+            "Check your internet connection and contact your provider.",
+          ],
+          [
+            "EPG not updating",
+            "Refresh the guide and check the EPG source.",
+          ],
+          [
+            "Remote control not responding",
+            "Check remote pairing and device navigation settings.",
+          ],
+        ],
+      },
+      {
+        type: "p",
+        parts: [
+          "If you experience buffering after installation, follow our ",
+          {
+            label: "TiviMate buffering troubleshooting guide",
+            href: blogPostPath(blogSlugs.bufferingFix),
+          },
+          ".",
+        ],
+      },
+      { type: "h2", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "How to download TiviMate on Samsung TV?",
+            answer:
+              "You cannot download the official TiviMate application directly onto a standard Samsung Smart TV because it runs Tizen OS. Connect a compatible Android TV, Google TV, or Fire TV device through HDMI and install TiviMate on that device.",
+          },
+          {
+            question:
+              "How to get TiviMate on Samsung TV without an Android box?",
+            answer:
+              "You can check the Samsung Apps Store for IPTV players that support Tizen. However, if you specifically want TiviMate, you need a compatible external streaming device.",
+          },
+          {
+            question: "Is TiviMate available for Samsung Smart TV?",
+            answer:
+              "No. TiviMate does not have an official native Samsung Tizen version. It is designed for compatible Android-based TV platforms.",
+          },
+          {
+            question:
+              "Can I install TiviMate APK on Samsung TV using a USB drive?",
+            answer:
+              "No. Samsung Tizen does not support standard Android APK installation. Copying an APK file to a USB drive will not make it compatible with your television.",
+          },
+          {
+            question: "Can I use TiviMate on Samsung TV with Firestick?",
+            answer:
+              "Yes, provided you use a compatible Fire TV device that supports TiviMate. Connect it to your Samsung TV through HDMI, install TiviMate on the streaming device, and add your IPTV playlist.",
+          },
+          {
+            question: "Which IPTV player is best for Samsung TV?",
+            answer:
+              "There is no single best option for every Samsung television. IBO Player, Smart IPTV, and SmartOne IPTV are examples worth checking in the Samsung Apps Store. Availability and features depend on your TV model and region.",
+          },
+          {
+            question: "Does TiviMate Premium include IPTV channels?",
+            answer:
+              "No. TiviMate Premium unlocks additional application features, but it does not provide live TV channels, movies, or an IPTV subscription. You need a separate compatible playlist.",
+          },
+        ],
+      },
+      { type: "h2", text: "Final Thoughts" },
+      {
+        type: "p",
+        text: "Although you cannot install TiviMate directly on a standard Samsung Smart TV, you can still enjoy its features by connecting a compatible Android TV, Google TV, or Fire TV device through HDMI.",
+      },
+      {
+        type: "p",
+        text: "If you want the actual TiviMate experience, this is the most practical solution. Otherwise, you can explore IPTV applications available directly through Samsung's Apps Store.",
+      },
+      {
+        type: "p",
+        parts: [
+          "Before downloading anything, check your TV's operating system and the compatibility of your chosen streaming device. This will help you avoid installation problems and choose the right setup for watching IPTV on your Samsung television. Looking for a compatible service? Review our ",
+          { label: "IPTV Plans", href: routes.plans },
+          ".",
+        ],
+      },
+    ],
+  },
   {
     slug: "tivimate-failed-to-get-data-from-server",
     title: "TiviMate Failed to Get Data from Server: Causes and Fixes",
